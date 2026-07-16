@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link rel="stylesheet" href="./src/css/styleXP.css" />
+    <script src="./src/js/chart.js"></script>
+    <title>Ŋǝ Journey</title>
+      
+    <meta property="og:title" content="Ŋǝ Journey" />
+    <meta property="og:description" content="Browse all routes that existed in Nguhcraft" />
+    <meta property="og:image" content="https://yunasha.github.io/nguhjourney/src/img/nguh.png" />
+    <meta property="og:url" content="https://yunasha.github.io/nguhjourney/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Ŋǝ Journey" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ŋǝ Journey" />
+    <meta name="twitter:description" content="Browse all routes that existed in Nguhcraft" />
+    <meta name="twitter:image" content="https://yunasha.github.io/nguhjourney/src/img/nguh.png" />
+
+    <meta name="theme-color" content="#ee7700">
+  </head>
+  <body>
+    <div class="main-margin">
+      <h1 class="title main-content">Nguh the Journey We are On..</h1>
+    </div>
+
+    <div class="map-container main-margin">
+      <div class="chart-container main-content">
+        
+        <div class="search_wrapper">
+          <select id="route-list" class="button-style">
+            <option value="" disabled selected>-- select a route --</option>
+          </select>
+        </div>
+        
+        <div class="chart">
+          <canvas id="chartCanvas"></canvas>
+        </div>
+
+        <h6>don't mind the ass map alignment. this is the best i can do</h6>
+      
+      </div>
+      <div class="main-content map-info">
+        
+        <details class="station-detail-container">
+          <summary class="button-style">
+            Station info
+            <div class="divider"></div>
+          </summary>
+          <div id="station-content" class="main-content outset-border">
+            select a station first
+          </div>
+        </details>
+
+        <div
+          class="main-widget main-content outset-border"
+          id="main-widget"
+          style="display: none"
+        ></div>
+
+      </div>
+    </div>
+
+    <div class="data-input-container main-margin">
+      <div class="main-content">
+        <div class="error" id="error" style="display: none">
+          <h3>No routes data is found</h3>
+          <p id="error-desc">please upload the data on the form below</p>
+        </div>
+
+        <p>
+          Unfortunately, without CORS, there's nothing I can do to fetch the
+          latest routes file from the wiki. You must do it yourself. To do it,
+          go to
+          <span>
+            <a
+              href="https://mc.nguh.org/w/index.php?title=Data:NguhRoutes%2Fnetwork.json&action=raw"
+              >here</a
+            > </span
+          >, copy everything by pressing Ctrl+A, then Ctrl+C (if you're on
+          mobile, good luck), return here, and paste the text into the input
+          below, which gonna be saved in your browser's local storage:
+        </p>
+        <textarea name="data" id="data-textarea"></textarea>
+        <button id="data-submit" class="button-style">submit</button>
+        <button id="data-clear" class="button-style">clear saved data</button>
+      </div>
+      <script>
+        const dataElement = document.getElementById("data-textarea");
+        document.getElementById("data-submit").addEventListener("click", () => {
+          const rawJson = dataElement.value;
+          const minifiedJson = JSON.stringify(JSON.parse(rawJson));
+          // navigator.clipboard.writeText(minifiedJson)
+          localStorage.setItem("nguhcraftRoutes", minifiedJson);
+          console.log("New routes data has been saved to localstorage");
+          window.location.reload();
+        });
+
+        // doc.gEBI:<>.aEV:<>
+        document.getElementById("data-clear").addEventListener("click", () => {
+          localStorage.removeItem("nguhcraftRoutes");
+          console.log("Routes data has been removed from localstorage");
+          window.location.reload();
+        });
+      </script>
+    </div>
+
+    <script type="module">
+      import * as route from "./src/js/routes.js";
+
+      let chart;
+
+      async function loadRoute({ code } = {}) {
+        if (!code) throw new Error('No route code was given.\n"bruh"');
+        const result = await route.getRoute({ code });
+
+        // console.log(result)
+
+        route.populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRoute({
+          route: result,
+          elementId: "main-widget",
+        });
+
+        chart = await route.displayMap({
+          chart: chart,
+          route: result,
+          elementId: "chartCanvas",
+        });
+      }
+
+      async function setupRoutesAutocomplete() {
+        let routes = await route.getRoutes();
+        routes = Object.values(routes)
+          .flat()
+          .map((_station) => ({ code: _station.code, name: _station.name }));
+        routes.sort((a, b) => a.name.localeCompare(b.name));
+        // console.log(routes)
+
+        const routeList = document.getElementById("route-list");
+        const fragment = document.createDocumentFragment();
+        routes.forEach((route) => {
+          const option = document.createElement("option");
+          option.value = route.code;
+          option.innerText = `${route.name} (${route.code})`;
+
+          fragment.appendChild(option);
+        });
+
+        routeList.appendChild(fragment);
+
+        routeList.addEventListener("change", (e) => {
+          const selected = e.target.value;
+          // console.log(selected)
+          loadRoute({ code: selected });
+          document
+            .getElementById("chartCanvas")
+            .parentElement.scrollIntoView({
+              behavior: "smooth",
+              block: "center",
+            });
+        });
+      }
+      setupRoutesAutocomplete();
+
+      document
+        .getElementById("main-widget")
+        .addEventListener("click", (event) => {
+          const element = event.target;
+          const stationCode = element.getAttribute("station-code");
+          const stationName = element.getAttribute("station-name");
+
+          if (!stationCode) return;
+
+          // console.log(stationCode);
+          // loadRoute({ code: stationCode }); //WRONGG
+
+          route
+            .getAssociatedStationRoutes({ stationCode: stationCode })
+            .then((data) => {
+              route.displayStationInfo({
+                routes: data,
+                stationName: `${stationCode} - ${stationName}`,
+                elementId: "station-content",
+              });
+            });
+        });
+
+      document
+        .getElementById("station-content")
+        .addEventListener("click", (event) => {
+          const element = event.target;
+          const routeCode = element.getAttribute("route-code");
+
+          if (!routeCode) return;
+
+          loadRoute({ code: routeCode });
+          document.getElementById("route-list").value = routeCode
+
+        });
+    </script>
+  </body>
+</html>

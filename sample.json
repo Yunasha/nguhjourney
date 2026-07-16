@@ -1,0 +1,5727 @@
+{
+  "comment": "Video tutorial for editing this file: https://youtu.be/vdVCicCslV0",
+  "comment9": "See the NguhRoutes page on this wiki for more information on the NguhRoutes mod",
+  "comment4": "If you add a stop with no coords it is ignored by the mod",
+  "comment5": "The mod determines the time from the previous stop using this order of preference:",
+  "comment6": "1. use 'time' if available",
+  "comment7": "2. else use 'dist' if that is available, and multiply by the minecart speed in seconds per block",
+  "comment8": "3. else calculate the taxicab/Manhattan distance between the stop and the previous stop using the coords, and multiply by the minecart speed as in 2.",
+  "format": "7.0",
+  "lines": {
+    "overworld": [
+      {
+        "code": "AB-AB",
+        "name": "Fisete Rail",
+        "stops": [
+          {
+            "code": "AB-YRS",
+            "coords": [-1680, 64, 4123],
+            "date": "2025-12-01T21:05:02Z"
+          },
+          {
+            "code": "ABF",
+            "coords": [-1678, 63, 4286],
+            "dist": 161,
+            "time": 8.8,
+            "date": "2025-12-01T21:05:02Z",
+            "date_opened": "2024-10-21"
+          },
+          {
+            "code": "AB-FYS",
+            "coords": [-1623, 82, 4377],
+            "dist": 147,
+            "time": 11.2,
+            "date": "2025-12-01T21:05:36Z"
+          }
+        ]
+      },
+      {
+        "code": "AQ",
+        "name": "Aquatic Line",
+        "color": "#ff4000",
+        "stops": [
+          {
+            "code": "GNI",
+            "coords": [1681, 64, 5778],
+            "date": "2026-05-29T20:28:04Z"
+          },
+          {
+            "code": "AOT",
+            "coords": [3821, 64, 5876],
+            "date": "2026-05-24T01:56:43"
+          },
+          {
+            "code": "CXK",
+            "coords": [1681, 64, 5778],
+            "date": "2026-05-23T16:47:04Z"
+          },
+          {
+            "code": "HDH",
+            "coords": [681, 40, 5985],
+            "date": "2026-05-22T19:37:04Z"
+          },
+          {
+            "code": "HLW",
+            "coords": [-213, 62, 6741],
+            "dist": 1650,
+            "time": 17.2,
+            "date": "2026-05-22T19:37:04Z"
+          },
+          {
+            "code": "HLM",
+            "coords": [-452, 61, 6431],
+            "dist": 549,
+            "time": 8.4,
+            "date": "2026-05-22T19:38:04Z",
+            "date_opened": "2024-05-27"
+          },
+          {
+            "code": "LRP",
+            "coords": [-1996, 85, 5376],
+            "dist": 2979,
+            "time": 29.2,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "LRI",
+            "coords": [-1989, 58, 4590],
+            "dist": 793,
+            "time": 11.4,
+            "date": "2025-09-17T16:30:18Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-07-08"
+          },
+          {
+            "code": "ABF",
+            "coords": [-1672, 63, 4286],
+            "dist": 621,
+            "time": 8.7,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-10-21"
+          },
+          {
+            "code": "KZB",
+            "coords": [-1478, 29, 3909],
+            "dist": 579,
+            "time": 16.5,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-05-16"
+          },
+          {
+            "code": "RPD",
+            "coords": [-1461, 70, 2736],
+            "dist": 1194,
+            "time": 12.9,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-04-09"
+          },
+          {
+            "code": "AYK",
+            "coords": [391, 39, 2719],
+            "dist": 1869,
+            "time": 18.3,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-04-27"
+          },
+          {
+            "code": "AYR",
+            "coords": [1139, 39, 2239],
+            "dist": 1262,
+            "time": 14.3,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-04-27"
+          },
+          {
+            "code": "KET",
+            "coords": [1571, 62, 2036],
+            "dist": 641,
+            "time": 9.3,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-04-27"
+          },
+          {
+            "code": "TRC",
+            "coords": [2191, 50, 3263],
+            "dist": 2019,
+            "time": 20.2,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-05-31"
+          },
+          {
+            "code": "CBM",
+            "coords": [3492, 71, 3811],
+            "dist": 1873,
+            "time": 24.2,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-09-13"
+          },
+          {
+            "code": "OKC",
+            "coords": [7121, 24, 3388],
+            "dist": 4106,
+            "time": 43.9,
+            "date": "2025-10-13T11:14:22Z",
+            "date_opened": "2024-09-16"
+          }
+        ]
+      },
+      {
+        "code": "AS-RL",
+        "name": "Aswngrail",
+        "local": true,
+        "brand": "Aswngrail",
+        "color": "#dd2222",
+        "stops": [
+          { "code": "AST", "coords": [2177, 39, -406], "date": "2026-02-17" },
+          {
+            "code": "ASP",
+            "coords": [1935, 47, -598],
+            "time": 12,
+            "date": "2026-04-21"
+          }
+        ]
+      },
+      {
+        "code": "AS-LM",
+        "name": "Zlarit Railway",
+        "local": true,
+        "brand": "Aswngrail",
+        "color": "#dd22dd",
+        "stops": [
+          { "code": "ASX", "coords": [2312, 62, -515], "date": "2026-05-23" },
+          { "code": "ASZ", "coords": [2474, 93, -447], "date": "2026-05-24" }
+        ]
+      },
+      {
+        "code": "AS-RH",
+        "name": "Aswnga - Ridiculous Heights",
+        "local": true,
+        "brand": "Aswngrail",
+        "color": "#22ddaa",
+        "stops": [
+          { "code": "AST", "coords": [2145, 108, -481], "date": "2026-02-17" },
+          {
+            "code": "ASX",
+            "coords": [2305, 120, -572],
+            "time": 60,
+            "date": "2026-05-23"
+          }
+        ]
+      },
+      {
+        "code": "AS-NA",
+        "name": "Aswngan Former Exclave BS",
+        "local": true,
+        "brand": "Aswngrail",
+        "color": "#ccdd22",
+        "stops": [
+          { "code": "ASB", "coords": [2399, 63, -246], "date": "2026-05-24" },
+          { "code": "AS-NAX", "coords": [2504, 63, -79], "date": "2026-05-24" }
+        ]
+      },
+      {
+        "code": "AS-OW",
+        "name": "Aswnga on Overworld",
+        "local": true,
+        "brand": "Aswngrail",
+        "color": "#22aadd",
+        "stops": [
+          { "code": "AST", "coords": [2183, 73, -482], "date": "2026-02-17" },
+          { "code": "ASA", "coords": [2309, 62, -356], "date": "2026-05-24" },
+          { "code": "ASB", "coords": [2351, 62, -223], "date": "2026-05-24" }
+        ]
+      },
+      {
+        "code": "BS",
+        "name": "Baarzenstad Line",
+        "stops": [
+          {
+            "code": "SVG",
+            "coords": [1932, 39, 458],
+            "date": "2025-11-04T16:37:16Z"
+          },
+          {
+            "code": "XST",
+            "coords": [2351, 39, 1021],
+            "dist": 982,
+            "time": 13.5,
+            "date": "2025-11-04T16:37:16Z"
+          },
+          {
+            "code": "XZS",
+            "coords": [3159, 39, 1716],
+            "dist": 1503,
+            "time": 15.4,
+            "date": "2025-11-04T16:38:21Z"
+          },
+          {
+            "code": "XBS",
+            "coords": [3159, 39, 2164],
+            "dist": 448,
+            "time": 9.7,
+            "date": "2025-11-04T17:14:27Z"
+          },
+          {
+            "code": "KEK",
+            "coords": [2501, 40, 2232],
+            "dist": 772,
+            "time": 9.1,
+            "date": "2026-01-11T17:12:48Z"
+          },
+          {
+            "code": "KEN",
+            "coords": [1689, 75, 1303],
+            "dist": 1777,
+            "time": 17.3,
+            "date": "2026-01-11T17:13:37Z"
+          }
+        ]
+      },
+      {
+        "code": "AT",
+        "name": "Atlantic",
+        "color": "#d9a633",
+        "stops": [
+          {
+            "code": "TAG",
+            "coords": [5008, 35, -1498],
+            "date": "2025-10-05T19:00:09Z"
+          },
+          {
+            "code": "TAI",
+            "coords": [4790, 29, -1331],
+            "dist": 385,
+            "time": 6,
+            "date": "2025-10-05T19:00:09Z"
+          },
+          {
+            "code": "???Bani 1",
+            "coords": [4495, 29, -1199],
+            "dist": 427,
+            "time": 7,
+            "date": "2025-10-05T19:01:20Z"
+          },
+          {
+            "code": "???Bani 2",
+            "coords": [3919, 29, -931],
+            "dist": 844,
+            "time": 13,
+            "date": "2025-10-05T19:08:14Z"
+          },
+          {
+            "code": "???Bani 3",
+            "coords": [3851, 29, -1473],
+            "dist": 610,
+            "time": 10.7,
+            "date": "2025-10-05T19:09:03Z"
+          },
+          {
+            "code": "EKT",
+            "coords": [3427, 29, -1896],
+            "dist": 847,
+            "time": 12.6,
+            "date": "2025-10-05T19:09:26Z"
+          },
+          {
+            "code": "EKY",
+            "coords": [3400, 29, -2059],
+            "dist": 190,
+            "time": 5.9,
+            "date": "2025-10-05T19:25:16Z"
+          }
+        ]
+      },
+      {
+        "code": "CL-67",
+        "name": "Six-Seven Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "CLS",
+            "coords": [-5705, 66, -3601],
+            "date": "2025-11-27T19:06:01Z"
+          },
+          {
+            "code": "CLT",
+            "coords": [-5756, 62, -3408],
+            "dist": 304,
+            "time": 6.2,
+            "date": "2026-03-29T23:27:29Z"
+          },
+          {
+            "code": "XDV",
+            "coords": [-5178, -1, -3080],
+            "dist": 934,
+            "time": 11.2,
+            "date": "2026-03-29T23:28:21Z",
+            "date_opened": "2026-03-30"
+          },
+          {
+            "code": "VD7",
+            "coords": [-5168, 80, -2455],
+            "dist": 663,
+            "time": 8.7,
+            "date": "2026-03-29T23:29:01Z",
+            "date_opened": "2026-03-30"
+          }
+        ]
+      },
+      {
+        "code": "CL-MT",
+        "name": "Caluta Metro",
+        "local": true,
+        "stops": [
+          { "code": "CL-TSV", "coords": [-6267, 66, -3149] },
+          {
+            "code": "CL-SCH",
+            "coords": [-5875, 58, -3177],
+            "dist": 488,
+            "time": 8.7,
+            "date": "2026-04-02T21:15:14Z"
+          },
+          {
+            "code": "CL-STR",
+            "coords": [-5822, 52, -3362],
+            "dist": 242,
+            "time": 7.5,
+            "date": "2026-06-09T18:46:04Z"
+          },
+          {
+            "code": "CLT",
+            "coords": [-5756, 62, -3412],
+            "dist": 116,
+            "time": 5.1,
+            "date": "2026-06-09T18:46:54Z"
+          },
+          {
+            "code": "CL-EPC",
+            "coords": [-5755, 34, -3707],
+            "dist": 306,
+            "time": 7.2,
+            "date": "2026-06-09T18:48:21Z"
+          },
+          {
+            "code": "CLJ",
+            "coords": [-5563, 27, -3735],
+            "dist": 220,
+            "time": 7.5,
+            "date": "2026-06-09T18:50:20Z"
+          },
+          {
+            "code": "CLG",
+            "coords": [-5175, 69, -3728],
+            "dist": 476,
+            "time": 11,
+            "date": "2025-12-25T21:32:11Z"
+          }
+        ]
+      },
+      {
+        "code": "GU-CE",
+        "name": "Central Gulf Line",
+        "local": true,
+        "brand": "Gulf",
+        "color": "#00c0f0",
+        "stops": [
+          {
+            "code": "VLW",
+            "coords": [2211, 59, -1465],
+            "date": "2025-12-3T08:04:34Z"
+          },
+          {
+            "code": "KZK",
+            "coords": [1992, 54, -1707],
+            "date": "2025-09-20T10:21:53Z"
+          },
+          {
+            "code": "KZA",
+            "coords": [1660, 29, -1705],
+            "dist": 334,
+            "time": 4.7,
+            "date": "2025-09-20T10:21:53Z"
+          },
+          {
+            "code": "STU",
+            "coords": [1343, 66, -1716],
+            "dist": 414,
+            "time": 5,
+            "date": "2025-09-20T10:22:14Z"
+          },
+          {
+            "code": "VAA",
+            "coords": [1080, 34, -1779],
+            "dist": 326,
+            "time": 5.6,
+            "date": "2025-09-20T10:23:29Z"
+          },
+          {
+            "code": "KCX",
+            "coords": [149, 62, -2019],
+            "dist": 1171,
+            "time": 13.7,
+            "date": "2025-09-20T10:23:59Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-702, 62, -2573],
+            "dist": 1465,
+            "time": 19.7,
+            "date": "2025-09-20T10:24:37Z"
+          },
+          {
+            "code": "XFA",
+            "coords": [-741, 65, -3116],
+            "date": "2026-05-31T16:50:07Z"
+          }
+        ]
+      },
+      {
+        "code": "CE",
+        "name": "Central Line",
+        "color": "#800000",
+        "stops": [
+          {
+            "code": "VUV",
+            "coords": [-524, 78, -6745],
+            "date": "2025-09-17T17:08:59Z",
+            "date_opened": "2024-07-05"
+          },
+          {
+            "code": "TZP",
+            "coords": [-2031, 68, -3465],
+            "dist": 4787,
+            "time": 43.3,
+            "date": "2025-09-17T17:08:59Z",
+            "date_opened": "2024-05-23"
+          },
+          {
+            "code": "TZX",
+            "coords": [-2572, 53, -3294],
+            "dist": 738,
+            "time": 10.2,
+            "date": "2025-09-17T17:13:48Z"
+          },
+          {
+            "code": "TZB",
+            "coords": [-2543, 53, -3170],
+            "dist": 167,
+            "time": 4.4,
+            "date": "2025-09-17T17:14:18Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-702, 62, -2563],
+            "dist": 2610,
+            "time": 26.1,
+            "date": "2025-09-17T17:15:13Z",
+            "date_opened": "2024-01-25"
+          },
+          {
+            "code": "KCC",
+            "coords": [-653, 61, -1039],
+            "dist": 1675,
+            "time": 24.5,
+            "date": "2025-09-17T17:15:52Z",
+            "usage_notes": "Code reflects former name: Kyaw Cen City. Local transit exists at this station. "
+          },
+          {
+            "code": "KCM",
+            "coords": [-668, 70, -239],
+            "dist": 915,
+            "time": 14.9,
+            "date": "2025-09-17T17:16:29Z"
+          },
+          {
+            "code": "MZL",
+            "coords": [-338, 62, -215],
+            "dist": 354,
+            "time": 5.4,
+            "date": "2025-09-17T17:17:19Z",
+            "date_opened": "2024-03-24"
+          },
+          {
+            "code": "MZS",
+            "coords": [-14, 62, -37],
+            "dist": 502,
+            "time": 12.6,
+            "date": "2025-09-17T17:18:38Z",
+            "date_opened": "2024-04-22"
+          },
+          {
+            "code": "MZT",
+            "coords": [1039, 57, -45],
+            "dist": 1061,
+            "time": 13.2,
+            "date": "2025-09-17T17:20:31Z",
+            "date_opened": "2023-12-28"
+          },
+          {
+            "code": "LIL",
+            "coords": [1210, 65, -191],
+            "dist": 317,
+            "time": 8.2,
+            "date": "2025-09-17T17:21:06Z"
+          },
+          {
+            "code": "XVB",
+            "coords": [1633, 70, -838],
+            "dist": 1078,
+            "time": 11.5,
+            "date": "2025-09-17T17:22:01Z",
+            "date_opened": "2025-01-01"
+          },
+          {
+            "code": "WAK",
+            "coords": [1973, 64, -838],
+            "dist": 340,
+            "time": 6.2,
+            "date": "2025-09-17T17:22:18Z"
+          },
+          {
+            "code": "KZK",
+            "coords": [1998, 73, -1709],
+            "dist": 896,
+            "time": 9.6,
+            "date": "2025-09-17T17:22:39Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-03-02"
+          },
+          {
+            "code": "RIY",
+            "coords": [2000, 65, -1942],
+            "dist": 235,
+            "time": 4.2,
+            "date": "2025-09-17T17:22:59Z"
+          },
+          {
+            "code": "EMC",
+            "coords": [2421, 68, -2300],
+            "dist": 795,
+            "time": 9.1,
+            "date": "2025-09-17T17:23:24Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "EKS",
+            "coords": [2947, 82, -2507],
+            "dist": 733,
+            "time": 8.5,
+            "date": "2025-09-17T17:24:02Z",
+            "date_opened": "2025-03-23"
+          },
+          {
+            "code": "NMK",
+            "coords": [3278, 63, -3299],
+            "dist": 1123,
+            "time": 11.3,
+            "date": "2026-01-05T19:54:40Z"
+          },
+          {
+            "code": "PNP",
+            "coords": [3693, 69, -3416],
+            "dist": 532,
+            "time": 6.3,
+            "date": "2026-01-05T19:56:26Z"
+          }
+        ]
+      },
+      {
+        "code": "KE-CH",
+        "name": "Cherry Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "KER",
+            "coords": [2307, 28, 2231],
+            "date": "2025-09-20T08:05:35Z"
+          },
+          {
+            "code": "KET",
+            "coords": [1571, 62, 2030],
+            "dist": 1281,
+            "time": 13.5,
+            "date": "2025-09-20T08:05:35Z"
+          },
+          {
+            "code": "KEN",
+            "coords": [1699, 75, 1305],
+            "dist": 1039,
+            "time": 12.1,
+            "date": "2025-10-13T10:58:06Z"
+          }
+        ]
+      },
+      {
+        "code": "CO",
+        "name": "Coastal Line",
+        "color": "#397cb3",
+        "stops": [
+          {
+            "code": "KCM",
+            "coords": [-691, 58, -240],
+            "date": "2025-09-19T21:11:53Z",
+            "date_opened": "2025-08-01"
+          },
+          {
+            "code": "GBL",
+            "coords": [-2109, 61, -570],
+            "dist": 1794,
+            "time": 18.1,
+            "date": "2025-09-19T21:11:53Z",
+            "date_opened": "2024-07-28"
+          },
+          {
+            "code": "SGA",
+            "coords": [-2888, 5, -754],
+            "dist": 977,
+            "time": 10.1,
+            "date": "2025-09-19T21:13:51Z",
+            "date_opened": "2024-09-26",
+            "usage_notes": "Local transit exists at this station but is currently out of order. "
+          },
+          {
+            "code": "VBO",
+            "coords": [-4022, 65, -752],
+            "dist": 1138,
+            "time": 14.1,
+            "date": "2026-05-08T21:49:59Z"
+          },
+          {
+            "code": "RAA",
+            "coords": [-4565, 67, -1058],
+            "dist": 849,
+            "time": 11.5,
+            "date": "2026-05-08T21:50:56Z",
+            "usage_notes": "Local transit and leshrail connection exists at the nearby RAZ station"
+          },
+          {
+            "code": "RAR",
+            "coords": [-5003, 62, -1030],
+            "dist": 468,
+            "time": 7.2,
+            "date": "2025-09-19T21:15:43Z",
+            "date_opened": "2024-11-27",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "KI1",
+            "coords": [-6172, 62, -515],
+            "dist": 1684,
+            "time": 18.5,
+            "date": "2025-09-19T21:16:17Z",
+            "date_opened": "2024-08-18",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "KIT",
+            "coords": [-6420, 62, -645],
+            "dist": 394,
+            "time": 6.6,
+            "date": "2025-09-19T21:17:23Z",
+            "date_opened": "2024-08-28",
+            "usage_notes": "Local transit exists at this station. "
+          }
+        ]
+      },
+      {
+        "code": "CP-CS",
+        "name": "Complex Shuttle",
+        "stops": [
+          {
+            "code": "XMZ",
+            "coords": [-2440, -54, 5620],
+            "date": "2025-10-20T09:29:11Z"
+          },
+          {
+            "code": "CPL",
+            "coords": [-2429, 65, 6271],
+            "dist": 782,
+            "time": 22.6,
+            "date": "2025-10-20T09:29:11Z"
+          }
+        ]
+      },
+      {
+        "code": "CR",
+        "name": "Corner Line",
+        "color": "#be93e3",
+        "stops": [
+          {
+            "comment": "The line is not actually finished beyond NHK",
+            "code": "NHK",
+            "coords": [-5955, 70, 6628],
+            "date": "2025-09-17T20:01:52Z"
+          },
+          {
+            "code": "CVS",
+            "coords": [-4934, 62, 7559],
+            "dist": 1952,
+            "time": 17.8,
+            "date": "2025-09-17T20:01:52Z",
+            "comment": "// CVS and XEJ don't exist??",
+            "usage_notes": "This station was originally planned to be connected to [[Drebzha]], but that plan was scrapped. The current rails use the existing tunnel built by [[ʡeter]]. "
+          },
+          {
+            "code": "SLA",
+            "coords": [-1225, 62, 7406],
+            "dist": 3862,
+            "time": 34.3,
+            "date": "2025-09-17T20:06:41Z"
+          },
+          {
+            "code": "XMK",
+            "coords": [3334, 77, 7129],
+            "dist": 4836,
+            "time": 43.2,
+            "date": "2025-09-17T20:13:39Z"
+          },
+          {
+            "code": "CRV",
+            "coords": [7897, 24, 5610],
+            "dist": 6100,
+            "time": 54.3,
+            "date": "2025-09-17T20:15:03Z"
+          },
+          {
+            "code": "OKC",
+            "coords": [7126, 24, 3386],
+            "dist": 2995,
+            "time": 29.1,
+            "date": "2025-09-17T20:15:51Z"
+          },
+          {
+            "code": "BDC",
+            "coords": [6802, 24, 1799],
+            "dist": 1911,
+            "time": 19.2,
+            "date": "2025-09-17T20:16:57Z"
+          },
+          {
+            "code": "APG",
+            "coords": [6786, 26, 933],
+            "dist": 882,
+            "time": 9.7,
+            "date": "2025-09-17T20:17:57Z",
+            "date_opened": "2025-04-26"
+          },
+          {
+            "code": "WAY",
+            "coords": [7700, 65, 374],
+            "dist": 1479,
+            "time": 15,
+            "date": "2025-09-17T20:19:32Z",
+            "date_opened": "2025-07-19"
+          },
+          {
+            "code": "WAB",
+            "coords": [7608, 63, -1228],
+            "dist": 1694,
+            "time": 18.1,
+            "date": "2025-09-17T20:20:15Z",
+            "date_opened": "2025-04-26"
+          },
+          {
+            "code": "WAF",
+            "coords": [7608, -52, -2599],
+            "dist": 1371,
+            "time": 13.7,
+            "date": "2025-09-17T20:21:33Z"
+          },
+          {
+            "code": "ADA",
+            "coords": [6468, 59, -4112],
+            "dist": 2653,
+            "time": 25.6,
+            "date": "2025-09-17T20:26:42Z"
+          },
+          {
+            "code": "PKP",
+            "coords": [6467, 52, -4718],
+            "dist": 607,
+            "time": 7.9,
+            "date": "2025-09-17T20:28:14Z",
+            "date_opened": "2025-04-23"
+          },
+          {
+            "code": "XSC",
+            "coords": [5166, 52, -5717],
+            "dist": 2300,
+            "time": 22.9,
+            "date": "2025-09-17T20:29:43Z",
+            "date_opened": "2025-04-20"
+          },
+          {
+            "code": "WAH",
+            "coords": [4372, 64, -7352],
+            "dist": 2429,
+            "time": 23.1,
+            "date": "2025-09-17T20:30:22Z",
+            "date_opened": "2025-07"
+          }
+        ]
+      },
+      {
+        "code": "CB",
+        "name": "Cuban Line",
+        "color": "#b3b3ff",
+        "stops": [
+          {
+            "code": "XSH",
+            "coords": [-2372, 54, 2161],
+            "date": "2025-09-19T20:34:08Z",
+            "date_opened": "2024-09-09",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "CBN",
+            "coords": [-2810, 117, 2055],
+            "dist": 608,
+            "time": 8.4,
+            "date": "2025-09-19T20:34:08Z",
+            "date_opened": "2024-09-09"
+          },
+          {
+            "code": "CBF",
+            "coords": [-4273, 69, 2578],
+            "dist": 1994,
+            "time": 18.7,
+            "date": "2025-09-19T20:35:33Z",
+            "date_opened": "2024-09-08"
+          },
+          {
+            "code": "CBR",
+            "coords": [-4977, 62, 2047],
+            "dist": 1433,
+            "time": 15.1,
+            "date": "2025-09-19T20:36:00Z"
+          },
+          {
+            "code": "CBC",
+            "coords": [-4974, 71, 1480],
+            "dist": 628,
+            "time": 7.3,
+            "date": "2025-09-19T20:42:42Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          "impassable",
+          {
+            "code": "CBV",
+            "coords": [-4952, 62, 964],
+            "dist": 628,
+            "time": 7.6,
+            "date": "2025-09-19T20:47:12Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "CBA",
+            "coords": [-4640, 65, 606],
+            "dist": 670,
+            "time": 7.3,
+            "date": "2025-09-19T20:47:39Z"
+          },
+          {
+            "code": "GBL",
+            "coords": [-2099, 61, -570],
+            "dist": 3717,
+            "time": 31.1,
+            "date": "2025-09-19T20:48:26Z",
+            "date_opened": "2024-07-28"
+          },
+          {
+            "code": "HLH",
+            "coords": [-2290, 50, -1414],
+            "dist": 1035,
+            "time": 10.6,
+            "date": "2025-09-19T20:49:10Z",
+            "date_opened": "2024-04-02"
+          }
+        ]
+      },
+      {
+        "code": "CX-RA",
+        "name": "Cxihrail",
+        "color": "#ffff00",
+        "stops": [
+          {
+            "code": "CX-TLX",
+            "coords": [1527, 65, 5784],
+            "date": "2026-05-25T19:30:09Z"
+          },
+          {
+            "code": "CX-CGI",
+            "coords": [1582, 61, 5819],
+            "date": "2026-05-25T19:30:09Z",
+            "usage_notes": "line doesnt actually stop there however it is where entitys /home bed is placed so this is the start point of 100% of all cxihrail traffic ever"
+          },
+          {
+            "code": "CXK",
+            "coords": [1680, 64, 5789],
+            "date": "2026-05-25T19:30:09Z"
+          },
+          {
+            "code": "CX-SLX",
+            "coords": [1679, 63, 5903],
+            "date": "2026-05-25T19:30:09Z"
+          },
+          {
+            "code": "CX-QLX",
+            "coords": [1623, 60, 6554],
+            "date": "2026-05-25T19:30:09Z"
+          }
+        ]
+      },
+      {
+        "code": "FE-DL",
+        "name": "Density Loop",
+        "local": true,
+        "brand": "FERRA",
+        "color": "#a1a1c7",
+        "stops": [
+          {
+            "code": "TAV",
+            "coords": [5412, 16, -53],
+            "dist": 612,
+            "time": 10.5,
+            "date": "2025-09-20T09:19:17Z"
+          },
+          {
+            "code": "TAX",
+            "coords": [5272, 7, 245],
+            "dist": 446,
+            "time": 9.1,
+            "date": "2025-09-20T09:08:20Z",
+            "date_opened": "2025-05-30"
+          },
+          {
+            "code": "APK",
+            "coords": [4988, -16, 633],
+            "dist": 694,
+            "time": 10,
+            "date": "2025-09-20T09:08:49Z",
+            "date_opened": "2025-05-24"
+          },
+          {
+            "code": "MRM",
+            "coords": [5907, 53, 1258],
+            "dist": 1604,
+            "time": 17.7,
+            "date": "2025-09-20T09:09:43Z",
+            "date_opened": "2025-04-25"
+          },
+          {
+            "code": "APU",
+            "coords": [6276, -31, 1096],
+            "dist": 867,
+            "time": 9.3,
+            "date": "2025-09-20T09:10:08Z",
+            "__comment": "no_exit?"
+          },
+          {
+            "comment": "Idk if this or APU is AP0",
+            "code": "APP",
+            "coords": [6368, -31, 928],
+            "dist": 260,
+            "time": 6.2,
+            "date": "2025-09-20T09:10:32Z",
+            "date_opened": "2025-04-26"
+          },
+          {
+            "code": "APG",
+            "coords": [6783, 22, 928],
+            "dist": 415,
+            "time": 10,
+            "date": "2025-09-20T09:11:01Z",
+            "date_opened": "2025-04-26"
+          },
+          {
+            "code": "APS",
+            "coords": [7374, 25, 1153],
+            "dist": 816,
+            "time": 11.6,
+            "date": "2025-09-20T09:11:33Z",
+            "date_opened": "2025-05-25"
+          },
+          {
+            "code": "WAY",
+            "coords": [7703, 67, 369],
+            "dist": 1137,
+            "time": 15.4,
+            "date": "2025-09-20T09:12:05Z",
+            "date_opened": "2025-04-28"
+          },
+          {
+            "code": "WAO",
+            "coords": [7502, -28, -632],
+            "dist": 1218,
+            "time": 23.3,
+            "date": "2025-09-20T09:12:50Z",
+            "date_opened": "2025-05-24"
+          },
+          {
+            "code": "WAM",
+            "coords": [7500, -30, -1209],
+            "dist": 579,
+            "time": 11.6,
+            "date": "2025-09-20T09:13:28Z",
+            "date_opened": "2025-04-18"
+          },
+          {
+            "code": "TAA",
+            "coords": [6934, 24, -1587],
+            "dist": 944,
+            "time": 12.2,
+            "date": "2025-09-20T09:14:28Z"
+          },
+          {
+            "code": "TAN",
+            "coords": [6534, 24, -1588],
+            "dist": 401,
+            "time": 8.8,
+            "date": "2025-09-20T09:15:29Z"
+          },
+          {
+            "code": "TAB",
+            "coords": [6144, 27, -1673],
+            "dist": 475,
+            "time": 8.8,
+            "date": "2025-09-20T09:16:01Z"
+          },
+          {
+            "code": "TAE",
+            "coords": [5211, 36, -1500],
+            "dist": 1106,
+            "time": 13.3,
+            "date": "2025-09-20T09:16:39Z"
+          },
+          {
+            "code": "TAG",
+            "coords": [5008, 35, -1490],
+            "dist": 213,
+            "time": 5.4,
+            "date": "2025-09-20T09:17:01Z"
+          },
+          {
+            "code": "TAL",
+            "coords": [5019, 35, -1249],
+            "dist": 284,
+            "time": 6.3,
+            "date": "2025-09-20T09:17:19Z"
+          },
+          {
+            "code": "TAO",
+            "coords": [5017, 20, -812],
+            "dist": 439,
+            "time": 6.5,
+            "date": "2025-09-20T09:17:36Z"
+          },
+          {
+            "code": "TAR",
+            "coords": [5132, 19, -631],
+            "dist": 324,
+            "time": 8.9,
+            "date": "2025-09-20T09:18:27Z",
+            "date_opened": "2025-02-20"
+          },
+          {
+            "code": "TAC",
+            "coords": [5129, 20, -382],
+            "dist": 280,
+            "time": 5.9,
+            "date": "2025-09-20T09:18:48Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "GU-EA",
+        "name": "Eastern Gulf Line",
+        "local": true,
+        "brand": "Gulf",
+        "color": "#c000c0",
+        "stops": [
+          {
+            "code": "STH",
+            "coords": [1330, 43, -1555],
+            "date": "2025-11-25T14:28:00Z"
+          },
+          {
+            "code": "VAA",
+            "coords": [1078, 35, -1765],
+            "dist": 484,
+            "time": 6.8,
+            "date": "2025-11-25T14:28:45Z"
+          },
+          {
+            "code": "EKB",
+            "coords": [1839, 39, -1313],
+            "dist": 1212,
+            "time": 13.2,
+            "date": "2025-09-20T10:27:55Z"
+          },
+          {
+            "code": "WAK",
+            "coords": [1975, 56, -843],
+            "dist": 606,
+            "time": 10.5,
+            "date": "2025-09-20T10:28:23Z"
+          },
+          {
+            "code": "ACA",
+            "coords": [2282, 61, -1147],
+            "dist": 611,
+            "time": 9.2,
+            "date": "2025-09-20T10:29:25Z"
+          },
+          {
+            "comment": "The name \"Eltear\" is invalid, please change and refer to instances as \"Wgəldərəm\" or \"Wgəldərəm Central\"",
+            "code": "USW",
+            "coords": [2589, 39, -1200],
+            "dist": 360,
+            "time": 5.2,
+            "date": "2025-09-20T10:29:41Z"
+          },
+          {
+            "code": "EKE",
+            "coords": [2577, 59, -1458],
+            "dist": 270,
+            "time": 5.1,
+            "date": "2025-09-20T10:29:58Z"
+          },
+          {
+            "code": "EKH",
+            "coords": [2731, 35, -1540],
+            "dist": 236,
+            "time": 7.1,
+            "date": "2025-09-20T10:30:17Z"
+          },
+          {
+            "code": "EKA",
+            "coords": [2766, 43, -1668],
+            "dist": 163,
+            "time": 5.2,
+            "date": "2025-09-20T10:30:45Z"
+          },
+          {
+            "code": "EKN",
+            "coords": [2743, 43, -1816],
+            "dist": 171,
+            "time": 5.6,
+            "date": "2025-09-20T10:31:01Z"
+          },
+          {
+            "code": "EKY",
+            "coords": [3400, 29, -2049],
+            "dist": 1010,
+            "time": 12.8,
+            "date": "2025-09-20T10:31:22Z"
+          },
+          {
+            "code": "EKT",
+            "coords": [3417, 29, -1898],
+            "dist": 168,
+            "time": 5,
+            "date": "2025-09-20T10:31:42Z"
+          },
+          {
+            "code": "EKM",
+            "coords": [3200, 29, -1746],
+            "dist": 369,
+            "time": 7.4,
+            "date": "2025-09-20T10:32:21Z"
+          },
+          {
+            "code": "EKG",
+            "coords": [2928, 29, -1746],
+            "dist": 272,
+            "time": 7.5,
+            "date": "2025-09-20T10:32:42Z"
+          },
+          {
+            "code": "EKH",
+            "coords": [2733, 35, -1535],
+            "dist": 406,
+            "time": 8.5,
+            "date": "2025-09-20T10:33:14Z"
+          }
+        ]
+      },
+      {
+        "code": "MZ-EG",
+        "name": "Egg Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "MZL",
+            "coords": [-334, 67, -228],
+            "date": "2025-09-20T08:42:45Z"
+          },
+          {
+            "code": "MZG",
+            "coords": [-86, 70, -595],
+            "dist": 615,
+            "time": 8.2,
+            "date": "2025-09-20T08:42:45Z"
+          },
+          {
+            "code": "MZY",
+            "coords": [809, 71, -620],
+            "dist": 920,
+            "time": 11.4,
+            "date": "2025-09-20T08:44:41Z"
+          }
+        ]
+      },
+      {
+        "code": "CB-ES",
+        "name": "Everglacier Shuttle",
+        "local": true,
+        "stops": [
+          {
+            "code": "CBR",
+            "coords": [-4976, 42, 2041],
+            "date": "2025-09-19T20:38:10Z"
+          },
+          {
+            "code": "CBE",
+            "coords": [-4832, 74, 1768],
+            "dist": 421,
+            "time": 16.5,
+            "date": "2025-09-19T20:38:10Z"
+          }
+        ]
+      },
+      {
+        "code": "CB-CV",
+        "name": "Chillvana Metro",
+        "local": true,
+        "stops": [
+          {
+            "code": "CBV",
+            "coords": [-4963, 62, 973],
+            "dist": 165,
+            "time": 5.3,
+            "date": "2025-12-01T19:16:07Z"
+          },
+          {
+            "code": "CB-POE",
+            "coords": [-4995, 58, 880],
+            "dist": 135,
+            "time": 4,
+            "date": "2025-12-01T19:12:22Z"
+          },
+          {
+            "code": "CB-TEM",
+            "coords": [-5014, 58, 1041],
+            "dist": 197,
+            "time": 5.5,
+            "date": "2025-12-01T19:13:21Z"
+          },
+          {
+            "code": "CB-FRE",
+            "coords": [-4901, 55, 1100],
+            "dist": 171,
+            "time": 4.6,
+            "date": "2025-12-01T19:13:49Z"
+          },
+          {
+            "code": "CB-EAS",
+            "coords": [-4719, 54, 1053],
+            "dist": 228,
+            "time": 4.9,
+            "date": "2025-12-01T19:14:21Z"
+          },
+          {
+            "code": "CB-GAR",
+            "coords": [-4834, 54, 1029],
+            "dist": 140,
+            "time": 4.3,
+            "date": "2025-12-01T19:14:54Z"
+          },
+          {
+            "code": "CB-NEA",
+            "coords": [-4868, 54, 918],
+            "dist": 145,
+            "time": 4.3,
+            "date": "2025-12-01T19:15:13Z"
+          }
+        ]
+      },
+      {
+        "code": "EV",
+        "name": "Evil Line",
+        "stops": [
+          {
+            "code": "BES",
+            "coords": [-4761, 109, -2770],
+            "date": "2026-05-13T14:17:13Z"
+          },
+          {
+            "code": "BEE",
+            "coords": [-4744, 65, -2710],
+            "date": "2026-05-13T14:17:13Z"
+          },
+          {
+            "code": "BED",
+            "coords": [-3988, 9, -2552],
+            "date": "2026-05-16T12:52:06Z"
+          },
+          {
+            "code": "AAW",
+            "coords": [-6048, 70, -2117],
+            "dist": 2531,
+            "time": 24.7,
+            "date": "2026-05-16T12:52:06Z"
+          },
+          {
+            "code": "LYF",
+            "coords": [-7172, 63, 612],
+            "dist": 3843,
+            "time": 31.8,
+            "date": "2025-12-06T10:22:57Z"
+          },
+          { "code": "LYD", "coords": [-7311, 51, 1343] },
+          { "code": "LYE", "coords": [-7310, 69, 1483] },
+          { "code": "XXX", "coords": [-7310, 120, 1907] }
+        ]
+      },
+      {
+        "comment": "I think this is the Split Line",
+        "code": "FE-SP",
+        "name": "Split Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "TAD",
+            "coords": [5641, 19, -421],
+            "date": "2025-09-20T09:33:34Z"
+          },
+          {
+            "code": "FEC",
+            "coords": [7232, -27, -1230],
+            "dist": 2426,
+            "time": 25.4,
+            "date": "2025-09-20T09:33:34Z"
+          },
+          {
+            "code": "WAM",
+            "coords": [7493, -27, -1210],
+            "dist": 281,
+            "time": 8.1,
+            "date": "2025-09-20T09:34:12Z"
+          }
+        ]
+      },
+      {
+        "comment": "Not sure if the codes are correct here since I can't find it in Annwan's data",
+        "code": "FE-C1",
+        "name": "FERRA Connecting Line 1",
+        "local": true,
+        "brand": "FERRA",
+        "stops": [
+          {
+            "code": "MRM",
+            "coords": [5871, 63, 1309],
+            "date": "2025-09-20T09:50:09Z"
+          },
+          {
+            "code": "FEM",
+            "coords": [5997, 63, 1809],
+            "dist": 630,
+            "time": 9.6,
+            "date": "2025-09-20T09:50:09Z"
+          }
+        ]
+      },
+      {
+        "code": "FO",
+        "name": "Forest Line",
+        "color": "#4d8787",
+        "stops": [
+          {
+            "comment": "Kaōranga (AKK) is not actually accessible on this line; it just turns you around",
+            "code": "SVW",
+            "coords": [-6390, 26, 4973],
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-06-07"
+          },
+          {
+            "code": "SVV",
+            "coords": [-6375, 26, 4692],
+            "dist": 296,
+            "time": 9.2,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "NKI",
+            "coords": [-5940, 29, 4415],
+            "dist": 742,
+            "time": 9,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "IST",
+            "coords": [-5527, 68, 3364],
+            "dist": 1500,
+            "time": 15.85,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "KAN",
+            "coords": [-6092, 83, 3137],
+            "dist": 792,
+            "time": 8.3,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "CBF",
+            "coords": [-4273, 69, 2572],
+            "dist": 2576,
+            "time": 31.1,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-09-08"
+          },
+          {
+            "code": "HOR",
+            "coords": [-4184, 66, 4033],
+            "dist": 1768,
+            "time": 18.5,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2025-05-01"
+          },
+          {
+            "code": "SVP",
+            "coords": [-4132, 51, 4335],
+            "dist": 354,
+            "time": 8.6,
+            "date": "2025-09-17T16:30:18Z"
+          },
+          {
+            "code": "DTV",
+            "coords": [-2907, 66, 4202],
+            "dist": 1358,
+            "time": 16.6,
+            "date": "2026-01-14T21:52:21Z"
+          },
+          {
+            "code": "KZB",
+            "coords": [-1502, 29, 3851],
+            "dist": 1756,
+            "time": 17.9,
+            "date": "2026-01-14T21:52:55Z",
+            "date_opened": "2024-05-16"
+          },
+          {
+            "code": "TAZ",
+            "coords": [-1103, 78, 3798],
+            "dist": 452,
+            "time": 6.8,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2025-01-2025"
+          },
+          {
+            "code": "AYT",
+            "coords": [-719, 39, 3581],
+            "dist": 601,
+            "time": 8.3,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-10-06"
+          },
+          {
+            "code": "RPU",
+            "coords": [-808, 73, 2913],
+            "dist": 757,
+            "time": 10.7,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-08-19"
+          },
+          {
+            "code": "RPD",
+            "coords": [-1459, 70, 2730],
+            "dist": 834,
+            "time": 10.2,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-04-09"
+          },
+          {
+            "code": "RPS",
+            "coords": [-1743, 70, 2537],
+            "dist": 477,
+            "time": 7.6,
+            "date": "2025-09-17T16:30:18Z",
+            "date_opened": "2024-08-10"
+          },
+          {
+            "code": "RPW",
+            "coords": [-2256, 44, 2176],
+            "date": "2025-04-25T18:44:00Z"
+          }
+        ]
+      },
+      {
+        "code": "NU-HY",
+        "name": "Hydra Line",
+        "local": true,
+        "stops": [
+          {
+            "comment": "Seemingly unfinished before this",
+            "code": "VDP",
+            "coords": [-4827, 56, -1854],
+            "date": "2025-09-19T21:57:53Z"
+          },
+          {
+            "code": "VDV",
+            "coords": [-4785, 57, -1723],
+            "dist": 173,
+            "time": 3.9,
+            "date": "2025-09-19T21:57:53Z"
+          },
+          {
+            "code": "RAP",
+            "coords": [-4785, 39, -1490],
+            "dist": 233,
+            "time": 4,
+            "date": "2025-09-19T21:59:16Z"
+          },
+          {
+            "code": "RAE",
+            "coords": [-4863, 39, -1421],
+            "dist": 147,
+            "time": 4,
+            "date": "2025-09-19T21:59:38Z",
+            "comment": "Seemingly unfinished after this"
+          }
+        ]
+      },
+      {
+        "code": "KE-RK",
+        "name": "Raln-Kalwar Shuttle",
+        "stops": [
+          {
+            "code": "KER",
+            "coords": [2308, 35, 2233],
+            "date": "2026-01-11T17:16:49Z"
+          },
+          {
+            "code": "KEK",
+            "coords": [2493, 40, 2232],
+            "dist": 192,
+            "time": 4.6,
+            "date": "2026-01-11T17:16:49Z"
+          }
+        ]
+      },
+      {
+        "code": "KB",
+        "name": "Klakkenbuutsh Line",
+        "stops": [
+          {
+            "code": "KAN",
+            "coords": [-6092, 83, 3142],
+            "date": "2025-09-19T20:05:47Z"
+          },
+          {
+            "code": "HRS",
+            "coords": [-6796, 112, 1259],
+            "dist": 2593,
+            "time": 21.5,
+            "date": "2025-09-19T20:05:47Z"
+          },
+          {
+            "code": "XNA",
+            "coords": [-6176, 84, 279],
+            "dist": 1654,
+            "time": 19.8,
+            "date": "2025-09-19T20:12:04Z"
+          },
+          {
+            "code": "CLI",
+            "coords": [-7439, 85, -2377],
+            "dist": 3922,
+            "time": 27.3,
+            "date": "2026-03-30T00:16:00Z",
+            "date_opened": "2025-12-31"
+          },
+          {
+            "code": "JLD",
+            "coords": [-7170, 38, -4007],
+            "dist": 1913,
+            "time": 14.7,
+            "date": "2026-03-30T00:16:34Z"
+          },
+          {
+            "code": "CLT",
+            "coords": [-5756, 62, -3394],
+            "dist": 2110,
+            "time": 22.9,
+            "date": "2026-03-23T15:28:31Z",
+            "date_opened": "2025-11-16"
+          },
+          {
+            "code": "CLQ",
+            "date_opened": "2026-04-08",
+            "coords": [-5310, 70, -3295],
+            "dist": 589,
+            "time": 6.7,
+            "date": "2026-04-14T18:36:20Z"
+          },
+          {
+            "code": "REM",
+            "coords": [-4055, 84, -3296],
+            "dist": 1243,
+            "time": 10,
+            "date": "2026-04-14T18:36:58Z"
+          },
+          {
+            "code": "HRN",
+            "coords": [-3697, 75, -3160],
+            "dist": 494,
+            "time": 5.2,
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "TZP",
+            "coords": [-2032, 68, -3472],
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "HRF",
+            "coords": [-1095, 31, -4472],
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "HRK",
+            "coords": [-921, 64, -4423],
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "YKF",
+            "coords": [-1120, 59, -3728],
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "YKW",
+            "coords": [-724, 59, -3728],
+            "date": "2025-09-19T20:16:38Z"
+          },
+          {
+            "code": "YKE",
+            "coords": [-366, 24, -3690],
+            "date": "2025-09-19T20:16:38Z"
+          }
+        ]
+      },
+      {
+        "code": "LE",
+        "name": "Lesbian Uhaul Express Line",
+        "color": "#682474",
+        "stops": [
+          {
+            "code": "AHB",
+            "coords": [-6213, 66, -1426],
+            "date": "2026-06-19T02:23:41Z"
+          },
+          {
+            "code": "HDO",
+            "coords": [-6651, 69, -1400],
+            "dist": 499,
+            "time": 4.6,
+            "date": "2026-06-19T02:23:41Z"
+          },
+          {
+            "code": "AAE",
+            "coords": [-5997, 69, -2110],
+            "dist": 1718,
+            "time": 16.6,
+            "date": "2026-01-10T01:48:40Z"
+          },
+          {
+            "code": "JLD",
+            "coords": [-7170, 38, -4018],
+            "dist": 3589,
+            "time": 31.6,
+            "date": "2025-11-27T19:14:08Z"
+          },
+          {
+            "code": "MSS",
+            "coords": [-5371, 47, -5428],
+            "dist": 3209,
+            "time": 32,
+            "date": "2025-09-19T22:12:28Z"
+          },
+          {
+            "code": "YKA",
+            "coords": [-4205, 97, -5326],
+            "dist": 1524,
+            "time": 21.2,
+            "date": "2026-05-05T13:56:15Z"
+          },
+          {
+            "code": "KRK",
+            "coords": [-3160, 82, -5434],
+            "dist": 1429,
+            "time": 15.3,
+            "date": "2026-05-05T13:57:46Z"
+          }
+        ]
+      },
+      {
+        "code": "LC",
+        "name": "Linecone",
+        "color": "#006900",
+        "stops": [
+          {
+            "code": "ZAZ",
+            "coords": [-3446, 64, -6867],
+            "date": "2026-05-05T13:49:10Z"
+          },
+          {
+            "code": "YKA",
+            "coords": [-4207, 97, -5332],
+            "dist": 2346,
+            "time": 23.2,
+            "date": "2026-05-05T13:49:10Z"
+          },
+          {
+            "code": "FJF",
+            "coords": [-3749, 68, -4483],
+            "dist": 1307,
+            "time": 12.7,
+            "date": "2026-05-05T13:49:38Z"
+          },
+          {
+            "code": "DHR",
+            "coords": [-3252, 65, -3711],
+            "dist": 1269,
+            "time": 13.7,
+            "date": "2026-05-05T13:50:08Z"
+          },
+          {
+            "code": "TZJ",
+            "coords": [-2959, 53, -3119],
+            "dist": 885,
+            "time": 10.2,
+            "date": "2026-05-07T11:38:47Z"
+          },
+          {
+            "code": "HRN",
+            "coords": [-3695, 62, -3016],
+            "dist": 955,
+            "time": 10.4,
+            "date": "2026-05-08T21:42:15Z"
+          },
+          {
+            "code": "BED",
+            "coords": [-3980, 9, -2552],
+            "dist": 751,
+            "time": 8,
+            "date": "2026-05-08T21:43:05Z"
+          },
+          {
+            "code": "VBS",
+            "coords": [-3781, 60, -904],
+            "dist": 1875,
+            "time": 17.8,
+            "date": "2026-05-08T21:46:09Z"
+          },
+          {
+            "code": "DNL",
+            "coords": [-3296, 62, -778],
+            "dist": 611,
+            "time": 7,
+            "date": "2026-05-16T12:42:55Z"
+          },
+          {
+            "code": "SGA",
+            "coords": [-2889, 5, -746],
+            "dist": 439,
+            "time": 6,
+            "date": "2026-05-16T12:45:35Z"
+          },
+          {
+            "code": "HGP",
+            "coords": [-2428, 65, 893],
+            "dist": 2100,
+            "time": 19.8,
+            "date": "2026-06-28T11:50:10Z"
+          },
+          {
+            "code": "ARY",
+            "coords": [-912, 57, 1158],
+            "dist": 1781,
+            "time": 16.5,
+            "date": "2026-07-04T16:55:18Z"
+          },
+          {
+            "code": "ARP",
+            "coords": [-673, 66, 1230],
+            "dist": 335,
+            "time": 4.8,
+            "date": "2026-07-04T16:55:50Z"
+          },
+          {
+            "code": "NAN",
+            "coords": [-66, 48, 1047],
+            "dist": 796,
+            "time": 9.3,
+            "date": "2026-07-04T16:56:18Z"
+          }
+        ]
+      },
+      {
+        "comment": "Annwan didn't find it so idk if the codes are right",
+        "code": "CH",
+        "name": "Line of Chaos",
+        "color": "#e5d0b1",
+        "stops": [
+          {
+            "code": "TAK",
+            "coords": [-845, 29, 5383],
+            "date": "2025-09-20T10:13:46Z",
+            "date_opened": "2025-02-13"
+          },
+          {
+            "code": "OTJ",
+            "coords": [-210, 34, 5160],
+            "dist": 858,
+            "time": 13.9,
+            "date": "2025-09-20T10:13:46Z",
+            "date_opened": "2025-03-12"
+          },
+          {
+            "code": "OTM",
+            "coords": [-98, 63, 5160],
+            "dist": 112,
+            "time": 4.5,
+            "date": "2025-09-20T10:14:29Z",
+            "date_opened": "2025-03-12"
+          },
+          {
+            "code": "OTV",
+            "coords": [236, 63, 5018],
+            "dist": 476,
+            "time": 6.2,
+            "date": "2025-09-20T10:14:46Z"
+          },
+          {
+            "code": "QOS",
+            "coords": [767, 71, 4382],
+            "dist": 1173,
+            "time": 13.3,
+            "date": "2025-09-20T10:15:11Z"
+          },
+          {
+            "code": "XKC",
+            "coords": [1085, 73, 4382],
+            "dist": 318,
+            "time": 7.6,
+            "date": "2025-09-20T10:15:30Z",
+            "comment": "The line stops here. Unfinished? (2025-09-20)"
+          }
+        ]
+      },
+      {
+        "code": "MS-MS",
+        "name": "Maraśań Shuttle",
+        "local": true,
+        "stops": [
+          {
+            "code": "MS-SIL",
+            "coords": [-5303, 63, -5545],
+            "date": "2025-11-08"
+          },
+          {
+            "code": "MS-WIP",
+            "coords": [-5285, 39, -5509],
+            "dist": 67,
+            "time": 2.3,
+            "date": "2025-11-27T19:16:25Z"
+          },
+          {
+            "code": "MSS",
+            "coords": [-5363, 47, -5428],
+            "dist": 210,
+            "time": 4.4,
+            "date": "2025-11-27T19:16:54Z"
+          },
+          {
+            "code": "MS-GOV",
+            "coords": [-5454, 34, -5615],
+            "dist": 278,
+            "time": 6,
+            "date": "2025-11-27T19:17:26Z"
+          },
+          {
+            "code": "MS-NIL",
+            "coords": [-5540, 61, -5437],
+            "dist": 267,
+            "time": 6.1,
+            "date": "2025-11-27T19:17:58Z"
+          },
+          {
+            "code": "MS-EIL",
+            "coords": [-5619, 28, -5437],
+            "dist": 76,
+            "time": 2.4,
+            "date": "2025-11-27T19:18:22Z"
+          },
+          {
+            "code": "MS-TPC",
+            "coords": [-6135, 14, -5473],
+            "dist": 548,
+            "time": 7.5,
+            "date": "2025-11-27T19:18:53Z"
+          },
+          {
+            "code": "MS-AFK",
+            "coords": [-6397, 183, -5473],
+            "dist": 257,
+            "time": 4.3,
+            "date": "2025-11-27T19:19:16Z"
+          }
+        ]
+      },
+      {
+        "comment": "Not a loop yet? (2025-09-20)",
+        "comment2": "Annwan didn't find this",
+        "code": "FE-ML",
+        "name": "Mesa Loop",
+        "local": true,
+        "brand": "FERRA",
+        "stops": [
+          {
+            "code": "WAC",
+            "coords": [2984, 58, 301],
+            "date": "2025-09-20T09:27:11Z"
+          },
+          {
+            "code": "TAR",
+            "coords": [5132, 19, -637],
+            "dist": 3174,
+            "time": 33.1,
+            "date": "2025-09-20T09:27:11Z"
+          },
+          {
+            "code": "TAD",
+            "coords": [5641, 19, -415],
+            "dist": 739,
+            "time": 10.2,
+            "date": "2025-09-20T09:28:22Z"
+          }
+        ]
+      },
+      {
+        "code": "MO",
+        "name": "Mountain Line",
+        "color": "#ca8a04",
+        "stops": [
+          {
+            "code": "TAK",
+            "coords": [-845, 34, 5395],
+            "dist": 246,
+            "time": 5.4,
+            "date": "2025-09-17T19:48:10Z",
+            "date_opened": "2025-02-10"
+          },
+          {
+            "code": "LCO",
+            "coords": [-756, -51, 4914],
+            "dist": 570,
+            "time": 7.5,
+            "date": "2025-09-17T19:48:56Z",
+            "date_opened": "2025-02-02"
+          },
+          {
+            "code": "CHV",
+            "coords": [-955, 76, 4787],
+            "dist": 366,
+            "time": 11.8,
+            "date": "2025-09-17T19:49:50Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-12-30"
+          },
+          {
+            "code": "ABP",
+            "coords": [-1221, 34, 4591],
+            "dist": 468,
+            "time": 10.1,
+            "date": "2025-09-17T19:50:20Z",
+            "date_opened": "2024-12-30"
+          },
+          {
+            "code": "ABO",
+            "coords": [-1391, 110, 4595],
+            "dist": 264,
+            "time": 9.5,
+            "date": "2025-09-17T19:50:41Z",
+            "date_opened": "2025-05-05"
+          },
+          {
+            "code": "LRI",
+            "coords": [-1986, 58, 4582],
+            "dist": 632,
+            "time": 7.5,
+            "date": "2025-09-17T19:51:07Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-07-08"
+          },
+          {
+            "code": "DTR",
+            "coords": [-2904, 114, 4830],
+            "dist": 1166,
+            "time": 13,
+            "date": "2025-09-17T19:51:35Z",
+            "date_opened": "2024-12-23"
+          },
+          {
+            "code": "CPF",
+            "coords": [-2904, 64, 5608],
+            "dist": 778,
+            "time": 11.1,
+            "date": "2025-09-17T19:44:33Z"
+          },
+          {
+            "code": "SLA",
+            "coords": [-1231, 62, 7405],
+            "dist": 3474,
+            "time": 33.3,
+            "date": "2025-09-17T19:47:16Z"
+          },
+          {
+            "code": "TAM",
+            "coords": [-1033, 34, 5453],
+            "dist": 2150,
+            "time": 22.5,
+            "date": "2025-09-17T19:47:52Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "NO",
+        "name": "Northern Line",
+        "color": "#fcc2d7",
+        "stops": [
+          {
+            "code": "MTH",
+            "coords": [5527, 65, -3620],
+            "date": "2025-09-17T17:30:13Z",
+            "date_opened": "2024-10-20"
+          },
+          {
+            "code": "LKE",
+            "coords": [4367, 67, -3413],
+            "dist": 1431,
+            "time": 14.1,
+            "date": "2025-09-17T17:30:13Z",
+            "date_opened": "2024-12-31"
+          },
+          {
+            "code": "LKU",
+            "coords": [3859, 63, -3413],
+            "dist": 508,
+            "time": 9.8,
+            "date": "2025-09-17T17:32:08Z"
+          },
+          {
+            "code": "PNP",
+            "coords": [3690, 68, -3407],
+            "dist": 175,
+            "time": 7.2,
+            "date": "2025-09-17T17:32:41Z"
+          },
+          {
+            "code": "UNL",
+            "coords": [3014, 61, -4022],
+            "dist": 1345,
+            "time": 28.2,
+            "date": "2025-09-17T17:33:22Z",
+            "date_opened": "2025-03-13"
+          },
+          {
+            "code": "LKT",
+            "coords": [2998, -6, -4179],
+            "dist": 191,
+            "time": 4.8,
+            "date": "2025-09-17T17:33:54Z",
+            "date_opened": "2025-04-12"
+          },
+          {
+            "code": "WSB",
+            "coords": [1851, 66, -4187],
+            "dist": 1171,
+            "time": 20,
+            "date": "2025-09-17T17:36:17Z",
+            "date_opened": "2025-04-13"
+          },
+          {
+            "code": "UKK",
+            "coords": [1513, 68, -4331],
+            "dist": 508,
+            "time": 13.6,
+            "date": "2025-09-17T17:36:45Z",
+            "date_opened": "2025-04-15"
+          },
+          {
+            "code": "UKH",
+            "coords": [1137, 68, -4590],
+            "dist": 635,
+            "time": 10.7,
+            "date": "2025-09-17T17:39:20Z",
+            "date_opened": "2025-04-29"
+          },
+          {
+            "code": "UKT",
+            "coords": [970, 65, -4470],
+            "dist": 364,
+            "time": 6.3,
+            "date": "2026-02-01T20:41:52Z",
+            "date_opened": "2026-02-01"
+          },
+          {
+            "code": "XDA",
+            "coords": [574, 67, -4362],
+            "dist": 441,
+            "time": 6.7,
+            "date": "2026-02-01T20:42:33Z"
+          },
+          {
+            "code": "XLP",
+            "coords": [-821, 58, -4758],
+            "dist": 1791,
+            "time": 19.6,
+            "date": "2025-09-17T17:41:45Z"
+          },
+          {
+            "code": "MAP",
+            "coords": [-1477, 44, -5827],
+            "dist": 1725,
+            "time": 17.4,
+            "date": "2025-09-17T17:43:13Z"
+          },
+          {
+            "code": "CUC",
+            "coords": [-2312, 120, -5347],
+            "date": "2026-05-30T19:44:16",
+            "date_opened": "2026-05-30"
+          },
+          {
+            "code": "KRK",
+            "coords": [-3153, 81, -5430],
+            "date": "2025-09-17T17:44:37Z",
+            "date_opened": "2025-07-02"
+          },
+          {
+            "code": "KRH",
+            "coords": [-2882, 71, -6510],
+            "dist": 1353,
+            "time": 13,
+            "date": "2025-09-17T17:51:06Z",
+            "comment": "The line ends here; Electric Touch Territory (PEL) is not accessible via this line"
+          }
+        ]
+      },
+      {
+        "code": "NA",
+        "alt_codes": ["ŊA"],
+        "name": "Ŋafrican Line",
+        "color": "#ff8f8f",
+        "stops": [
+          { "code": "OKN", "coords": [-2777, 127, 586], "date": "2025-11-09" },
+          {
+            "code": "SVB",
+            "coords": [-2890, -59, 107],
+            "dist": 643,
+            "time": 9,
+            "date": "2025-12-09T17:23:45Z"
+          },
+          {
+            "code": "SGA",
+            "coords": [-2889, 5, -762],
+            "dist": 1160,
+            "time": 12.4,
+            "date": "2025-12-09T17:24:18Z"
+          },
+          {
+            "comment": "OBP no longer exists",
+            "code": "HLH",
+            "coords": [-2296, 66, -1431],
+            "dist": 1264,
+            "time": 14.1,
+            "date": "2025-11-27T19:23:15Z",
+            "usage_notes": "Local transit exists at this station"
+          },
+          {
+            "code": "HLA",
+            "coords": [-2573, 85, -1503],
+            "dist": 349,
+            "time": 7.1,
+            "date": "2025-09-19T21:41:46Z"
+          },
+          {
+            "code": "XML",
+            "coords": [-3489, 32, -1896],
+            "dist": 1343,
+            "time": 15.6,
+            "date": "2025-09-19T21:43:06Z"
+          },
+          {
+            "code": "RAU",
+            "coords": [-4734, 62, -1511],
+            "dist": 2196,
+            "time": 26,
+            "date": "2025-09-19T21:44:15Z"
+          },
+          {
+            "code": "VDV",
+            "coords": [-4795, 71, -1715],
+            "dist": 315,
+            "time": 6.3,
+            "date": "2025-09-19T21:44:45Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "VD7",
+            "coords": [-5158, 80, -2451],
+            "dist": 1099,
+            "time": 13.4,
+            "date": "2025-09-19T21:45:18Z"
+          },
+          {
+            "code": "TZG",
+            "coords": [-5055, 62, -2705],
+            "dist": 357,
+            "time": 7,
+            "date": "2025-09-19T21:45:41Z"
+          },
+          {
+            "code": "BEE",
+            "coords": [-4744, 65, -2706],
+            "date": "2026-05-13T14:17:13Z"
+          },
+          {
+            "code": "XFR",
+            "coords": [-4303, 65, -3182],
+            "dist": 1229,
+            "time": 14.9,
+            "date": "2025-09-19T21:46:13Z"
+          },
+          {
+            "code": "REM",
+            "coords": [-4055, 83, -3304],
+            "dist": 402,
+            "time": 10.3,
+            "date": "2026-06-09T18:54:39Z"
+          },
+          {
+            "code": "DHZ",
+            "coords": [-3747, 94, -3694],
+            "dist": 1126,
+            "time": 16,
+            "date": "2025-09-19T21:46:45Z"
+          },
+          {
+            "code": "DHR",
+            "coords": [-3248, 65, -3712],
+            "dist": 527,
+            "time": 6.8,
+            "date": "2025-11-27T19:29:27Z"
+          },
+          {
+            "code": "TZX",
+            "coords": [-2578, 53, -3290],
+            "dist": 1099,
+            "time": 12.1,
+            "date": "2025-11-27T19:29:57Z"
+          }
+        ]
+      },
+      {
+        "code": "NA-NL",
+        "name": "SitNār Loop",
+        "color": "#2e9ef9",
+        "stops": [
+          {
+            "code": "NA-MEO",
+            "coords": [603, 63, 709],
+            "date": "2025-12-01T20:45:49Z",
+            "date_opened": "2025-10-8"
+          },
+          {
+            "code": "NAG",
+            "coords": [352, 93, 883],
+            "dist": 425,
+            "time": 8.2,
+            "date": "2025-12-01T20:45:49Z",
+            "date_opened": "2025-8-4",
+            "usage_notes": "Links to SitNār Cat Line, "
+          },
+          {
+            "code": "NAS",
+            "coords": [-268, 56, 901],
+            "dist": 638,
+            "time": 8.7,
+            "date": "2026-01-14T22:05:53Z"
+          },
+          {
+            "code": "NAN",
+            "coords": [-55, 40, 1047],
+            "dist": 385,
+            "time": 7.2,
+            "date": "2026-01-14T22:07:17Z",
+            "date_opened": "2025-04-29",
+            "usage_notes": "Links to Southern & Olympic Lines"
+          },
+          {
+            "code": "NA-NED",
+            "coords": [75, 61, 1442],
+            "date": "2025-12-01T20:55:13Z",
+            "date_opened": "2025-1-11"
+          },
+          {
+            "code": "NA-NIS",
+            "coords": [285, 76, 1535],
+            "dist": 310,
+            "time": 6.9,
+            "date": "2025-12-01T20:56:45Z",
+            "date_opened": "2025-1-11"
+          },
+          {
+            "code": "NA-KOR",
+            "coords": [439, 72, 1590],
+            "dist": 206,
+            "time": 3.9,
+            "date": "2025-12-01T20:57:35Z",
+            "date_opened": "2025-1-11"
+          },
+          {
+            "code": "NA-ASM",
+            "coords": [625, 64, 1517],
+            "dist": 258,
+            "time": 5.2,
+            "date": "2025-12-01T20:58:19Z",
+            "usage_notes": "Links to SitNār Cat Line"
+          },
+          {
+            "code": "NA-GAN",
+            "coords": [1161, 67, 1474],
+            "dist": 590,
+            "time": 8.6,
+            "date": "2025-12-01T20:59:48Z"
+          },
+          { "code": "NA-XAN", "coords": [1201, 111, 1182] },
+          { "code": "NA-RUC", "coords": [870, 63, 1105] }
+        ],
+        "loop": true
+      },
+      {
+        "code": "NA-CL",
+        "name": "SitNār Cat Line",
+        "color": "#ffcc4d",
+        "stops": [
+          {
+            "code": "NAG",
+            "coords": [352, 93, 883],
+            "dist": 425,
+            "time": 8.2,
+            "date_opened": "2025-8-4",
+            "usage_notes": "Links to SitNār Loop, "
+          },
+          { "code": "NA-NAC", "coords": [98, 58, 1017] },
+          { "code": "NAK", "coords": [514, 62, 1315] },
+          { "code": "NAB", "coords": [434, 64, 1439] },
+          {
+            "code": "NA-ASM",
+            "coords": [625, 64, 1517],
+            "dist": 258,
+            "time": 5.2,
+            "usage_notes": "Links to SitNār Loop"
+          }
+        ]
+      },
+      {
+        "code": "NA-DL",
+        "name": "SitNār Devious Line",
+        "color": "#aa8dd8",
+        "stops": [
+          { "code": "NA-PAR", "coords": [148, 63, 988] },
+          { "code": "NA-NAC", "coords": [97, 58, 1025] },
+          { "code": "NAN", "coords": [-69, 41, 1046] },
+          { "code": "NA-NRS", "coords": [89, 67, 1157] }
+        ]
+      },
+      {
+        "code": "NE",
+        "alt_codes": ["ŊE"],
+        "color": "#9233e9",
+        "name": "Ŋerlin Line",
+        "stops": [
+          {
+            "code": "LRI",
+            "coords": [-1989, 58, 4578],
+            "date": "2025-09-20T10:46:12Z",
+            "date_opened": "2024-07-08"
+          },
+          {
+            "code": "TPU",
+            "coords": [-2027, 65, 3613],
+            "dist": 1035,
+            "time": 12.4,
+            "date": "2025-09-20T10:46:12Z",
+            "date_opened": "2025-02-06"
+          },
+          {
+            "code": "RPA",
+            "coords": [-2027, 25, 1983],
+            "dist": 1630,
+            "time": 19.5,
+            "date": "2025-09-20T10:46:50Z",
+            "date_opened": "2024-09-10"
+          },
+          {
+            "code": "RPN",
+            "coords": [-1419, 40, 2163],
+            "dist": 842,
+            "time": 12.4,
+            "date": "2025-09-20T10:47:23Z",
+            "date_opened": "2024-10-02"
+          },
+          {
+            "code": "RPK",
+            "coords": [-850, 48, 1889],
+            "dist": 847,
+            "time": 10.9,
+            "date": "2025-09-20T10:47:50Z",
+            "date_opened": "2024-09-29"
+          },
+          {
+            "code": "RPC",
+            "coords": [-250, 48, 1696],
+            "dist": 795,
+            "time": 12.1,
+            "date": "2025-09-20T10:48:12Z",
+            "date_opened": "2025-03-25"
+          },
+          {
+            "code": "RPB",
+            "coords": [100, 58, 1720],
+            "dist": 350,
+            "time": 5.9,
+            "date": "2025-10-16T12:40:10Z",
+            "date_opened": "2025-10-16"
+          }
+        ]
+      },
+      {
+        "code": "OL",
+        "name": "Olympic Line",
+        "color": "#fcba03",
+        "stops": [
+          {
+            "code": "XOJ",
+            "coords": [3010, 78, -4899],
+            "date": "2026-06-01T18:18:28Z"
+          },
+          {
+            "code": "AAA",
+            "coords": [3003, 78, -4742],
+            "dist": 172,
+            "time": 13.9,
+            "date": "2026-06-01T18:18:28Z"
+          },
+          {
+            "code": "XZP",
+            "coords": [3036, 63, -4416],
+            "dist": 359,
+            "time": 9.1,
+            "date": "2026-06-01T18:19:37Z"
+          },
+          {
+            "code": "XLG",
+            "coords": [3047, 38, -4124],
+            "dist": 303,
+            "time": 5.3,
+            "date": "2026-03-06T16:18:56Z"
+          },
+          {
+            "code": "UNL",
+            "coords": [3027, 61, -4021],
+            "dist": 157,
+            "time": 3.5,
+            "date": "2026-03-06T16:21:46Z"
+          },
+          {
+            "code": "LKJ",
+            "coords": [2522, 72, -3681],
+            "dist": 931,
+            "time": 13.6,
+            "date": "2026-03-06T16:22:37Z"
+          },
+          {
+            "code": "WSK",
+            "coords": [2219, 81, -3799],
+            "dist": 423,
+            "time": 11.4,
+            "date": "2026-03-06T16:22:57Z"
+          },
+          {
+            "code": "WSW",
+            "coords": [1966, 68, -3702],
+            "dist": 362,
+            "time": 7,
+            "date": "2026-03-06T16:24:05Z"
+          },
+          {
+            "code": "WSL",
+            "coords": [1754, 65, -3631],
+            "dist": 293,
+            "time": 8.3,
+            "date": "2026-03-06T16:24:31Z"
+          },
+          {
+            "code": "WSN",
+            "coords": [1613, 70, -3478],
+            "dist": 308,
+            "time": 10.7,
+            "date": "2026-03-06T16:25:07Z"
+          },
+          {
+            "code": "OKP",
+            "coords": [1075, 91, -3522],
+            "dist": 890,
+            "time": 37.5,
+            "date": "2026-03-06T16:25:34Z"
+          },
+          {
+            "code": "OKS",
+            "coords": [589, 197, -3410],
+            "dist": 598,
+            "time": 5.5,
+            "date": "2026-03-06T16:26:06Z"
+          },
+          {
+            "code": "OKV",
+            "coords": [791, 72, -2922],
+            "dist": 704,
+            "time": 6.1,
+            "date": "2026-03-06T16:26:31Z"
+          },
+          {
+            "code": "STN",
+            "coords": [791, 72, -2770],
+            "dist": 152,
+            "time": 6.6,
+            "date": "2026-03-06T16:27:42Z"
+          },
+          {
+            "code": "STB",
+            "coords": [936, 72, -2528],
+            "dist": 407,
+            "time": 8.8,
+            "date": "2026-03-06T16:28:14Z"
+          },
+          {
+            "code": "STC",
+            "coords": [1454, 48, -2998],
+            "dist": 990,
+            "time": 11.8,
+            "date": "2026-03-06T16:28:38Z"
+          },
+          {
+            "code": "NTT",
+            "coords": [1732, 48, -2998],
+            "dist": 278,
+            "time": 4.9,
+            "date": "2026-03-06T16:29:23Z"
+          },
+          {
+            "code": "NTN",
+            "coords": [2109, 48, -2731],
+            "dist": 684,
+            "time": 8.1,
+            "date": "2026-03-06T16:29:55Z"
+          },
+          {
+            "code": "KZE",
+            "coords": [1799, 48, -1884],
+            "dist": 1157,
+            "time": 11.6,
+            "date": "2026-03-06T16:31:40Z"
+          },
+          {
+            "code": "KZK",
+            "coords": [1982, 54, -1721],
+            "dist": 346,
+            "time": 6.4,
+            "date": "2026-03-06T16:32:01Z",
+            "date_opened": "2024-03-02",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "ACA",
+            "coords": [2275, 70, -1149],
+            "dist": 935,
+            "time": 9.2,
+            "date": "2025-09-17T19:02:19Z"
+          },
+          {
+            "code": "AST",
+            "coords": [2180, 39, -399],
+            "date": "2026-02-17",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "RKZ",
+            "coords": [1929, 39, -70],
+            "date": "2025-09-17T19:02:51Z"
+          },
+          {
+            "code": "SVG",
+            "coords": [1929, 39, 450],
+            "dist": 520,
+            "time": 6.4,
+            "date": "2025-09-17T19:03:16Z"
+          },
+          {
+            "code": "KEN",
+            "coords": [1693, 75, 1303],
+            "dist": 1089,
+            "time": 11.5,
+            "date": "2025-10-13T10:55:43Z",
+            "date_opened": "2024-10-26"
+          },
+          {
+            "code": "NAN",
+            "coords": [-55, 48, 1047],
+            "dist": 837,
+            "time": 11.5,
+            "date": "2025-09-17T19:06:20Z",
+            "date_opened": "2024-09-25"
+          },
+          {
+            "code": "ARS",
+            "coords": [-746, 47, 995],
+            "dist": 743,
+            "time": 9.5,
+            "date": "2025-09-17T19:06:41Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "ARA",
+            "coords": [-1265, -1, 604],
+            "dist": 928,
+            "time": 13.1,
+            "date": "2025-09-17T19:07:16Z"
+          },
+          {
+            "code": "CBB",
+            "coords": [-3316, 71, 1599],
+            "dist": 3046,
+            "time": 26.7,
+            "date": "2025-09-17T19:08:45Z"
+          },
+          {
+            "code": "CBT",
+            "coords": [-4357, 78, 1430],
+            "dist": 1492,
+            "time": 15.9,
+            "date": "2025-09-17T19:09:14Z"
+          },
+          {
+            "code": "CBV",
+            "coords": [-4951, 62, 973],
+            "dist": 1179,
+            "time": 13.1,
+            "date": "2025-09-17T19:09:32Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "KLB",
+            "coords": [-6003, 68, 1106],
+            "dist": 1207,
+            "time": 14.5,
+            "date": "2025-09-19T21:30:09Z"
+          },
+          {
+            "code": "KI1",
+            "coords": [-6172, 75, -514],
+            "dist": 1789,
+            "time": 17.7,
+            "date_opened": "2024-08-18",
+            "date": "2025-09-19T21:31:40Z"
+          }
+        ]
+      },
+      {
+        "code": "KI-RL",
+        "name": "Rails of Eras Loop",
+        "local": true,
+        "stops": [
+          {
+            "code": "KI1",
+            "coords": [-6175, 69, -510],
+            "dist": 271,
+            "time": 5.9,
+            "date": "2025-11-27T19:43:04Z"
+          },
+          {
+            "code": "KI-TOR",
+            "coords": [-6109, 61, -702],
+            "dist": 284,
+            "time": 4.1,
+            "date": "2025-11-27T19:38:04Z"
+          },
+          {
+            "code": "KI-FRL",
+            "coords": [-6220, 66, -718],
+            "dist": 141,
+            "time": 3.2,
+            "date": "2025-11-27T19:38:26Z"
+          },
+          {
+            "code": "KI-EVW",
+            "coords": [-6237, 62, -632],
+            "dist": 144,
+            "time": 4.2,
+            "date": "2025-11-27T19:38:47Z"
+          },
+          {
+            "code": "KI-EVI",
+            "coords": [-6368, 74, -686],
+            "dist": 183,
+            "time": 4.3,
+            "date": "2025-11-27T19:39:11Z"
+          },
+          {
+            "code": "KIT",
+            "coords": [-6460, 63, -645],
+            "dist": 128,
+            "time": 3.2,
+            "date": "2025-11-27T19:39:37Z"
+          },
+          {
+            "code": "KI-SPN",
+            "coords": [-6534, 62, -672],
+            "dist": 169,
+            "time": 4.8,
+            "date": "2025-11-27T19:39:56Z"
+          },
+          {
+            "code": "KI-FOL",
+            "coords": [-6512, 64, -592],
+            "dist": 100,
+            "time": 3.3,
+            "date": "2025-11-27T19:40:13Z"
+          },
+          {
+            "code": "KI-DEB",
+            "coords": [-6431, 96, -490],
+            "dist": 248,
+            "time": 4.9,
+            "date": "2025-11-27T19:40:33Z"
+          },
+          {
+            "code": "KI-RES",
+            "coords": [-6407, 84, -385],
+            "dist": 184,
+            "time": 4.4,
+            "date": "2025-11-27T19:41:00Z"
+          },
+          {
+            "code": "KI-NIA",
+            "coords": [-6406, 105, -441],
+            "dist": 75,
+            "time": 2.3,
+            "date": "2025-11-27T19:41:18Z"
+          },
+          {
+            "code": "KI-SAS",
+            "coords": [-6367, 121, -499],
+            "dist": 90,
+            "time": 3.2,
+            "date": "2025-11-27T19:41:37Z"
+          },
+          {
+            "code": "KI-AKS",
+            "coords": [-6317, 93, -487],
+            "dist": 100,
+            "time": 3.3,
+            "date": "2025-11-27T19:42:00Z"
+          },
+          {
+            "code": "KI-YAL",
+            "coords": [-6274, 91, -497],
+            "dist": 46,
+            "time": 1.8,
+            "date": "2025-11-27T19:42:18Z"
+          },
+          {
+            "code": "KI-SIR",
+            "coords": [-6238, 68, -407],
+            "dist": 130,
+            "time": 2.6,
+            "date": "2025-11-27T19:42:43Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "KI-RB",
+        "name": "Rails of Eras Bypasses",
+        "local": true,
+        "stops": [
+          {
+            "code": "KI-EVW",
+            "coords": [-6237, 63, -627],
+            "date": "2025-11-12"
+          },
+          {
+            "code": "KI-YAL",
+            "coords": [-6273, 91, -508],
+            "dist": 153,
+            "time": 5,
+            "date": "2025-11-27T19:44:28Z"
+          },
+          {
+            "code": "KI-SAS",
+            "coords": [-6363, 121, -505],
+            "dist": 91,
+            "time": 3.3,
+            "date": "2025-11-27T19:44:51Z"
+          },
+          {
+            "code": "KI-DEB",
+            "coords": [-6425, 96, -488],
+            "dist": 114,
+            "time": 3,
+            "date": "2025-11-27T19:45:08Z"
+          }
+        ]
+      },
+      {
+        "code": "KZ-ME",
+        "name": "Kozdenen Metro",
+        "local": true,
+        "stops": [
+          {
+            "code": "KZ-DIP",
+            "coords": [1945, 54, -1667],
+            "dist": 138,
+            "time": 2,
+            "date": "2025-11-29T13:21:00Z"
+          },
+          {
+            "code": "KZ-GRP",
+            "coords": [1959, 54, -1578],
+            "dist": 102,
+            "time": 1.5,
+            "date": "2025-11-29T13:16:23Z"
+          },
+          {
+            "code": "KZ-STO",
+            "coords": [2053, 54, -1580],
+            "dist": 117,
+            "time": 1.6,
+            "date": "2025-11-29T13:17:47Z"
+          },
+          {
+            "code": "KZ-PEP",
+            "coords": [2121, 54, -1623],
+            "dist": 114,
+            "time": 1.6,
+            "date": "2025-11-29T13:18:54Z"
+          },
+          {
+            "code": "KZ-WAR",
+            "coords": [2053, 54, -1693],
+            "dist": 136,
+            "time": 1.8,
+            "date": "2025-11-29T13:19:25Z"
+          },
+          {
+            "code": "KZ-CAP",
+            "coords": [2018, 54, -1760],
+            "dist": 108,
+            "time": 1.6,
+            "date": "2025-11-29T13:19:43Z"
+          },
+          {
+            "code": "KZ-BAN",
+            "coords": [1897, 54, -1785],
+            "dist": 146,
+            "time": 1.9,
+            "date": "2025-11-29T13:20:00Z"
+          },
+          {
+            "code": "KZ-CAM",
+            "coords": [1777, 54, -1785],
+            "dist": 122,
+            "time": 1.6,
+            "date": "2025-11-29T13:20:20Z"
+          },
+          {
+            "code": "KZ-GRB",
+            "coords": [1835, 54, -1687],
+            "dist": 211,
+            "time": 2.7,
+            "date": "2025-11-29T13:20:41Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "KZ-SH",
+        "name": "Kozdenen Subway Shuttle",
+        "local": true,
+        "__comment": "This line is single-tracked",
+        "stops": [
+          {
+            "code": "KZK",
+            "coords": [1974, 56, -1714],
+            "date": "2025-11-29T13:13:46Z"
+          },
+          {
+            "code": "KZ-DIP",
+            "coords": [1948, 55, -1671],
+            "dist": 64,
+            "time": 1,
+            "date": "2025-11-29T13:13:46Z"
+          }
+        ]
+      },
+      {
+        "code": "DT-MT",
+        "name": "Mitosis Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "DT-SUN",
+            "coords": [-2812, 66, 4491],
+            "date": "2025-12-01T19:27:03Z",
+            "__comment": "Sometimes also called Sunflower Island, it seems",
+            "date_opened": "2025-5-1"
+          },
+          {
+            "code": "DT-OAK",
+            "coords": [-2848, 39, 4737],
+            "dist": 282,
+            "time": 8.1,
+            "date": "2025-12-01T19:27:03Z"
+          },
+          {
+            "code": "DTR",
+            "coords": [-2899, 114, 4830],
+            "dist": 144,
+            "time": 6,
+            "date": "2025-12-01T19:27:46Z",
+            "date_opened": "2024-12-23"
+          },
+          {
+            "code": "DT-AJA",
+            "coords": [-3093, 39, 4888],
+            "dist": 277,
+            "time": 5.3,
+            "date": "2025-12-01T19:28:05Z"
+          },
+          {
+            "code": "DT-CMC",
+            "coords": [-3151, 39, 4697],
+            "dist": 248,
+            "time": 6.4,
+            "date": "2025-12-01T19:28:35Z"
+          },
+          {
+            "code": "DT-VON",
+            "coords": [-3294, 39, 4695],
+            "dist": 143,
+            "time": 4.8,
+            "date": "2025-12-01T19:30:56Z",
+            "date_opened": "2025-2-15"
+          },
+          {
+            "code": "DT-DVO",
+            "coords": [-3294, 51, 4346],
+            "dist": 346,
+            "time": 5.9,
+            "date": "2025-12-01T19:31:22Z"
+          },
+          {
+            "code": "DT-VAT",
+            "coords": [-3293, 69, 4048],
+            "dist": 297,
+            "time": 7,
+            "date": "2025-12-01T19:32:03Z"
+          }
+        ]
+      },
+      {
+        "code": "DT-RO",
+        "name": "Rose Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "DTV",
+            "coords": [-2902, 66, 4198],
+            "date": "2026-01-14T21:54:32Z"
+          },
+          {
+            "code": "DTR",
+            "coords": [-2908, 114, 4831],
+            "dist": 641,
+            "time": 9,
+            "date": "2026-01-14T21:54:32Z"
+          }
+        ]
+      },
+      {
+        "code": "KC-PM",
+        "name": "Pyuwa Metro",
+        "local": true,
+        "stops": [
+          {
+            "code": "XSH",
+            "coords": [-2373, 55, 2149],
+            "date": "2025-12-01T20:02:59Z"
+          },
+          {
+            "code": "KC-FOT",
+            "coords": [-2455, 54, 2012],
+            "dist": 257,
+            "time": 10,
+            "date": "2025-12-01T20:02:59Z"
+          }
+        ]
+      },
+      {
+        "code": "KC-Z1",
+        "name": "Metro Z1",
+        "local": true,
+        "stops": [
+          {
+            "code": "KC-BMK",
+            "coords": [-593, 63, -985],
+            "date": "2025-12-01T20:10:31Z"
+          },
+          {
+            "code": "KCC",
+            "coords": [-653, 61, -1029],
+            "dist": 104,
+            "time": 3.7,
+            "date": "2025-12-01T20:10:31Z"
+          },
+          {
+            "code": "KC-KHE",
+            "coords": [-686, 70, -859],
+            "dist": 212,
+            "time": 5.4,
+            "date": "2025-12-01T20:10:55Z",
+            "date_opened": "2024-7-30"
+          }
+        ]
+      },
+      {
+        "code": "KC-TK",
+        "name": "Transkyawcenni Express",
+        "local": true,
+        "comment": "This line is single-tracked",
+        "stops": [
+          {
+            "code": "KCY",
+            "coords": [-704, 62, -2579],
+            "date": "2025-12-01T20:18:18Z",
+            "date_opened": "2025-5-20"
+          },
+          {
+            "code": "KC-PYH",
+            "coords": [-2409, 25, 2094],
+            "dist": 6389,
+            "time": 97.8,
+            "date": "2025-12-01T20:18:18Z",
+            "date_opened": "2025-5-25"
+          }
+        ]
+      },
+      {
+        "code": "KC-T1",
+        "name": "Yija Tram Line 1",
+        "local": true,
+        "stops": [
+          {
+            "code": "KCY",
+            "coords": [-686, 63, -2556],
+            "dist": 80,
+            "time": 2.8,
+            "date": "2025-12-01T20:29:44Z"
+          },
+          {
+            "code": "KC-ESK",
+            "coords": [-757, 63, -2519],
+            "dist": 107,
+            "time": 3.9,
+            "date": "2025-12-01T20:27:02Z"
+          },
+          {
+            "code": "KC-BEN",
+            "coords": [-688, 63, -2444],
+            "dist": 143,
+            "time": 3.9,
+            "date": "2025-12-01T20:27:36Z"
+          },
+          {
+            "code": "KC-MON",
+            "coords": [-613, 63, -2550],
+            "dist": 168,
+            "time": 3.6,
+            "date": "2025-12-01T20:28:51Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "KC-T2",
+        "name": "Yija Tram Line 2",
+        "local": true,
+        "stops": [
+          { "code": "KCE", "coords": [406, 69, -2839], "date": "" },
+          {
+            "code": "KC-TAS",
+            "coords": [-474, 69, -2813],
+            "dist": 93,
+            "time": 3.4,
+            "date": "2025-12-01T20:33:59Z"
+          },
+          {
+            "code": "KC-COH",
+            "coords": [-576, 63, -2790],
+            "dist": 147,
+            "time": 3.3,
+            "date": "2025-12-01T20:34:54Z"
+          },
+          {
+            "code": "KC-YIN",
+            "coords": [-690, 65, -2764],
+            "dist": 162,
+            "time": 4.5,
+            "date": "2025-12-01T20:36:32Z"
+          },
+          {
+            "code": "KC-BWE",
+            "coords": [-693, 63, -2679],
+            "dist": 86,
+            "time": 2.8,
+            "date": "2025-12-01T20:37:22Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-685, 63, -2564],
+            "dist": 131,
+            "time": 3.8,
+            "date": "2025-12-01T20:38:21Z"
+          },
+          {
+            "code": "KC-ROM",
+            "coords": [-807, 71, -2577],
+            "dist": 182,
+            "time": 4.6,
+            "date": "2025-12-01T20:38:47Z"
+          }
+        ]
+      },
+      {
+        "code": "RA-LO",
+        "name": "RTS Loop",
+        "local": true,
+        "stops": [
+          {
+            "code": "RAZ",
+            "coords": [-4567, 47, -1124],
+            "dist": 205,
+            "time": 3,
+            "date": "2025-11-27T19:54:04Z"
+          },
+          {
+            "code": "RAH",
+            "coords": [-4574, 47, -889],
+            "dist": 239,
+            "time": 4,
+            "date": "2025-11-27T19:51:27Z"
+          },
+          {
+            "code": "RAR",
+            "coords": [-5002, 46, -1034],
+            "dist": 566,
+            "time": 6.8,
+            "date": "2025-11-27T19:51:49Z"
+          },
+          {
+            "code": "RAI",
+            "coords": [-5063, 46, -1119],
+            "dist": 143,
+            "time": 2.3,
+            "date": "2025-11-27T19:52:06Z"
+          },
+          {
+            "code": "RAY",
+            "coords": [-5049, 46, -1268],
+            "dist": 158,
+            "time": 2.9,
+            "date": "2025-11-27T19:52:33Z"
+          },
+          {
+            "code": "RAM",
+            "coords": [-5157, 46, -1518],
+            "dist": 371,
+            "time": 4.2,
+            "date": "2025-11-27T19:52:56Z"
+          },
+          {
+            "code": "RAE",
+            "coords": [-4867, 46, -1434],
+            "dist": 385,
+            "time": 5.6,
+            "date": "2025-11-27T19:53:27Z"
+          },
+          {
+            "code": "RAL",
+            "coords": [-4668, 46, -1233],
+            "dist": 417,
+            "time": 4.4,
+            "date": "2025-11-27T19:53:45Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "SL",
+        "name": "Slab Line",
+        "color": "#808080",
+        "stops": [
+          {
+            "code": "EDS",
+            "coords": [1876, 62, -5964],
+            "date": "2025-09-17T18:21:56Z"
+          },
+          {
+            "code": "EDT",
+            "coords": [1558, 102, -6288],
+            "dist": 666,
+            "time": 10.3,
+            "date": "2025-09-17T18:21:56Z",
+            "date_opened": "2024-04-20"
+          },
+          {
+            "code": "LRJ",
+            "coords": [617, 80, -5777],
+            "dist": 1452,
+            "time": 11.1,
+            "date": "2025-09-17T18:23:38Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "XDA",
+            "coords": [586, 70, -4366],
+            "dist": 1442,
+            "time": 10.9,
+            "date": "2025-09-17T18:24:24Z"
+          },
+          {
+            "code": "OKS",
+            "coords": [596, 197, -3410],
+            "dist": 1082,
+            "time": 8.7,
+            "date": "2025-09-17T18:24:43Z",
+            "date_opened": "2024-04-10"
+          },
+          {
+            "code": "STS",
+            "coords": [607, 70, -2669],
+            "dist": 766,
+            "time": 6.5,
+            "date": "2025-09-17T18:25:06Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-705, 62, -2571],
+            "dist": 1998,
+            "time": 15.9,
+            "date": "2025-09-17T18:25:40Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-01-25"
+          }
+        ]
+      },
+      {
+        "code": "SO",
+        "name": "Southern Line",
+        "alt_names": ["Southern Loop"],
+        "color": "#0000bf",
+        "stops": [
+          {
+            "code": "KCM",
+            "coords": [-668, 70, -232],
+            "dist": 1443,
+            "time": 20.9,
+            "date": "2025-09-17T16:57:35Z"
+          },
+          {
+            "code": "TZM",
+            "coords": [-524, 63, 245],
+            "dist": 641,
+            "time": 9.8,
+            "date": "2025-09-17T16:39:34Z",
+            "date_opened": "2024-03-22"
+          },
+          {
+            "code": "TUN",
+            "coords": [-299, 38, 340],
+            "dist": 320,
+            "time": 7.6,
+            "date": "2025-09-17T16:45:44Z",
+            "date_opened": "2024-01-04"
+          },
+          {
+            "code": "NAN",
+            "coords": [-58, 56, 1046],
+            "dist": 947,
+            "time": 15.6,
+            "date": "2026-01-14T23:06:04Z",
+            "usage_notes": "Local transit exists at this station."
+          },
+          {
+            "code": "ARY",
+            "coords": [-854, 71, 1109],
+            "dist": 913,
+            "time": 14.4,
+            "date": "2025-09-17T16:49:51Z",
+            "usage_notes": "Local transit exists at this station.",
+            "date_opened": "2025-01-28"
+          },
+          {
+            "code": "RPK",
+            "coords": [-852, 52, 1887],
+            "dist": 842,
+            "time": 8.7,
+            "date": "2025-09-17T16:50:18Z",
+            "date_opened": "2024-09-29"
+          },
+          {
+            "code": "RPD",
+            "coords": [-1459, 70, 2738],
+            "dist": 1460,
+            "time": 18.9,
+            "date": "2025-09-17T16:51:15Z",
+            "date_opened": "2024-04-09"
+          },
+          {
+            "code": "XSH",
+            "coords": [-2362, 54, 2163],
+            "dist": 1536,
+            "time": 16.9,
+            "date": "2025-09-17T16:54:36Z",
+            "date_opened": "2024-09-09",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "RPA",
+            "coords": [-2027, 30, 1981],
+            "dist": 517,
+            "time": 10.2,
+            "date": "2025-09-17T16:55:08Z",
+            "date_opened": "2024-09-10"
+          },
+          {
+            "code": "ARF",
+            "coords": [-1735, 69, 1341],
+            "dist": 932,
+            "time": 15.6,
+            "date": "2025-09-17T16:55:44Z",
+            "date_opened": "2024-08-27",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "NBT",
+            "coords": [-1263, 59, 925],
+            "dist": 888,
+            "time": 9.5,
+            "date": "2025-09-17T16:56:19Z",
+            "date_opened": "2024-07-15"
+          },
+          {
+            "code": "ARA",
+            "coords": [-1267, -1, 602],
+            "dist": 357,
+            "time": 9.2,
+            "date": "2025-11-25T16:33:46Z",
+            "usage_notes": "Local transit exists at this station. "
+          }
+        ],
+        "loop": true
+      },
+      {
+        "comment": "Despite the name, it has not been finished enough to actually loop yet",
+        "code": "FE-SL",
+        "name": "Sparsity Loopn't",
+        "local": true,
+        "brand": "FERRA",
+        "stops": [
+          {
+            "code": "OKC",
+            "coords": [7131, 24, 3387],
+            "date": "2025-09-20T08:38:34Z"
+          },
+          {
+            "code": "PKA",
+            "coords": [5126, 24, 3060],
+            "dist": 2336,
+            "time": 22,
+            "date": "2025-09-20T08:38:34Z"
+          },
+          {
+            "code": "PKL",
+            "coords": [5084, 80, 2960],
+            "dist": 142,
+            "time": 4.3,
+            "date": "2025-09-20T08:38:59Z",
+            "comment": "After this, it launches you into the air and kills you (2025-09-20)"
+          }
+        ]
+      },
+      {
+        "code": "SP",
+        "name": "Split-2 Line",
+        "stops": [
+          {
+            "code": "WAC",
+            "coords": [2979, 60, 291],
+            "date": "2026-05-31T03:12:29Z"
+          },
+          {
+            "code": "WAK",
+            "coords": [1977, 58, -849],
+            "date": "2026-05-31T03:12:29Z"
+          },
+          {
+            "code": "KBK",
+            "coords": [1751, 58, -621],
+            "date": "2026-05-31T03:12:29Z"
+          }
+        ]
+      },
+      {
+        "code": "RA-SU",
+        "name": "Sugar Line",
+        "local": true,
+        "stops": [
+          { "code": "RAI", "coords": [-5079, 41, -1119], "date": "2025-11-10" },
+          {
+            "code": "RAD",
+            "coords": [-5220, -4, -1042],
+            "dist": 224,
+            "time": 3.8,
+            "date": "2025-11-27T19:55:47Z"
+          },
+          {
+            "code": "RAB",
+            "coords": [-5605, -5, -901],
+            "dist": 521,
+            "time": 5.6,
+            "date": "2025-11-27T19:56:16Z",
+            "comment": "The connection to Midnight Era is unfinished, making this de facto a local line"
+          }
+        ]
+      },
+      {
+        "code": "TA",
+        "name": "Traeth Line",
+        "color": "#668787",
+        "stops": [
+          {
+            "code": "TAZ",
+            "coords": [-1099, 78, 3795],
+            "date": "2025-09-20T07:34:48Z",
+            "date_opened": "2025-01-21"
+          },
+          {
+            "code": "XAT",
+            "coords": [-1224, 63, 3942],
+            "dist": 272,
+            "time": 4.7,
+            "date": "2025-09-20T07:34:48Z",
+            "date_opened": "2025-04-22"
+          },
+          {
+            "code": "ABO",
+            "coords": [-1395, 110, 4595],
+            "dist": 920,
+            "time": 11.3,
+            "date": "2025-09-20T07:38:58Z",
+            "date_opened": "2025-05-5"
+          }
+        ]
+      },
+      {
+        "code": "TF",
+        "name": "Transfortunate Line",
+        "color": "#ec008c",
+        "stops": [
+          {
+            "code": "AYK",
+            "coords": [393, 39, 2751],
+            "date": "2025-09-20T07:43:24Z",
+            "date_opened": "2024-04-27"
+          },
+          {
+            "code": "MDJ",
+            "coords": [132, 47, 3929],
+            "dist": 1465,
+            "time": 21.7,
+            "date": "2025-09-20T07:43:24Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "XKE",
+            "coords": [132, 47, 4589],
+            "dist": 660,
+            "time": 16.5,
+            "date": "2025-09-20T07:49:29Z"
+          },
+          {
+            "code": "EWW",
+            "coords": [134, 47, 5754],
+            "dist": 1167,
+            "time": 22.6,
+            "date": "2025-09-20T07:50:33Z",
+            "date_opened": "2024-06-03"
+          },
+          {
+            "code": "CXK",
+            "coords": [1668, 76, 5767],
+            "dist": 1551,
+            "time": 21.6,
+            "date": "2025-09-20T07:51:12Z",
+            "date_opened": "2025-08-23"
+          },
+          {
+            "code": "XHA",
+            "coords": [2799, 77, 6746],
+            "dist": 2114,
+            "time": 21.9,
+            "date": "2025-09-20T07:52:01Z",
+            "date_opened": "2024-10-09"
+          },
+          {
+            "code": "XMK",
+            "coords": [3324, 77, 7127],
+            "dist": 906,
+            "time": 12.6,
+            "date": "2025-09-20T07:52:49Z",
+            "date_opened": "2024-12-30"
+          }
+        ]
+      },
+      {
+        "code": "TR",
+        "name": "Transversal Line",
+        "color": "#008000",
+        "stops": [
+          {
+            "code": "ADA",
+            "coords": [6459, 61, -4107],
+            "date": "2025-09-17T20:35:50Z"
+          },
+          {
+            "code": "ADP",
+            "coords": [6256, 31, -4025],
+            "dist": 285,
+            "time": 5.6,
+            "date": "2025-09-17T20:35:50Z"
+          },
+          {
+            "code": "MTH",
+            "coords": [5522, 65, -3623],
+            "dist": 1178,
+            "time": 13,
+            "date": "2025-09-17T20:38:24Z",
+            "date_opened": "2024-10-20"
+          },
+          {
+            "code": "MTV",
+            "coords": [5506, 68, -3124],
+            "dist": 1099,
+            "time": 14.3,
+            "date": "2025-09-17T20:39:04Z",
+            "date_opened": "2024-07-07"
+          },
+          {
+            "code": "MTN",
+            "coords": [5429, 28, -1867],
+            "dist": 1334,
+            "time": 15.1,
+            "date": "2025-09-17T20:39:36Z"
+          },
+          {
+            "code": "MTB",
+            "coords": [5404, 28, -1123],
+            "dist": 769,
+            "time": 10.2,
+            "date": "2025-09-17T20:40:11Z",
+            "date_opened": "2024-07-07"
+          },
+          {
+            "code": "TAV",
+            "coords": [5429, 38, -58],
+            "dist": 1090,
+            "time": 11.1,
+            "date": "2025-09-17T20:44:06Z"
+          },
+          {
+            "code": "XMT",
+            "coords": [4374, 39, 790],
+            "dist": 1903,
+            "time": 17.8,
+            "date": "2025-09-17T20:44:57Z",
+            "date_opened": "2024-07-07"
+          },
+          {
+            "code": "FET",
+            "coords": [3845, 39, 790],
+            "dist": 529,
+            "time": 6.5,
+            "date": "2025-09-17T20:45:19Z"
+          },
+          {
+            "code": "XSB",
+            "coords": [3841, 39, -59],
+            "dist": 853,
+            "time": 9.5,
+            "date": "2025-09-17T20:46:00Z",
+            "date_opened": "2024-07-07"
+          },
+          {
+            "code": "XCE",
+            "coords": [3345, 39, -351],
+            "dist": 788,
+            "time": 8.5,
+            "date": "2025-09-17T20:46:27Z",
+            "date_opened": "2024-07-07"
+          },
+          {
+            "code": "USI",
+            "coords": [2663, 39, -875],
+            "dist": 1222,
+            "time": 12.1,
+            "date": "2025-09-17T20:46:50Z",
+            "date_opened": "2024-03-02"
+          },
+          {
+            "code": "EKH",
+            "coords": [2754, 43, -1556],
+            "dist": 824,
+            "time": 11,
+            "date": "2025-09-17T20:47:12Z"
+          },
+          {
+            "code": "MPB",
+            "coords": [2229, 44, -1716],
+            "dist": 685,
+            "time": 9.3,
+            "date": "2025-09-17T20:47:50Z"
+          },
+          {
+            "code": "KZK",
+            "coords": [1992, 54, -1717],
+            "dist": 240,
+            "time": 5.9,
+            "date": "2025-09-17T20:48:14Z",
+            "comment": "Transversal only stops at KZA during events",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-03-02"
+          },
+          { "code": "KZA", "usage_notes": "Only stops during events" },
+          {
+            "code": "IMP",
+            "coords": [9, 69, -1168],
+            "dist": 2540,
+            "time": 22.7,
+            "date": "2025-09-17T20:48:48Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-01-02"
+          },
+          {
+            "code": "KCC",
+            "coords": [-653, 61, -1034],
+            "dist": 796,
+            "time": 9.5,
+            "date": "2025-09-17T20:50:08Z",
+            "comment": "OBF doesn't exist anymore I think",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "HLH",
+            "coords": [-2284, 66, -1431],
+            "dist": 2028,
+            "time": 19.2,
+            "date": "2025-09-17T20:50:45Z",
+            "usage_notes": "Local transit exists at this station. ",
+            "date_opened": "2024-04-02"
+          },
+          {
+            "code": "TZB",
+            "coords": [-2542, 49, -3172],
+            "dist": 2021,
+            "time": 20.4,
+            "date": "2025-09-17T20:51:57Z"
+          },
+          {
+            "code": "TZP",
+            "coords": [-2033, 68, -3467],
+            "dist": 872,
+            "time": 10,
+            "date": "2025-09-17T20:52:33Z",
+            "date_opened": "2024-05-23"
+          },
+          {
+            "code": "XQO",
+            "coords": [-2361, 94, -4507],
+            "dist": 1456,
+            "time": 15.6,
+            "date": "2025-09-17T20:53:06Z"
+          },
+          {
+            "code": "XNO",
+            "coords": [-3057, 79, -4134],
+            "dist": 1069,
+            "time": 12.7,
+            "date": "2025-09-17T20:53:52Z",
+            "date_opened": "2024-04-20"
+          },
+          {
+            "code": "DHR",
+            "coords": [-3242, 66, -3743],
+            "dist": 576,
+            "time": 7.8,
+            "date": "2025-09-17T20:54:13Z"
+          },
+          {
+            "code": "XZT",
+            "coords": [-5172, 63, -4076],
+            "dist": 2299,
+            "time": 21.7,
+            "date": "2025-09-17T20:54:55Z"
+          },
+          {
+            "code": "CLB",
+            "coords": [-5297, 66, -4889],
+            "dist": 1010,
+            "time": 27.5,
+            "date": "2025-09-17T20:55:41Z"
+          },
+          {
+            "code": "MSS",
+            "coords": [-5367, 47, -5428],
+            "dist": 609,
+            "time": 15.1,
+            "date": "2025-09-17T20:56:12Z",
+            "usage_notes": "Station uses activator rails in place of buttons due to aquatic constraints. Local transit exists at this station. "
+          },
+          {
+            "code": "UNP",
+            "coords": [-5165, 68, -5509],
+            "dist": 283,
+            "time": 7.7,
+            "date": "2025-09-17T20:56:35Z"
+          },
+          {
+            "code": "XG2",
+            "coords": [-5936, 66, -5960],
+            "dist": 1222,
+            "time": 12.7,
+            "date": "2025-09-17T20:57:13Z",
+            "date_opened": "2024-07-31"
+          },
+          {
+            "code": "ORT",
+            "coords": [-6472, 66, -7264],
+            "dist": 1840,
+            "time": 19.4,
+            "date": "2025-09-17T20:57:58Z",
+            "date_opened": "2024-07-31"
+          },
+          {
+            "code": "XG3",
+            "coords": [-7981, 62, -7998],
+            "dist": 2243,
+            "time": 21.7,
+            "date": "2025-10-13T17:37:06Z"
+          }
+        ]
+      },
+      {
+        "code": "CB-OV",
+        "name": "Cuba Villager Hub Shuttle",
+        "local": true,
+        "stops": [
+          {
+            "code": "CBC",
+            "coords": [-4968, 71, 1480],
+            "date": "2025-09-19T20:44:06Z"
+          },
+          {
+            "code": "CB-VIH",
+            "coords": [-4949, 62, 1284],
+            "dist": 215,
+            "time": 5.5,
+            "date": "2025-09-19T20:44:06Z"
+          }
+        ]
+      },
+      {
+        "code": "WS-WS",
+        "name": "Wekañu Line",
+        "local": true,
+        "stops": [
+          {
+            "code": "WSK",
+            "coords": [2219, 81, -3803],
+            "date": "2025-09-20T08:58:14Z"
+          },
+          {
+            "code": "WSW",
+            "coords": [1966, 68, -3708],
+            "dist": 362,
+            "time": 7.5,
+            "date": "2025-09-20T08:58:14Z"
+          },
+          {
+            "code": "WSC",
+            "coords": [1810, -54, -4056],
+            "dist": 524,
+            "time": 7.5,
+            "date": "2025-09-20T08:59:38Z",
+            "comment": "WSE has seemingly been added after this (2025-10-11)"
+          },
+          {
+            "code": "WSE",
+            "coords": [2183, 63, -4875],
+            "dist": 1192,
+            "time": 17.4,
+            "date": "2025-09-20T09:00:12Z"
+          },
+          {
+            "code": "WSS",
+            "coords": [2200, 20, -4695],
+            "dist": 299,
+            "time": 9.7,
+            "date": "2025-10-26T16:25:29Z"
+          },
+          {
+            "code": "WST",
+            "coords": [2112, 51, -4776],
+            "dist": 201,
+            "time": 7.1,
+            "date": "2025-10-26T16:28:58Z"
+          },
+          {
+            "code": "WSE",
+            "coords": [2176, 68, -4863],
+            "dist": 151,
+            "time": 6.7,
+            "date": "2025-10-26T16:30:16Z"
+          },
+          {
+            "code": "WSD",
+            "coords": [2206, 61, -4863],
+            "dist": 30,
+            "time": 4.2,
+            "date": "2025-10-26T16:43:44Z"
+          }
+        ]
+      },
+      {
+        "code": "GU-WE",
+        "name": "Western Gulf Line",
+        "local": true,
+        "brand": "Gulf",
+        "color": "#ff8000",
+        "stops": [
+          {
+            "code": "STN",
+            "coords": [789, 72, -2767],
+            "date": "2026-03-06T16:41:17Z"
+          },
+          {
+            "code": "STS",
+            "coords": [613, 70, -2666],
+            "dist": 287,
+            "time": 7.5,
+            "date": "2026-03-06T16:41:17Z"
+          },
+          {
+            "code": "STT",
+            "coords": [811, 63, -2412],
+            "dist": 452,
+            "time": 6.7,
+            "date": "2026-03-06T16:50:10Z"
+          },
+          {
+            "code": "STW",
+            "coords": [1127, 86, -2215],
+            "dist": 513,
+            "time": 7.1,
+            "date": "2026-03-06T16:50:33Z"
+          },
+          {
+            "code": "STJ",
+            "coords": [1127, 86, -1997],
+            "dist": 218,
+            "time": 5.8,
+            "date": "2026-03-06T16:50:58Z"
+          },
+          {
+            "code": "VAA",
+            "coords": [1081, 35, -1773],
+            "dist": 270,
+            "time": 4.7,
+            "date": "2026-03-06T16:51:33Z"
+          },
+          {
+            "code": "VAW",
+            "coords": [887, 24, -1219],
+            "dist": 275,
+            "date": "2025-09-17T18:39:45Z"
+          },
+          {
+            "code": "VAF",
+            "coords": [480, 24, -1623],
+            "dist": 811,
+            "time": 29.9,
+            "date": "2025-09-17T18:40:28Z"
+          },
+          {
+            "code": "KCX",
+            "coords": [149, 62, -1997],
+            "dist": 725,
+            "time": 17.2,
+            "date": "2025-09-17T18:40:58Z"
+          },
+          {
+            "code": "IMO",
+            "coords": [176, 70, -1515],
+            "dist": 699,
+            "time": 9.8,
+            "date": "2025-09-17T18:41:20Z"
+          },
+          {
+            "code": "IMP",
+            "coords": [9, 69, -1162],
+            "dist": 520,
+            "time": 7.3,
+            "date": "2025-09-17T18:41:43Z"
+          },
+          {
+            "code": "IMM",
+            "coords": [-347, 44, -1473],
+            "dist": 669,
+            "time": 7.5,
+            "date": "2025-10-13T11:05:48Z"
+          },
+          {
+            "code": "IMA",
+            "coords": [-334, 62, -1798],
+            "dist": 354,
+            "time": 5,
+            "date": "2025-09-17T18:43:14Z"
+          },
+          {
+            "code": "KCT",
+            "coords": [-412, 62, -2232],
+            "dist": 664,
+            "time": 10.4,
+            "date": "2025-09-17T18:43:41Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-705, 62, -2567],
+            "dist": 862,
+            "time": 11.5,
+            "date": "2025-09-17T18:44:08Z"
+          },
+          {
+            "code": "KCU",
+            "coords": [-533, 54, -2656],
+            "dist": 285,
+            "time": 4.3,
+            "date": "2025-09-17T18:44:25Z"
+          },
+          {
+            "code": "KCE",
+            "coords": [-374, 54, -2851],
+            "dist": 349,
+            "time": 11.3,
+            "date": "2025-11-27T20:20:14Z"
+          },
+          {
+            "code": "STK",
+            "coords": [-365, 23, -3290],
+            "dist": 447,
+            "time": 6.5,
+            "date": "2025-11-27T20:21:30Z"
+          },
+          {
+            "code": "YKE",
+            "coords": [-366, 24, -3960],
+            "date": "2025-11-27T20:23:12Z"
+          },
+          {
+            "code": "XLP",
+            "coords": [-847, 69, -4755],
+            "date": "2025-11-27T20:23:12Z"
+          }
+        ]
+      },
+      {
+        "code": "WE",
+        "name": "Western Line",
+        "color": "#8f6030",
+        "stops": [
+          {
+            "code": "HDO",
+            "coords": [-6659, 69, -1402],
+            "date": "2026-01-09T17:07:22Z"
+          },
+          {
+            "code": "XFE",
+            "coords": [-6728, 72, -1240],
+            "dist": 231,
+            "time": 4.1,
+            "date": "2026-01-09T17:07:22Z"
+          },
+          {
+            "code": "KIT",
+            "coords": [-6424, 62, -639],
+            "dist": 911,
+            "time": 11.1,
+            "date": "2025-12-31T18:49:48Z"
+          },
+          {
+            "code": "HED",
+            "coords": [-4917, 75, -396],
+            "dist": 1788,
+            "time": 18.4,
+            "date": "2025-09-19T21:22:24Z",
+            "date_opened": "2024-05-03"
+          },
+          {
+            "code": "CBA",
+            "coords": [-4640, 65, 594],
+            "dist": 1267,
+            "time": 13.2,
+            "date": "2025-09-19T21:22:51Z",
+            "date_opened": "2024-05-03"
+          },
+          {
+            "code": "OKN",
+            "coords": [-2778, 126, 590],
+            "dist": 1866,
+            "time": 18.8,
+            "date": "2025-09-19T21:23:21Z",
+            "date_opened": "2024-04-22"
+          },
+          {
+            "code": "ARA",
+            "coords": [-1267, -1, 610],
+            "dist": 1535,
+            "time": 24.7,
+            "date": "2025-11-25T16:37:41Z",
+            "usage_notes": "Local transit exists at this station. "
+          },
+          {
+            "code": "TUN",
+            "coords": [-299, 38, 344],
+            "dist": 1238,
+            "time": 20.9,
+            "date": "2025-11-25T16:38:29Z",
+            "date_opened": "2024-01-04"
+          }
+        ]
+      },
+      {
+        "code": "WS-DO",
+        "name": "Doom Line",
+        "local": true,
+        "color": "#19C3F6",
+        "stops": [
+          {
+            "code": "WSL",
+            "coords": [1754, 65, -3635],
+            "date": "2026-03-06T17:28:28Z"
+          },
+          {
+            "code": "",
+            "coords": [1446, 82, -3708],
+            "dist": 381,
+            "time": 14.6,
+            "date": "2026-03-06T17:28:28Z"
+          }
+        ]
+      },
+      {
+        "code": "NM-WP",
+        "name": "Wheeler Peak Metro",
+        "color": "#faa772",
+        "stops": [
+          {
+            "code": "NMA",
+            "coords": [5418, 71, 5100],
+            "date": "2026-01-30T03:58:47Z"
+          },
+          {
+            "code": "NM-AHQ",
+            "coords": [5434, 101, 5156],
+            "dist": 73,
+            "time": 7.6,
+            "date": "2026-01-30T03:38:17Z"
+          },
+          {
+            "code": "NM-CLG",
+            "coords": [5531, 69, 5072],
+            "dist": 190,
+            "time": 5.1,
+            "date": "2026-01-30T03:38:54Z"
+          }
+        ]
+      },
+      {
+        "code": "ZY",
+        "name": "Zyrian Line",
+        "color": "#b01040",
+        "stops": [
+          {
+            "code": "DTM",
+            "coords": [-4337, 62, 5227],
+            "date": "2025-09-19T22:22:12Z"
+          },
+          {
+            "code": "DTR",
+            "coords": [-2892, 114, 4831],
+            "dist": 2109,
+            "time": 19.8,
+            "date": "2025-09-19T22:22:12Z"
+          },
+          {
+            "code": "OTW",
+            "coords": [-2636, 70, 5095],
+            "dist": 704,
+            "time": 9.3,
+            "date": "2025-09-19T22:24:14Z"
+          },
+          {
+            "code": "XMZ",
+            "coords": [-2441, -55, 5616],
+            "dist": 724,
+            "time": 9.5,
+            "date": "2025-10-20T09:14:08Z"
+          },
+          {
+            "code": "TAW",
+            "coords": [-1096, -50, 5537],
+            "dist": 1584,
+            "time": 24.2,
+            "date": "2025-10-20T09:16:10Z"
+          },
+          {
+            "code": "TAM",
+            "coords": [-1037, 30, 5465],
+            "dist": 131,
+            "time": 5.1,
+            "date": "2025-09-19T22:26:00Z"
+          },
+          {
+            "comment": "There are two EWRs, and this one is designated as number 2.",
+            "code": "EWR2",
+            "coords": [-395, 32, 5492],
+            "dist": 673,
+            "time": 13.3,
+            "date": "2025-09-19T22:26:27Z"
+          },
+          {
+            "code": "EWR",
+            "coords": [-403, 56, 5505],
+            "dist": 69,
+            "time": 5.9,
+            "date": "2025-09-19T22:26:53Z"
+          },
+          {
+            "code": "EWW",
+            "coords": [164, 47, 5754],
+            "dist": 816,
+            "time": 11.5,
+            "date": "2025-09-19T22:27:17Z"
+          },
+          {
+            "code": "EWM",
+            "coords": [164, 63, 5978],
+            "dist": 224,
+            "time": 6.7,
+            "date": "2025-09-19T22:28:32Z"
+          },
+          {
+            "code": "HDH",
+            "coords": [680, 40, 5997],
+            "dist": 537,
+            "time": 11.2,
+            "date": "2025-11-04T17:31:58Z"
+          }
+        ]
+      },
+      {
+        "code": "IM-S1",
+        "name": "Chalmosique Metrò Linha 1",
+        "brand": "SCCBO",
+        "color": "#008000",
+        "stops": [
+          { "code": "IM-SPB", "coords": [44, 67, -1219] },
+          {
+            "code": "IM-SGC",
+            "coords": [17, 75, -1173],
+            "dist": 73,
+            "time": 6.3,
+            "date": "2025-11-09T20:50:01Z"
+          },
+          {
+            "code": "IM-SPE",
+            "coords": [21, 91, -1111],
+            "dist": 66,
+            "time": 3.4,
+            "date": "2025-11-09T20:50:32Z"
+          },
+          {
+            "code": "IM-SUN",
+            "coords": [53, 91, -1075],
+            "dist": 68,
+            "date": "2025-11-09T20:51:00Z"
+          },
+          {
+            "code": "IM-SGP",
+            "coords": [17, 91, -1004],
+            "dist": 107,
+            "time": 4.1,
+            "date": "2025-11-09T20:51:14Z"
+          }
+        ]
+      },
+      {
+        "code": "IM-S2",
+        "name": "Chalmosique Metrò Linha 2",
+        "brand": "SCCBO",
+        "color": "#800000",
+        "stops": [
+          { "code": "IM-IRV", "coords": [181, 62, -1134] },
+          {
+            "code": "IM-STS",
+            "coords": [105, 74, -1160],
+            "dist": 110,
+            "time": 3.4,
+            "date": "2025-11-09T20:56:54Z"
+          },
+          {
+            "code": "IM-SGC",
+            "coords": [21, 75, -1164],
+            "dist": 88,
+            "time": 3.1,
+            "date": "2025-11-09T20:57:08Z"
+          },
+          {
+            "code": "IM-SDI",
+            "coords": [-39, 75, -1160],
+            "dist": 64,
+            "time": 3.6,
+            "date": "2025-11-09T20:57:18Z"
+          },
+          {
+            "code": "IM-SPM",
+            "coords": [-39, 74, -1082],
+            "dist": 78,
+            "time": 3.8,
+            "date": "2025-11-09T20:58:27Z"
+          },
+          {
+            "code": "IM-SRP",
+            "coords": [-142, 68, -1040],
+            "dist": 145,
+            "time": 4.6,
+            "date": "2025-11-09T20:58:46Z"
+          }
+        ]
+      },
+      {
+        "code": "ST-SS",
+        "name": "Sajl Sow Line",
+        "stops": [
+          {
+            "code": "STH",
+            "coords": [1340, 63, -1541],
+            "date": "2025-11-25T14:17:00Z"
+          },
+          {
+            "code": "STU",
+            "coords": [1340, 66, -1722],
+            "dist": 227,
+            "time": 4.3,
+            "date": "2025-11-25T14:17:41Z"
+          },
+          {
+            "code": "STO",
+            "coords": [1323, 64, -1919],
+            "dist": 236,
+            "time": 3.8,
+            "date": "2025-11-25T14:18:12Z"
+          },
+          {
+            "code": "STR",
+            "coords": [1223, 66, -2120],
+            "dist": 301,
+            "time": 4.3,
+            "date": "2025-11-25T14:21:18Z"
+          },
+          {
+            "code": "STW",
+            "coords": [1127, 68, -2120],
+            "dist": 96,
+            "time": 2.6,
+            "date": "2025-11-25T14:22:18Z"
+          },
+          {
+            "code": "STA",
+            "coords": [1051, 62, -2400],
+            "dist": 374,
+            "time": 6,
+            "date": "2025-11-25T14:23:21Z"
+          },
+          {
+            "code": "STV",
+            "coords": [881, 69, -2451],
+            "dist": 271,
+            "time": 4.2,
+            "date": "2025-11-25T14:23:55Z"
+          },
+          {
+            "code": "STB",
+            "coords": [936, 72, -2520],
+            "dist": 124,
+            "time": 3.5,
+            "date": "2025-11-25T14:24:16Z"
+          },
+          {
+            "code": "STD",
+            "coords": [1012, 64, -2522],
+            "dist": 84,
+            "time": 3.8,
+            "date": "2025-11-25T14:24:40Z"
+          }
+        ]
+      },
+      {
+        "code": "OR-RR",
+        "name": "Oressian Ring Rail",
+        "stops": [
+          {
+            "code": "ORT",
+            "coords": [-6458, 68, -7265],
+            "date": "2026-05-10T16:52:25Z"
+          },
+          {
+            "code": "OR-KEZ",
+            "coords": [-6700, 73, -7512],
+            "dist": 623,
+            "time": 8.8,
+            "date": "2026-05-10T16:52:25Z"
+          }
+        ]
+      }
+    ],
+    "the_nether": [
+      {
+        "comment": "If you don't include the N- prefix it gets added automatically",
+        "code": "N-CR",
+        "name": "Crimson Line",
+        "color": "#f00",
+        "stops": [
+          {
+            "code": "GUY",
+            "coords": [0, 128, -147],
+            "date": "2025-09-20T11:42:56Z"
+          },
+          {
+            "code": "KCY",
+            "coords": [-74, 128, -328],
+            "usage_notes": "This station contains portals for both Yija and the [[Palace of the Ŋations]]. In the [[Ŋatacombs]] of the Palace, there is a portal with one-way access to the Leshrail Floor Waichi station.",
+            "dist": 255,
+            "time": 4.7,
+            "date": "2025-09-20T11:42:56Z"
+          },
+          {
+            "code": "YKW",
+            "coords": [-93, 127, -422],
+            "dist": 113,
+            "time": 4.1,
+            "date": "2026-06-24T17:22:23Z"
+          },
+          {
+            "code": "LRT",
+            "coords": [12, 128, -718],
+            "dist": 497,
+            "time": 7.1,
+            "date": "2026-06-24T17:47:52Z"
+          },
+          {
+            "code": "NOG",
+            "coords": [133, 128, -984],
+            "dist": 391,
+            "time": 5.4,
+            "date": "2026-06-24T17:24:21Z"
+          }
+        ]
+      },
+      {
+        "code": "N-AN",
+        "name": "Ancient Line",
+        "color": "#753",
+        "stops": [
+          {
+            "code": "KZK",
+            "coords": [246, 127, -221],
+            "usage_notes": "Lag.",
+            "date": "2026-03-08T07:14:28Z"
+          },
+          {
+            "code": "HLH",
+            "coords": [-296, 128, -189],
+            "dist": 574,
+            "time": 9.4,
+            "date": "2026-03-08T07:20:26Z"
+          },
+          {
+            "code": "SGS",
+            "coords": [-377, 128, -132],
+            "dist": 138,
+            "time": 5.9,
+            "date": "2026-03-08T07:21:18Z"
+          },
+          {
+            "code": "RAZ",
+            "coords": [-578, 128, -156],
+            "usage_notes": "Near the Cenrail [[Cenrail network#Coastal Line|RAA]] station. Connects to the local Fallen Line (its own rails).",
+            "dist": 227,
+            "time": 6.9,
+            "date": "2026-03-08T07:23:14Z"
+          },
+          {
+            "code": "VDP",
+            "coords": [-611, 128, -231],
+            "dist": 118,
+            "time": 4.5,
+            "date": "2026-03-08T07:23:58Z"
+          },
+          {
+            "code": "AAE",
+            "coords": [-751, 127, -252],
+            "dist": 161,
+            "time": 6.5,
+            "date": "2026-03-08T07:24:33Z"
+          },
+          {
+            "code": "XG3",
+            "coords": [-991, 128, -998],
+            "dist": 1002,
+            "time": 13.1,
+            "date": "2026-06-20T00:02:28Z"
+          }
+        ]
+      },
+      {
+        "code": "N-DE",
+        "name": "Delta Line",
+        "color": "#888",
+        "stops": [
+          {
+            "code": "WAY",
+            "coords": [967, 128, 37],
+            "date": "2025-10-05T18:09:40Z"
+          },
+          {
+            "code": "TAL",
+            "coords": [618, 127, -169],
+            "usage_notes": "A [[FERRA]] line in the [[Density Loop]] leads to this location with the FERRA code FDTAL. FDTAL can be reached from FDTAV, which connects to Cenrail [[Cenrail network#Transversal Line|TAV]].",
+            "dist": 575,
+            "time": 8.4,
+            "date": "2025-10-05T18:09:40Z"
+          }
+        ]
+      },
+      {
+        "code": "N-GO",
+        "name": "Gold Line",
+        "color": "#ff0",
+        "stops": [
+          {
+            "code": "HDW",
+            "coords": [320, 128, 1021],
+            "usage_notes": "The nether coordinates are beyond the overworld world border.",
+            "date": "2025-12-03T21:14:56Z"
+          },
+          {
+            "code": "HDH",
+            "coords": [85, 128, 753],
+            "dist": 503,
+            "time": 6.1,
+            "date": "2025-12-03T21:14:56Z"
+          },
+          {
+            "code": "HLM",
+            "coords": [-48, 127, 790],
+            "dist": 170,
+            "time": 4,
+            "date": "2025-12-03T21:15:37Z"
+          },
+          {
+            "code": "CHV",
+            "coords": [-121, 128, 590],
+            "dist": 273,
+            "time": 8.1,
+            "date": "2025-09-20T11:22:22Z"
+          },
+          {
+            "code": "LRI",
+            "coords": [-255, 128, 576],
+            "dist": 148,
+            "time": 4.5,
+            "date": "2025-09-20T11:24:18Z"
+          },
+          {
+            "code": "KZB",
+            "coords": [-180, 128, 487],
+            "usage_notes": "Public-use guardian farm.",
+            "dist": 164,
+            "time": 4.1,
+            "date": "2025-09-20T11:24:38Z"
+          },
+          {
+            "code": "XSH",
+            "coords": [-294, 128, 268],
+            "dist": 333,
+            "time": 5.5,
+            "date": "2025-09-20T11:24:56Z"
+          },
+          {
+            "code": "SVB",
+            "coords": [-377, 127, -3],
+            "usage_notes": "The Gold Line intersects with the Obsidian Loop (formerly itself) at this stop. There is a connection to the [[Venrail]] N1 line that leads to [[Sta Wejs]], [[Stej Ven]] (SVS). There is a nether rail leading from the Venrail N1 Sta Wejs stop to the [[Tour de Nguh]].",
+            "dist": 245,
+            "time": 4.7,
+            "date": "2025-09-20T11:28:51Z"
+          },
+          {
+            "code": "MZS",
+            "coords": [-8, 127, -3],
+            "usage_notes": "This area in the nether roof also contains portals to [[Þunan ŋáce|Þunan Ŋáce]] (TUN) to the southwest and [[Port Marcy]] (KCM) to the west. N-MZS is famous for containing three of [[W.D. Ngaster|W.D. Ngaster's]] obelisks and being the home of [[W.D. Gaster (chicken)|chicken Gaster]].",
+            "dist": 369,
+            "time": 5.8,
+            "date": "2025-09-20T11:29:07Z"
+          },
+          {
+            "code": "NAG",
+            "coords": [62, 128, 77],
+            "usage_notes": "Public-use gold farm built by [[Þunan Qumreá]]. The gold farm contains one of [[W.D. Ngaster|W.D. Ngaster's]] obelisks.",
+            "dist": 150,
+            "time": 3.7,
+            "date": "2025-09-20T11:29:27Z"
+          }
+        ]
+      },
+      {
+        "code": "N-MO",
+        "name": "Molten Loop",
+        "color": "#f60",
+        "stops": [
+          {
+            "code": "MZS",
+            "coords": [-8, 127, -11],
+            "usage_notes": "This area in the nether roof also contains portals to [[Þunan ŋáce|Þunan Ŋáce]] (TUN) to the southwest and [[Port Marcy]] (KCM) to the west. N-MZS is famous for containing three of [[W.D. Ngaster|W.D. Ngaster's]] obelisks and being the home of [[W.D. Gaster (chicken)|chicken Gaster]].",
+            "dist": 180,
+            "time": 5.1,
+            "date": "2025-09-20T11:41:36Z"
+          },
+          {
+            "code": "ARP",
+            "coords": [-83, 128, 156],
+            "usage_notes": "This is the only Leshrail access to [[Xarslasja]]. Beyond the portal is a rail that leads directly to [insert Xarslasja city].",
+            "dist": 252,
+            "time": 4.9,
+            "date": "2025-09-20T11:36:13Z"
+          },
+          {
+            "code": "KER",
+            "coords": [287, 128, 270],
+            "dist": 542,
+            "time": 8.5,
+            "date": "2025-09-20T11:36:46Z"
+          },
+          {
+            "code": "XBL",
+            "coords": [550, 128, 155],
+            "usage_notes": "The sand in Bad to the Land is free for anyone to take by decree of Empress [[Suwi]]<ref>I wrote this.</ref>.",
+            "dist": 404,
+            "time": 6.6,
+            "date": "2025-09-20T11:39:51Z"
+          },
+          {
+            "code": "TAL",
+            "coords": [618, 127, -161],
+            "usage_notes": "A [[FERRA]] line in the [[Density Loop]] leads to this location with the FERRA code FDTAL. FDTAL can be reached from FDTAV, which connects to Cenrail [[Cenrail network#Transversal Line|TAV]].",
+            "dist": 390,
+            "time": 5.8,
+            "date": "2025-09-20T11:40:09Z"
+          },
+          {
+            "code": "EKA",
+            "coords": [345, 127, -206],
+            "dist": 318,
+            "time": 6.1,
+            "date": "2025-09-20T11:40:27Z"
+          },
+          {
+            "code": "KZK",
+            "coords": [246, 127, -209],
+            "usage_notes": "Lag.",
+            "dist": 102,
+            "time": 5.1,
+            "date": "2025-09-20T11:40:44Z"
+          },
+          {
+            "code": "IMC",
+            "coords": [0, 128, -153],
+            "dist": 302,
+            "time": 5.2,
+            "date": "2025-09-20T11:41:03Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "N-OB",
+        "name": "Obsidian Loop",
+        "color": "#002",
+        "stops": [
+          {
+            "code": "SVB",
+            "coords": [-377, 127, -9],
+            "usage_notes": "The Gold Line intersects with the Obsidian Loop (formerly itself) at this stop. There is a connection to the [[Venrail]] N1 line that leads to [[Sta Wejs]], [[Stej Ven]] (SVS). There is a nether rail leading from the Venrail N1 Sta Wejs stop to the [[Tour de Nguh]].",
+            "dist": 368,
+            "time": 6.9,
+            "date": "2025-09-20T11:25:18Z"
+          },
+          {
+            "code": "HLH",
+            "coords": [-288, 128, -189],
+            "dist": 269,
+            "time": 5.9,
+            "date": "2025-09-20T11:25:55Z"
+          },
+          { "code": "BED", "coords": [-488, 128, -315] },
+          {
+            "code": "VD7",
+            "coords": [-636, 127, -303],
+            "usage_notes": "The overworld location of the portal connects by single-tracked rails to Froglight Junction (DHF).",
+            "date": "2025-09-20T11:26:17Z"
+          },
+          {
+            "code": "CBD",
+            "coords": [-785, 127, -59],
+            "usage_notes": "A [[Rails of Eras|local line]] attached to Cenrail KI1 and KIT leads to this location with the local code MEDN",
+            "dist": 395,
+            "time": 6.8,
+            "date": "2025-09-20T11:28:01Z"
+          },
+          {
+            "code": "HEJ",
+            "coords": [-622, 128, -3],
+            "usage_notes": "This stop only exists as a way to pass between the Gold and Soul Lines. It has no portal, but corresponds to [[Hedamata]] (the former [[Islands of Ʒimh Gwynh]]) in the overworld.",
+            "dist": 219,
+            "time": 4.4,
+            "date": "2025-09-20T11:28:20Z"
+          }
+        ],
+        "loop": true
+      },
+      {
+        "code": "N-SO",
+        "name": "Soul Line",
+        "color": "#0ff",
+        "stops": [
+          {
+            "code": "XXX",
+            "coords": [-874, 127, 248],
+            "date": "2025-09-20T11:48:47Z"
+          },
+          {
+            "code": "CBV",
+            "coords": [-628, 128, 142],
+            "usage_notes": "This station incorporates portals to 3 locations inside Coldba: [[Chillvana]], [[Westerforest]], and [[Old Cuba]]. It is closest to the Cenrail [[Cenrail#Cuban Line|CBV]] station. Connected to a private line directly to the [[Madlands]].",
+            "dist": 354,
+            "time": 5.5,
+            "date": "2025-09-20T11:48:47Z"
+          },
+          {
+            "code": "HEJ",
+            "coords": [-622, 128, -9],
+            "usage_notes": "This stop only exists as a way to pass between the Gold and Soul Lines. It has no portal, but corresponds to [[Hedamata]] (the former [[Islands of Ʒimh Gwynh]]) in the overworld.",
+            "dist": 165,
+            "time": 9.2,
+            "date": "2025-09-20T11:50:21Z"
+          },
+          {
+            "code": "RAZ",
+            "coords": [-577, 128, -144],
+            "usage_notes": "Near the Cenrail [[Cenrail network#Coastal Line|RAA]] station. Connects to the local Fallen Line (its own rails).",
+            "dist": 198,
+            "time": 4.3,
+            "date": "2025-09-20T11:51:13Z"
+          },
+          {
+            "code": "CLS",
+            "coords": [-711, 128, -450],
+            "usage_notes": "A [[Cenrail network#Caluta|local line]] leads to this location in the overworld.",
+            "dist": 440,
+            "time": 6.6,
+            "date": "2025-11-27T20:01:11Z"
+          },
+          {
+            "code": "MSI",
+            "coords": [-664, 128, -694],
+            "usage_notes": "A [[Cenrail network#Maraśań Shuttle|local line]] attached to Cenrail MSS leads to this location with the local code MS-SIL.",
+            "dist": 300,
+            "time": 6.4,
+            "date": "2025-11-27T20:01:33Z"
+          }
+        ]
+      },
+      {
+        "code": "N-QU",
+        "name": "Quartz Line",
+        "color": "#fee",
+        "stops": [
+          {
+            "code": "PNP",
+            "coords": [458, 128, -420],
+            "date": "2026-06-02T01:40:33Z"
+          },
+          {
+            "code": "OKD",
+            "coords": [193, 129, -474],
+            "usage_notes": "Contains a warp.",
+            "date": "2026-06-02T01:40:33Z"
+          },
+          {
+            "code": "OKS",
+            "coords": [79, 129, -422],
+            "date": "2026-06-02T01:40:33Z"
+          },
+          {
+            "code": "YKW",
+            "coords": [-94, 128, -415],
+            "date": "2026-06-02T01:40:33Z"
+          },
+          {
+            "code": "TZT",
+            "coords": [-310, 128, -407],
+            "date": "2026-06-02T01:40:33Z"
+          },
+          {
+            "code": "MAP",
+            "coords": [-188, 129, -728],
+            "date": "2026-06-02T01:40:33Z"
+          }
+        ]
+      },
+      {
+        "code": "N-SV-N1",
+        "name": "Venrail N1",
+        "local": true,
+        "stops": [
+          {
+            "code": "SVW",
+            "coords": [-797, 128, 609],
+            "date": "2025-12-16T11:37:22Z"
+          },
+          {
+            "code": "SVP",
+            "coords": [-536, 128, 537],
+            "dist": 333,
+            "time": 5.9,
+            "date": "2025-12-16T11:37:22Z"
+          },
+          {
+            "code": "SVB",
+            "coords": [-393, 128, 5],
+            "dist": 811,
+            "time": 9.5,
+            "date": "2025-12-16T11:37:46Z"
+          }
+        ]
+      },
+      {
+        "code": "N-SV-N3",
+        "name": "Venrail N3",
+        "local": true,
+        "stops": [
+          {
+            "code": "SV-WNF",
+            "coords": [-791, 99, 615],
+            "date": "2026-06-05T12:11:09Z"
+          },
+          {
+            "code": "SV-NEM",
+            "coords": [-727, 15, 697],
+            "dist": 146,
+            "time": 3,
+            "date": "2026-06-05T12:11:09Z"
+          },
+          {
+            "code": "SV-WAF",
+            "coords": [-727, 52, 895],
+            "dist": 198,
+            "time": 5.2,
+            "date": "2026-06-05T12:11:55Z"
+          }
+        ]
+      },
+      {
+        "code": "N-WA",
+        "name": "Warped Line",
+        "color": "#00f",
+        "stops": [
+          {
+            "code": "KCY",
+            "coords": [-81, 128, -328],
+            "usage_notes": "This station contains portals for both Yija and the [[Palace of the Ŋations]]. In the [[Ŋatacombs]] of the Palace, there is a portal with one-way access to the Leshrail Floor Waichi station.",
+            "date": "2025-09-20T11:45:11Z"
+          },
+          {
+            "code": "OKS",
+            "coords": [74, 128, -422],
+            "dist": 283,
+            "time": 4.9,
+            "date": "2025-09-20T11:45:11Z"
+          },
+          {
+            "code": "UNL",
+            "coords": [380, 128, -504],
+            "dist": 388,
+            "time": 5.7,
+            "date": "2025-09-20T11:45:34Z"
+          },
+          {
+            "code": "WSE",
+            "coords": [271, 128, -615],
+            "usage_notes": "A [[Cenrail network#Wekañu-Skefo|local line]] leads to this location in the overworld.",
+            "dist": 236,
+            "time": 7.4,
+            "date": "2025-11-04T16:36:20Z"
+          },
+          {
+            "code": "ADA",
+            "coords": [809, 128, -516],
+            "dist": 546,
+            "time": 7,
+            "date": "2025-11-09T22:26:00Z"
+          }
+        ]
+      },
+      {
+        "code": "N-WI",
+        "name": "Wither Line",
+        "color": "#b0f",
+        "stops": [
+          {
+            "code": "KZB",
+            "coords": [-186, 128, 487],
+            "usage_notes": "Public-use guardian farm.",
+            "date": "2025-09-20T11:53:53Z"
+          },
+          {
+            "code": "ANQ",
+            "coords": [213, 128, 477],
+            "usage_notes": "Previously the [[Anaqw]] station.",
+            "dist": 409,
+            "time": 6.4,
+            "date": "2025-09-20T11:53:53Z"
+          },
+          {
+            "code": "CBM",
+            "coords": [434, 128, 477],
+            "dist": 221,
+            "time": 4.5,
+            "date": "2025-09-20T11:54:33Z"
+          },
+          {
+            "code": "NMA",
+            "coords": [679, 128, 638],
+            "dist": 398,
+            "time": 5,
+            "date": "2025-11-27T20:04:39Z"
+          }
+        ]
+      }
+    ]
+  },
+  "comment10": "Stations that are close enough together to walk between",
+  "comment11": "It is possible to put more than two stations in the interchange",
+  "interchanges": [
+    ["RAA", "RAZ"],
+    ["IMP", "IM-SGC"],
+    ["N-KER", "N-ANQ"],
+    ["N-MSI", "N-MS-TPC"],
+    ["KC-FOT", "KC-PYH", "XSH"],
+    ["AAW", "AAE"]
+  ],
+  "comment2": "Connections between overworld stations and nether stations",
+  "connections": [
+    [
+      { "code": "N-SV-WNF", "coords": [-797, 100, 615] },
+      { "code": "SVW", "coords": [-6397, 28, 4967] }
+    ],
+    [
+      { "code": "MZS", "coords": [-21, 63, -34] },
+      { "code": "N-MZS", "coords": [-8, 129, -6] }
+    ],
+    [
+      { "code": "ARP", "coords": [-672, 68, 1232] },
+      { "code": "N-ARP", "coords": [-83, 130, 154] }
+    ],
+    [
+      { "code": "KER", "coords": [2307, 29, 2242] },
+      { "code": "N-KER", "coords": [288, 129, 278] }
+    ],
+    [
+      { "code": "XBL", "coords": [4403, 107, 1228] },
+      { "code": "N-XBL", "coords": [550, 130, 151] }
+    ],
+    [
+      { "code": "TAL2", "coords": [4973, 72, -1253] },
+      { "code": "N-TAL", "coords": [628, 129, -164] }
+    ],
+    [
+      { "code": "WAY", "coords": [7725, 64, 340] },
+      { "code": "N-WAY", "coords": [968, 130, 42] }
+    ],
+    [
+      { "code": "EKA", "coords": [2784, 68, -1668] },
+      { "code": "N-EKA", "coords": [349, 129, -206] }
+    ],
+    [
+      { "code": "KZK", "coords": [2002, 65, -1706] },
+      { "code": "N-KZK", "coords": [250, 129, -214] }
+    ],
+    [
+      { "code": "MCM", "coords": [-354, 45, -1467] },
+      { "code": "N-GUY", "coords": [-44, 129, -183] }
+    ],
+    [
+      { "code": "IMP", "coords": [2, 79, -1191] },
+      { "code": "N-GUY", "coords": [0, 130, -149] }
+    ],
+    [
+      { "code": "KCY", "coords": [-657, 63, -2599] },
+      { "code": "N-KCY", "coords": [-84, 129, -322] }
+    ],
+    [
+      { "code": "KCU", "coords": [-516, 83, -2665] },
+      { "code": "N-KCY", "coords": [-69, 129, -331] }
+    ],
+    [
+      { "code": "LRT", "coords": [131, 63, -5812] },
+      { "code": "N-LRT", "coords": [12, 130, -716] }
+    ],
+    [
+      { "code": "OKS", "coords": [586, 199, -3377] },
+      { "code": "N-OKS", "coords": [76, 130, -422] }
+    ],
+    [
+      { "code": "UNL", "coords": [3035, 63, -4022] },
+      { "code": "N-UNL", "coords": [380, 130, -508] }
+    ],
+    [
+      { "code": "SVB", "coords": [-2902, -58, 107] },
+      { "code": "N-SVB", "coords": [-375, 129, 6] }
+    ],
+    [
+      { "code": "VD7", "coords": [-5135, 82, -2454] },
+      { "code": "N-VD7", "coords": [-642, 129, -307] }
+    ],
+    [
+      { "code": "HLH", "coords": [-2291, 52, -1442] },
+      { "code": "N-HLH", "coords": [-292, 130, -189] }
+    ],
+    [
+      { "code": "XSH", "coords": [-2351, 63, 2169] },
+      { "code": "N-XSH", "coords": [-294, 130, 272] }
+    ],
+    [
+      { "code": "KZB", "coords": [-1481, 31, 3901] },
+      { "code": "N-KZB", "coords": [-184, 130, 487] }
+    ],
+    [
+      { "code": "CBM", "coords": [3484, 85, 3833] },
+      { "code": "N-CBM", "coords": [434, 130, 473] }
+    ],
+    [
+      { "code": "NMA", "coords": [5418, 72, 5093] },
+      { "code": "N-NMA", "coords": [677, 130, 638] }
+    ],
+    [
+      { "code": "LRI", "coords": [-1994, 59, 4596] },
+      { "code": "N-LRI", "coords": [-249, 130, 575] }
+    ],
+    [
+      { "code": "CHV", "coords": [-952, 78, 4752] },
+      { "code": "N-CHV", "coords": [-121, 130, 594] }
+    ],
+    [
+      { "code": "HLM", "coords": [-448, 63, 6437] },
+      { "code": "N-HLM", "coords": [-46, 129, 796] }
+    ],
+    [
+      { "code": "HDH", "coords": [672, 42, 5991] },
+      { "code": "N-HDH", "coords": [84, 130, 749] }
+    ],
+    [
+      { "code": "SVP", "coords": [-4136, 63, 4331] },
+      { "code": "N-SVP", "coords": [-530, 129, 535] }
+    ],
+    [
+      { "code": "SVW", "coords": [-6380, 155, 4973] },
+      { "code": "N-SVW", "coords": [-796, 129, 615] }
+    ],
+    [
+      { "code": "XXX", "coords": [-7004, 87, 2000] },
+      { "code": "N-XXX", "coords": [-877, 129, 246] }
+    ],
+    [
+      { "code": "CBV", "coords": [-4948, 64, 999] },
+      { "code": "N-CBC", "coords": [-620, 129, 125] }
+    ],
+    [
+      { "code": "CBC", "coords": [-4880, 68, 1473] },
+      { "code": "N-CBC", "coords": [-604, 129, 172] }
+    ],
+    [
+      { "code": "RAZ", "coords": [-4599, 66, -1116] },
+      { "code": "N-RAZ", "coords": [-575, 129, -140] }
+    ],
+    [
+      { "code": "WSE", "coords": [2159, 69, -4934] },
+      { "code": "N-WSE", "coords": [273, 129, -616] }
+    ],
+    [
+      { "code": "MS-SIL", "coords": [-5306, 60, -5568] },
+      { "code": "N-MSI", "coords": [-664, 129, -696] }
+    ],
+    [
+      { "code": "ADA", "coords": [6465, 102, -4111] },
+      { "code": "N-ADA", "coords": [808, 129, -514] }
+    ],
+    [
+      { "code": "AAE", "coords": [-6033, 80, -2085] },
+      { "code": "N-AAE", "coords": [-753, 135, -253] }
+    ],
+    [
+      { "code": "SGS", "coords": [-3001, 125, -1012] },
+      { "code": "N-SGS", "coords": [-376, 129, -128] }
+    ],
+    [
+      { "code": "VDP", "coords": [-4860, 86, -1869] },
+      { "code": "N-VDP", "coords": [-607, 129, -233] }
+    ],
+    [
+      { "code": "KI-AKS", "coords": [-6318, 119, -481] },
+      { "code": "N-CBD", "coords": [-791, 130, -60] }
+    ],
+    [
+      { "code": "MS-TPC", "coords": [-6136, 15, -5470] },
+      { "code": "N-MS-TPC", "coords": [-766, 129, -684] }
+    ],
+    [
+      { "code": "CLS", "coords": [-5705, 64, -3614] },
+      { "code": "N-CLS", "coords": [-715, 129, -451] }
+    ],
+    [
+      { "code": "NAG", "coords": [346, 104, 909] },
+      { "code": "N-NAG", "coords": [42, 129, 113] }
+    ],
+    [
+      { "code": "BED", "coords": [-3982, 10, -2551] },
+      { "code": "N-BED", "coords": [-488, 52, -316] }
+    ],
+    [
+      { "code": "OKD", "coords": [1436, 83, -3708] },
+      { "code": "N-OKD", "coords": [193, 130, -471] }
+    ],
+    [
+      { "code": "PNP", "coords": [3645, 61, -3427] },
+      { "code": "N-PNP", "coords": [458, 129, -421] }
+    ],
+    [
+      { "code": "YKW", "coords": [-732, 59, -3747] },
+      { "code": "N-YKW", "coords": [-95, 84, -465] }
+    ],
+    [
+      { "code": "TZB", "coords": [-2551, 64, -3185] },
+      { "code": "N-TZT", "coords": [-320, 129, -398] }
+    ],
+    [
+      { "code": "TZX", "coords": [-2567, 54, -3286] },
+      { "code": "N-TZT", "coords": [-322, 129, -415] }
+    ],
+    [
+      { "code": "MAP", "coords": [-1475, 68, -5833] },
+      { "code": "N-MAP", "coords": [-185, 130, -728] }
+    ],
+    [
+      { "code": "XG3", "coords": [-7971, 74, -7981] },
+      { "code": "N-XG3", "coords": [-996, 129, -994] }
+    ]
+  ],
+  "warps": [
+    { "code": "MZS", "coords": [0, 163, 0], "discount": 10 },
+    { "code": "XG3", "coords": [-7993, 63, -7994] },
+    {
+      "comment": "your_doom is disabled by default in the mod",
+      "comment2": "enable using /nr config your_doom true",
+      "code": "OKD",
+      "coords": [1439, 156, -3711],
+      "discount": 10
+    }
+  ],
+  "stations": {
+    "AAA": "Amodingaling",
+    "AAE": "East Ðoòng Sơn",
+    "N-AAE": ["Ðoòng Sơn Nether", "Adnar Nether"],
+    "AAW": "West Ðoòng Sơn",
+    "ABF": "Fisete",
+    "AB-FYS": "Fyslete",
+    "ABO": "Olympus Mons",
+    "ABP": "Paul",
+    "AB-YRS": "Yrsaute",
+    "ACA": "Araçana",
+    "AHB": ["Anarchy Chessitory", "Anarchy Chess.", "b3"],
+    "ADA": "Adaria Central",
+    "N-ADA": "Adaria Nether",
+    "ADP": "Península de l’estret",
+    "N-ANQ": "Rindauh Nether",
+    "AOT": "Tulanahea",
+    "AP0": "Mystery station",
+    "APG": "Green Transitional",
+    "APK": "Kiakus'a",
+    "APS": "Syfa",
+    "ARA": "Ash Fork",
+    "ARF": "Flagstaff",
+    "ARP": "Surprise",
+    "N-ARP": "Surprise Nether",
+    "ARS": "Sedona",
+    "ARY": "Yuɱa",
+    "ASA": "Arktsevian Void",
+    "ASB": "Beacon Island",
+    "AS-NAX": "New Axolotlland",
+    "ASP": "Purasta",
+    "AST": "Terramar",
+    "ASX": "Xallia Central",
+    "ASZ": "Zlarit Mountain",
+    "AYK": "Khaath Tran",
+    "AYR": "Ruôy Rûdak",
+    "AYT": "Tempuy",
+    "BED": "'bed",
+    "BEE": "Bee",
+    "N-BED": "'bed Nether",
+    "BES": "Slop Exchange",
+    "BDC": "B’hiy’aj Dchâjâ",
+    "CB-EAS": "Eastbay",
+    "CB-FRE": "Freezeway",
+    "CB-GAR": "Gardens",
+    "CB-NEA": "North Everglacier Avenue",
+    "CB-POE": "Port ⁊ Embassy",
+    "CB-TEM": "Temple",
+    "CB-VIH": "Villager Hub",
+    "CBA": [
+      "Anweigh",
+      "Abervilletownboroughtoncesterforthinghursthorpwalldonminsterhammorewickfirthburndalefieldholmleigh"
+    ],
+    "CBB": "Sprutia Bridge",
+    "CBC": "Cuba",
+    "CBD": "Drowned Farm",
+    "CBE": "Everglacier National Park",
+    "CBF": "Faeran",
+    "N-XBL": "Bad to the Land Nether",
+    "CBN": "Mount Navia",
+    "CBR": "Frostanamo Bay",
+    "CBT": "Arctic Circle Stadium",
+    "CBV": "Chillvana Grand Central",
+    "N-CBC": "Chillvana Nether",
+    "CVS": "Civuyiscajrn",
+    "CPF": "Complex Fringe",
+    "CPL": "The Complex",
+    "CRV": "Wiszdanha",
+    "CL-EPC": "Evil Phishing Country",
+    "CL-MS2": "Måneskin II",
+    "CL-SCH": "Caluta School",
+    "CL-STR": "Caluta Storage Room (private)",
+    "CL-TSV": "Tansy Village",
+    "CLB": "Balijom",
+    "CLG": "Galagazaj",
+    "CLI": "Caluta!! On Ice",
+    "CLJ": "Jytlynd",
+    "XLP": "La Pastenaga",
+    "CLQ": "Chimp Island",
+    "CLS": "Caluta Sunrise",
+    "N-CLS": "Caluta Sunrise Nether",
+    "CLT": [
+      "Caluta",
+      "Hydrogencalutamide",
+      "Holy Republican Theocracy of Caluta"
+    ],
+    "CLZ": "Zotazil (West)",
+    "CUC": "Chunk Nation",
+    "CX-CGI": "Cat gift farm",
+    "CX-SLX": "Sikttaalxoga",
+    "CX-TLX": "Ttawolxoga",
+    "CX-QLX": "Qaapcalxoga",
+    "CXK": "Kkopiiiiwobqolxoga",
+    "DHR": "Rintìh",
+    "DHZ": "Zharid",
+    "DNL": "Dnalrehten",
+    "DT-AJA": "Ajamui",
+    "DT-CMC": "Cumocalo",
+    "DTD": "Đzefxal",
+    "DT-DVO": "Dvodli",
+    "DTM": "Manitarilant",
+    "DT-OAK": "Oaksby",
+    "DTR": "Ruxese",
+    "DTV": "Vuttteźmæk",
+    "DT-VAT": "Vatttat",
+    "DT-VON": "Vönuxö",
+    "DT-SUN": "Sunflower Island",
+    "EDS": "Sevanie",
+    "EDT": "Tordanniòge",
+    "EKA": "Alnaŋaemak Government",
+    "N-EKA": "Alnaŋaemak Nether",
+    "EKB": "Boat Settlement",
+    "EKE": "Ekativak",
+    "EKG": "Gasaŋgak",
+    "EKH": "Alnaŋaemak Harbour",
+    "EKM": "Ŋismgak",
+    "EKN": "Nonigak",
+    "EKS": "Sabgabagak",
+    "EKT": "Tulisgak",
+    "EKY": "Ymi ⁊ Ioqo",
+    "EMC": "i Êpcem Mûn-nan",
+    "XXX": "Evil Scamming Country",
+    "N-XXX": "Evil Scamming Country Nether",
+    "EWM": "Medzeitwa",
+    "EWR": "Ríkízműis",
+    "EWR2": "Ríkízműis 2",
+    "EWW": "Wyisei",
+    "FET": "South Tsiccengair",
+    "FJF": "Fejhaks Eujijj",
+    "GNI": "Gdaƨihr Ni̦xlo",
+    "GUY": "Yetch Bay",
+    "N-GUY": "Yetch Bay Nether",
+    "HDH": "Hajdislant Arh.",
+    "N-HDH": "Hajdislant Arh. Nether",
+    "N-HDW": "Wither Farm",
+    "HGP": "Haii Gwaida Pirates",
+    "HRF": "Fordow",
+    "HRK": "Klakkenbuutsh",
+    "HRN": "Hertskomestat Ŋegypt",
+    "HRS": "Hertskomestat Syndicate",
+    "HLA": "Auŕol Uraśe",
+    "HLF": "Fliegenpilz",
+    "HLG": "Glitter Island",
+    "HLH": "Mitthumm City",
+    "N-HLH": "Hummland Nether",
+    "HLM": "Mawg",
+    "N-HLM": "Mawg Nether",
+    "HLW": "Wug Islands",
+    "IM-SGC": "Gara Centrala",
+    "IM-SGP": "Gastpòrt Internacionau Cilpeic S. Nomahí",
+    "IM-SPB": "Plaça de la Baia",
+    "IM-SPE": "Palais d’Estat",
+    "IM-SUN": "Universitat",
+    "IM-IRV": "Rota de Vansterèl",
+    "IM-STS": "Temple de Seol",
+    "IM-SDI": "Diplomacia",
+    "IM-SPM": "Plaça dau marcat",
+    "IM-SRP": "Rota de Parcòu",
+    "IMA": "Oestpòrt",
+    "N-IMC": "Chalmosique Nether",
+    "IMO": "Ojovila",
+    "IMP": "Imerchal Pfr.",
+    "MCM": "Minaro-Cohasia",
+    "IST": "Ī’Saertur",
+    "JLD": "Dornwík",
+    "KAN": "Neryu City",
+    "KBK": "Kabazat",
+    "KC-BEN": "Bęnyimar",
+    "KC-BMK": "Bęnziw Miz Kyôšya",
+    "KC-BWE": "Bwengleš",
+    "KC-COH": "Čohanbaiw",
+    "KC-ESK": "Esem Kuwi",
+    "KC-FOT": "Fotōṡnisa",
+    "KC-KHE": "Kyaw Hęstauyne",
+    "KC-MON": "Monюment",
+    "KC-PYH": "Pyuwa Harbor",
+    "KC-ROM": "Rombu",
+    "KC-TAS": "Taswo",
+    "KC-YIN": "Yija Nam",
+    "KCC": "Parkow Pfr.",
+    "KCE": "Esasne",
+    "KCM": "Port Marcy",
+    "KCS": "Beytaš",
+    "KCT": "Twirne",
+    "KCX": "Xêgwar",
+    "KCY": "Yija Pfr.",
+    "N-KCY": "Yija Nether",
+    "KEK": "Kalwar Islands",
+    "KEN": "Northern Plains",
+    "KER": "Raln Cfbs.",
+    "N-KER": "Raln Nether",
+    "KET": "Tarpoenstad",
+    "KI1": "Kik'ya 1199",
+    "KI-TOR": "Tǫřętayun",
+    "KI-FRL": "Fearless",
+    "KI-EVW": "Evermore-Wil",
+    "KI-EVI": "Evermore-Ivy",
+    "KI-SPN": "Speak Now",
+    "KI-FOL": "Folklore",
+    "KI-DEB": "Debut",
+    "KI-RES": "Reputation S",
+    "KI-NIA": "Former Nieuw Antwerpen",
+    "KI-SAS": "Ṡȧsúntṙ",
+    "KI-AKS": "Akskílagwa",
+    "KI-SIR": "Ṡirito",
+    "KI-YAL": "Ýanlelor",
+    "N-CBD": "Drowned Farm",
+    "KRK": "Krīpahra",
+    "KZ-BAN": "Bank",
+    "KZ-CAM": "Campus",
+    "KZ-CAP": "Cascade Park",
+    "KZ-DIP": "Diplomatic Quarter",
+    "KZ-GRB": "Grand Boule",
+    "KZ-GRP": "Grand Pier",
+    "KZ-PEP": "Petty Pier",
+    "KZ-STO": "Stoneworks",
+    "KZ-WAR": "Warehouse",
+    "KZA": "Gulf Arena",
+    "KZB": "Blighted Shrine",
+    "N-KZB": "Blighted Shrine Nether",
+    "KZK": "Kozdenen",
+    "N-KZK": "Kozdenen Nether",
+    "LCO": "Ostmare Stronghold",
+    "LKE": "Etethelio",
+    "KRH": "Hweru Cada",
+    "LKJ": "Jukcabiuu",
+    "UNL": "Lautseq Kceuua",
+    "N-UNL": "Lavvakcessa Nether",
+    "LKN": "Neu Tocoselesi",
+    "LKT": "Lautseq Trial Chamber",
+    "LKU": "Unnamedtown",
+    "LKX": "Some random unmarked station",
+    "LR-ALB": "Alba Longa",
+    "LR-BAS": "Basilica",
+    "LR-SAB": "Sabinum",
+    "LR-TEM": "Temple",
+    "LRI": "Idanopolis",
+    "N-LRI": "Idanopolis Nether",
+    "LRJ": "Telmaticum Junction",
+    "LRP": "Palléscéntium",
+    "LRT": "Telmaticum",
+    "N-LRT": "Telmaticum Nether",
+    "LYD": "Downtown",
+    "LYE": "Eville",
+    "LYF": "Fucking",
+    "MAH": "House",
+    "MAN": "Nopcorn",
+    "MAP": "Popcorn",
+    "N-MAP": "Popcorn Nether",
+    "MPB": "BaLbeL",
+    "MRM": "Ḿaro-Heki",
+    "MS-AFK": "Tyrant Palace AFK Platform",
+    "MS-EIL": "Earth Island",
+    "MS-GOV": "Government Palace",
+    "MS-NIL": "Nature Island",
+    "MS-SIL": "Sun Island",
+    "MS-TPC": "Tyrant Palace Collection Area",
+    "N-MS-TPC": "Tyrant Palace Nether",
+    "MS-WIP": "Wind Pier",
+    "N-MSI": "Sun Island Nether",
+    "MSS": "Śaracþáw",
+    "MTB": "Marti’s Base",
+    "MTH": "Marti’s Home",
+    "MTN": "Nowhere",
+    "MTV": "Marti’s Village",
+    "LIL": "Liauolên",
+    "MZG": "Ğyžven",
+    "MZL": "Liztarp",
+    "MZS": "Spawn",
+    "N-MZS": "Spawn Nether",
+    "MZT": "Tisheongja",
+    "MZY": "Yatland",
+    "NA-ASM": "Asmiħusp",
+    "NAB": "București",
+    "NA-GAN": "Gāňwogæð",
+    "NA-MEO": "Mēōusp",
+    "NA-NAC": "Nārospiňt City",
+    "NA-NED": "Nedogotþa",
+    "NAG": "Goldbürc",
+    "N-NAG": "Gold Farm",
+    "NA-NRS": "South Nārospiňt",
+    "NA-NIS": "Niš",
+    "NAK": "Kišino",
+    "NAN": "Nārospiňt",
+    "NA-KOR": "Kõrdžali",
+    "NA-PAR": "Nāroňpari Parliament",
+    "NA-RUC": "Rucyń",
+    "NAS": "Sæxlann",
+    "NA-XAN": "Xangjûm",
+    "NBT": "Ŋibraltar",
+    "NHK": "Nan Hsüeh Kung Ssu",
+    "NKI": "İstaŋbul",
+    "NMA": ["Albaqaerqe-Leshrail Interchange", "Albaqaerqe"],
+    "N-NMA": "Albaqaerqe Nether",
+    "NM-AHQ": "Albaqaerqe: Captain's Shuttle",
+    "NM-CLG": "Caralbad: Lagao Gthandeo",
+    "NMK": "Kriseon City",
+    "NOG": "Grindlesnurt",
+    "N-NOG": "Grindlesnurt Nether",
+    "NTN": "Nolegonia",
+    "NTT": "RPD Trial Chamber",
+    "OKC": "Citadel Island",
+    "OKN": "Ŋájaþáw",
+    "OKP": "Nguhtropolis",
+    "OKS": "Slab Exchange",
+    "N-OKS": "Slab Exchange Nether",
+    "OKV": ["SE Village", "Southeast Village"],
+    "ORT": "Todoian",
+    "OR-KEZ": "Kezlai",
+    "OTW": "Wealdwick",
+    "PKA": "Amethyst",
+    "PKL": "Länśapol",
+    "PKP": "Paz Kiiam",
+    "PNP": "Pantiago",
+    "N-PNP": "Pantiago Nether",
+    "RAA": "Azeria Midtown",
+    "RAB": "Rasórabong",
+    "RAD": "Dip(a)lomacy",
+    "RAE": "Elemental City",
+    "RAH": "Astona Hill",
+    "RAI": "Irisela Island",
+    "RAL": "Lígatal",
+    "RAM": "Motostoke",
+    "RAP": "Conclave Periculorum",
+    "RAR": "Remulapola",
+    "RAU": "Elemental University",
+    "RAY": "Murya Island",
+    "RAZ": "Azeria Downtown",
+    "N-RAZ": "Azeria Nether",
+    "REM": "Reimusia",
+    "RIY": "Riyelum",
+    "RKZ": "Zestōspiṓ",
+    "RPA": "Allium",
+    "RPB": "Bumble Bee",
+    "RPC": "Sun City",
+    "RPD": "Drebzha",
+    "RPK": "Kanga",
+    "RPN": "Ŋerlin",
+    "RPS": "Shangu",
+    "RPU": "Kuzhgubsk",
+    "RPW": "Whitefish Bay",
+    "SLA": "Seolland",
+    "SGA": "Spansos Gaming",
+    "N-SGS": "Spansos Gaming Nether",
+    "VLW": "Chielbary Westbanhof",
+    "VLG": "Vipolis Ghastport",
+    "XNA": "Nieuw Antwerpen",
+    "VLS": "Sakuraberg",
+    "KIT": "TTPD Era",
+    "CHV": "Vipolis",
+    "N-CHV": "Vipolis Nether",
+    "STA": "Sajloẃluv",
+    "STB": "Bąlo Zăskluz",
+    "STC": "Cpeladisa",
+    "STD": "Dâz Naj",
+    "STH": "Hycenon",
+    "STJ": "Jl'ąoiðo",
+    "STN": "Sajlo Nagăv",
+    "STO": "Uuši Jovensuu",
+    "STR": "Rïjdücikëjjl",
+    "STS": "Saotäjäe",
+    "STT": "Täznad",
+    "STU": "Vu uħKupa",
+    "STV": "Vo Sowao Tâsi",
+    "STW": "Bawusïw Junction",
+    "SV-BON": "Birchill Old Nether Roof",
+    "SVB": "Birchill",
+    "N-SVB": "Birchill Nether",
+    "N-SV-FRF": "Stejvenni Froglight Facility",
+    "SVG": "Gagma Balls Territory",
+    "N-SV-NEM": "Stejvenni Nether Mine",
+    "SVP": ["Saiŋt Pierre and Ɱiqueloŋ", "SPaⱮ"],
+    "N-SVP": ["Saiŋt Pierre and Ɱiqueloŋ Nether", "SPaⱮ Nether"],
+    "SVV": "Sta Ven",
+    "SVW": "Sta Wejs",
+    "N-SV-WAF": "Stejvenni Warped Forest",
+    "N-SV-WNF": ["Sta Wejs Nether Floor", "Sta Wejs Nether Hub"],
+    "N-SVW": "Sta Wejs Nether",
+    "TAA": "Alk'emit'at",
+    "TAB": "Vdolabeċi",
+    "TAC": "Ocean",
+    "TAD": "Ladicad",
+    "TAE": "Erśqe",
+    "TAF": "Mziuri Farms",
+    "TAG": "Gogili",
+    "TAI": "Islii Ġaere",
+    "TAK": "K’vgeba",
+    "TAL": "Lsotabsi",
+    "TAL2": "Lsotabsi Aboveground",
+    "N-TAL": "Lsotabsi Nether",
+    "TAM": "Mziuri",
+    "TAN": "New North City",
+    "TAO": "Ofdaxebs",
+    "TAR": "Erdudad",
+    "TAV": "Vasilob",
+    "TAW": "Lowest Mziuri Ancient City",
+    "TAX": "Xvredi",
+    "TAZ": "Zanriin",
+    "TPU": "Tauranga Puawai",
+    "TRC": "Czägrÿxyx",
+    "TUN": "Þunan Ŋáce",
+    "TZB": "Bōtag",
+    "TZG": "Maghraba",
+    "TZJ": "Janiu",
+    "TZM": "Mosas",
+    "TZP": "Pamou",
+    "TZX": "Xālub",
+    "N-TZT": "Tanzang Nether",
+    "KCU": "United Ŋations Headquarters",
+    "USW": "Wgəldərəm Central",
+    "USI": "Iopvixens’ Fort",
+    "VAA": "Pòrt d’Avets",
+    "VAF": "Cyerin Forest",
+    "VAW": "Cape Wancrêw",
+    "VBO": "Solinasen",
+    "VBS": "Syygalaun",
+    "VD7": "Pāgus Septimus",
+    "N-VD7": "Pāgus Septimus Nether",
+    "VDL": "Linea Diplomatica",
+    "VDP": "Plāna Diabolōrum",
+    "N-VDP": "Plāna Diabolōrum Nether",
+    "VDV": "Vallis Ignium",
+    "VUV": "Vukhaa",
+    "WAB": "Bá Dalaz",
+    "WAC": "Cyryká",
+    "WAD": "Dúa Suýn",
+    "WAF": "Fenmoz",
+    "WAH": "Hánaz Damok",
+    "WAK": "Majamók’et",
+    "WAM": "Bá Dalaz Mételo",
+    "WAO": "Ola Damok",
+    "FEC": "FERRA Center",
+    "WAY": "Yázka",
+    "N-WAY": "Yázka Nether",
+    "WSB": "Bjekejshaw Village",
+    "WSC": "Chicklag-Skal",
+    "WSE": "Klesokla-Skal",
+    "WSK": "Klehen",
+    "WSL": "Klipuñe-Skal",
+    "WSS": "Skitop-Skal",
+    "WSW": "Wekañu-Skal",
+    "WST": "Skeletia-Skal",
+    "WSD": "Lava-Pit",
+    "WSN": "Nehek-skal",
+    "XAT": "Auchentraeth",
+    "XBS": "Baarzenstad",
+    "XCE": "Cesarea",
+    "XDA": "Dagalunt",
+    "XDV": "Dave",
+    "XFA": "Fagrasdeng",
+    "XFE": "Festeburg",
+    "XFR": "Frog",
+    "XG2": "Guam 2",
+    "XG3": "Guam 3",
+    "N-XG3": "Guam 3 Nether",
+    "XHA": "Hanebrug",
+    "XKE": "Kemâliye",
+    "XOJ": "Olympic Junction",
+    "HDO": "Onnaonnadualant",
+    "GBL": "Gubynlynd",
+    "XLG": "Lautseq Kceuua Interngational Ghastport",
+    "XMK": "Mekathyr",
+    "XML": "Maryland",
+    "XMT": "Mesa Temple",
+    "XMZ": "Midzyrian Stop",
+    "XNO": "Nóreesá",
+    "HOR": "Pelcach",
+    "UNP": "Phoeŋix",
+    "XQO": "Qòhééhinyèè",
+    "CBM": "Middle Cuba",
+    "N-CBM": "Middle Cuba Nether",
+    "XSB": "Sidón ⁊ Biblos",
+    "XSC": "Saithe’s Castle",
+    "XSH": ["Scarecrow Harbour", "Scarecrow Harbor"],
+    "N-XSH": ["Scarecrow Harbour Nether", "Scarecrow Harbor Nether"],
+    "XVB": "Vee’s Base",
+    "N-HEJ": "West Junction",
+    "OKD": "your_doom",
+    "N-OKD": "your_doom Nether",
+    "XZP": "Zaram Pewu",
+    "YKA": "Aurimesa",
+    "YKE": "Weister Bay Exchange",
+    "YKF": "Fabriekes Zon",
+    "YKW": "Weister Bay",
+    "N-YKW": "Weister Bay Nether",
+    "ZAZ": "Hiso Zju'a",
+    "HED": "Hedamata",
+    "UKH": "Hikormi",
+    "UKK": "Kotunda",
+    "UKT": "Tauzisi",
+    "XZT": "Zotazil",
+    "???Bani 1": "Unknown Bani line stop #1",
+    "???Bani 2": "Unknown Bani line stop #2",
+    "???Bani 3": "Unknown Bani line stop #3",
+    "KZE": "Estrogen",
+    "XST": "Steve",
+    "XZS": "Zandstad",
+    "STK": "Kecyon",
+    "APU": "Upper Perhyh",
+    "KLB": "Byelaya Tepe",
+    "APP": "Perhyh",
+    "FEM": "Mushroom",
+    "OTJ": "Cave Johnson",
+    "OTM": "Otslahue Mainland",
+    "OTV": "Otslahue Village",
+    "QOS": "Qosculyn",
+    "XKC": "Korzen's Castle",
+    "MDJ": "Madlands Junction",
+    "MAK": "Pepuakaija",
+    "IMC": "West Chalmosique",
+    "N-XSG": "Slab Exchange Nether",
+    "N-XUU": ["119ium", "Uŋuŋəŋŋium"]
+  },
+  "aliases": {
+    "UNG": "KCU",
+    "HEJ": "N-HEJ",
+    "VDA": "VDV",
+    "MSI": "MS-SIL",
+    "SXG": "OKS",
+    "N-SXG": "N-OKS",
+    "NMA": "NM-ALI"
+  }
+}
