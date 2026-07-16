@@ -81,7 +81,7 @@ ul {
   height: min(max(80vw, 144px), 90dvh);
   margin: 0 auto;
   /* margin-top: 0.5rem; */
-  background-image: url("../img/map.png");
+  background-image: url("../img/map.webp");
   background-repeat: no-repeat;
   background-size: cover;
   /* box-shadow: 5px 5px 10px 3px #0005; */
