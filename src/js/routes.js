@@ -73,8 +73,11 @@ export async function getRoute({ url = targetUrl, code } = {}) {
 }
 
 // despite the name, it will not make them passable
-export function removeRouteImpassable(route) {
-  return route["stops"].filter((stop) => typeof stop != "string");
+// forget that. we gonna unfuck it
+export function unfuckRoute(route) {
+  return route["stops"].filter((stop) => (
+    typeof stop != "string" && stop.coords
+  ));
 }
 
 export async function getAssociatedStationRoutes({
@@ -164,7 +167,7 @@ export async function populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRou
   // populate list
   let stations = await getData();
   stations = stations["stations"];
-  removeRouteImpassable(route).forEach((_station) => {
+  unfuckRoute(route).forEach((_station) => {
     const item = document.createElement("li");
     item.setAttribute("station-code", _station.code)
     const name = stationNamesFromCode({
@@ -192,7 +195,7 @@ export async function populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRou
 
   // array of stops
   const stopsList = document.createElement("p");
-  const stopsString = removeRouteImpassable(route)
+  const stopsString = unfuckRoute(route)
     .map((_station) => `(${_station.coords[0]},${_station.coords[2]})`)
     .join();
   stopsList.innerText = `[${stopsString}]`;
@@ -247,7 +250,8 @@ export async function displayMap({ chart, route, elementId } = {}) {
   stations = stations["stations"];
 
   // console.log(route.loop);
-  stations = removeRouteImpassable(route).map((_station) => ({
+  console.log(route)
+  stations = unfuckRoute(route).map((_station) => ({
     x: isNether ? _station.coords[0] * 8 : _station.coords[0],
     y: isNether ? _station.coords[2] * 8 : _station.coords[2],
     name: `${_station.code} - ${stationNamesFromCode({ stationsList: stations, stationCode: _station.code })[0]}`,
