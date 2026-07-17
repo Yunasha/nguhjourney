@@ -1,0 +1,2934 @@
+{
+	"__schema": {
+		"__comment": "Omit any field not relevant to the place described",
+		"code2": "string; 2 letter code",
+		"code3": "string; 3 letter code",
+		"common_name": "string; Short name, should be, or redirect to, the wiki page for the country",
+		"name": "string; Full name of the country",
+		"ruler": "string|list of string; In-lore ruler of the country",
+		"ruler_title": "string; Title of the ruler",
+		"ruler_link": "string; If the name ruler of the country doesn’t redirect to the correct wiki page, put the link here",
+		"date_founded": "list of 3 numbers: [year, month, day] as of the gregorian calendar",
+		"date_dissolved": "list of 3 numbers: [year, month, day] as of the gregorian calendar",
+		"reason_dissolved": "string|bool; the reason the nation was dissolved, or the bolean true if it was dissolved without any known reason",
+		"capital": "string; Name of the official \"Capital Subdivision\"",
+		"banner": "string; pagename of the file containing the banner, File: namespace implied",
+		"ung": "\"member\"|\"observer\"|\"former\"; current membership status in the United Ŋations",
+		"ung_joined": "list of 3 numbers: [year, month, day] as of the gregorian calendar",
+		"ung_demoted": "list of 3 numbers: [year, month, day] as of the gregorian calendar; date on which the country became an observer",
+		"ung_left": "list of 3 numbers: [year, month, day] as of the gregorian calendar; date on which the country has left the United Ŋations",
+		"not_ngation": "bool; This place isn’t a sovereign nation",
+		"condominium": "list of string; This place is a condominium, list of all the `code2`s of all the places having a stake here. Use a single member list for territories who are dependent on some other place, but otherwise have their own code. Implies not_ngation: true.",
+		"notes": "string; extra notes on recognition, special status or anything else",
+		"reserved": "string; if this field is present, only include `code2` and `code3`. Indicates a code reserved a place that could use a top level code but currently doesn't "
+	},
+	"places": [
+		{
+			"code2": "AA",
+			"code3": "ADN",
+			"common_name": "Adnar",
+			"name": "Communist Empire of Adnar",
+			"ruler": "Adnagaporp",
+			"ruler_title": "Supreme Leader",
+			"date_founded": [
+				2025,
+				8,
+				15
+			],
+			"capital": "Ðoòng Sơn Cavern",
+			"banner": "Adnar-banner.png"
+		},
+		{
+			"code2": "AB",
+			"code3": "ARB",
+			"common_name": "Arbustivum",
+			"condominium": [
+				"LR",
+				"TA"
+			],
+			"ruler": [
+				"theidealist",
+				"lambda"
+			],
+			"ruler_title": "Regent",
+			"banner": "Saifeg_banner.png",
+			"date_founded": [
+				2024,
+				10,
+				24
+			],
+			"notes": "Previously known as Saifeg, a condominium between [[Latium Regnatum]] and [[Shrudrow]]."
+		},
+		{
+			"code2": "AC",
+			"code3": "ACA",
+			"common_name": "Araçana",
+			"name": "Principality of Araçana and Ŋasegak",
+			"ruler": "Outlaw Sly",
+			"ruler_title": "Princess",
+			"date_founded": [
+				2025,
+				4,
+				20
+			],
+			"capital": "Çana City",
+			"banner": "City of Araçana Banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				5,
+				27
+			],
+			"ung_demoted": [
+				2025,
+				10,
+				12
+			],
+			"notes": "United Ŋations observer from October 12, 2025 to November 21, 2025"
+		},
+		{
+			"code2": "AD",
+			"code3": "ADA",
+			"common_name": "Adaria",
+			"name": "Republic of Adaria",
+			"ruler": "Martinawa",
+			"ruler_title": "Supreme Leader",
+			"date_founded": [
+				2025,
+				3,
+				19
+			],
+			"banner": "Adaria_banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				28
+			]
+		},
+		{
+			"code2": "AE",
+			"code3": "AVE",
+			"common_name": "Avenyam",
+			"name": "Principality of Avenyam",
+			"ruler": "Agenciak",
+			"date_founded": [
+				2026,
+				2,
+				9
+			],
+			"banner": "Avenyam banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2026,
+				3,
+				12
+			]
+		},
+		{
+			"code2": "AH",
+			"code3": "ACH",
+			"common_name": "Anarchy Chessitory",
+			"name": "Anarchy Chessitory",
+			"ruler": "apollyon",
+			"date_founded": [
+				2026,
+				6,
+				1
+			],
+			"notes": "Legally considered a sovereign ngation by vote. Place where Anarchy Chess happens (Check out the Nguhcraft Anarchy Chess thread in #minecraft :3"
+		},
+		{
+			"code2": "",
+			"code3": "",
+			"common_name": "'Arbor 'Iland",
+			"name": "Protectorate of 'Arbor 'Iland",
+			"ruler": [
+				"Ebzot Gálcja Wevåxh",
+				"Jutomi"
+			],
+			"date_founded": [
+				2026,
+				5,
+				22
+			],
+			"condominium": [
+				"KB",
+				"JT"
+			],
+			"notes": "Chiefly designed by Jutomi; administered as a protectorate under Kabazat"
+		},
+		{
+			"code2": "AK",
+			"code3": "AKV",
+			"common_name": "Aomoī-Kaervaenan Commonwealth",
+			"ruler": "Diax",
+			"date_founded": [
+				2025,
+				5,
+				3
+			],
+			"date_dissolved": [
+				2025,
+				11,
+				3
+			],
+			"reason_dissolved": "Inactivity",
+			"capital": "Kāoranga",
+			"banner": "AKC-banner.jpeg"
+		},
+		{
+			"code2": "AM",
+			"code3": "AMJ",
+			"common_name": "Amuj",
+			"name": "City-State of Amuj",
+			"ruler": "CMC",
+			"ruler_title": "Kachbuches",
+			"date_founded": [
+				2024,
+				4,
+				2
+			],
+			"date_dissolved": [
+				2024,
+				10,
+				8
+			],
+			"reason_dissolved": "Absorbed into multiple Ŋations. See [[Amujxplosion]]",
+			"capital": "Drebzha",
+			"banner": "Amuj banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				2
+			]
+		},
+		{
+			"code2": "AO",
+			"code3": "AMR",
+			"common_name": "Amoria",
+			"name": "Amorian Colonies",
+			"ruler": "Layaw",
+			"ruler_title": "Queen",
+			"ruler_link": "User:BoubaWiki1102",
+			"date_founded": [
+				2025,
+				12,
+				23
+			],
+			"capital": "Tulanahea",
+			"banner": "Colonial Amorian Banner.png"
+		},
+		{
+			"code2": "AP",
+			"code3": "APX",
+			"common_name": "Aprux Mexyrhat",
+			"ruler": "Aleksanetra of Perhyh",
+			"ruler_title": "Mexyrfax",
+			"date_founded": [
+				2025,
+				4,
+				30
+			],
+			"capital": "Tiamis",
+			"banner": "APXNewBanner.png"
+		},
+		{
+			"code2": "AR",
+			"code3": "ARS",
+			"common_name": "Xarslasja",
+			"name": "Bezuvate of Xarslasja",
+			"ruler": "Agamashuya I",
+			"ruler_title": "Bezuv",
+			"date_founded": [
+				2024,
+				3,
+				11
+			],
+			"capital": "Yuɱa",
+			"banner": "Xarslasja-flag.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				2
+			]
+		},
+		{
+			"code2": "AS",
+			"code3": "ASW",
+			"common_name": "Aswnga",
+			"name": "Mega-state Republic of Aswnga (and Xallia)",
+			"ruler": "AxolotlCraft",
+			"ruler_title": "Ruler",
+			"capital": "Purasta",
+			"date_founded": [
+				2026,
+				1,
+				6
+			],
+			"banner": "Aswnga_banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2026,
+				3,
+				20
+			]
+		},
+		{
+			"code2": "AT",
+			"code3": "ANT",
+			"common_name": "Antilvakia",
+			"name": "Socialist Republic of Antilvakia",
+			"ruler": "Darthinian",
+			"ruler_title": "Tsaa",
+			"date_founded": [
+				2025,
+				6,
+				20
+			],
+			"capital": "Krakistok",
+			"banner": "Banner_1-mitchell.png",
+			"ung": "observer",
+			"ung_joined": [
+				2025,
+				9,
+				8
+			],
+			"ung_demoted": [
+				2026,
+				3,
+				22
+			]
+		},
+		{
+			"code2": "AV",
+			"code3": "AVZ",
+			"common_name": "Avazistan",
+			"date_founded": [
+				2024,
+				10,
+				20
+			],
+			"date_dissolved": [
+				2025,
+				9,
+				25
+			],
+			"reason_dissolved": "Dissolution of Oberia",
+			"banner": "Avazistan-banner.png",
+			"condominium": [
+				"HL"
+			]
+		},
+		{
+			"code2": "AY",
+			"code3": "AYG",
+			"common_name": "Aylongam",
+			"name": "Great Kingdom of Aylongam",
+			"ruler": "Zendrid",
+			"ruler_title": "Quing",
+			"date_founded": [
+				2024,
+				3,
+				2
+			],
+			"capital": "Khaath Tran",
+			"banner": "Aylongam-banner.png",
+			"ung": "former",
+			"ung_joined": [
+				2024,
+				3,
+				6
+			],
+			"ung_left": [
+				2025,
+				1,
+				25
+			]
+		},
+		{
+			"code2": "BD",
+			"code3": "BDC",
+			"common_name": "B’hiy’aj Dchâjâ",
+			"ruler": "Šœ́hag",
+			"ruler_title": "Leader",
+			"date_founded": [
+				2024,
+				9,
+				25
+			],
+			"capital": "B’hiy’aj Dchâjâ",
+			"banner": "Bhiyaj-banner.png"
+		},
+		{
+			"code2": "BE",
+			"code3": "BED",
+			"common_name": "'bed"
+		},
+		{
+			"code2": "BL",
+			"code3": "BTL",
+			"common_name": "Bootland",
+			"name": "Duchy of Bootland",
+			"ruler": "Lux Moniridia",
+			"ruler_title": "Duchess",
+			"date_founded": [
+				2025,
+				4,
+				22
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				6
+			],
+			"reason_dissolved": "Dissolved",
+			"capital": "Auchentraeth",
+			"banner": "Bootland-banner.webp"
+		},
+		{
+			"code2": "old:Bramusia",
+			"code3": "old:Bramusia",
+			"common_name": "Bramusia",
+			"name": "Communist Empire of Bramusia",
+			"ruler": "Dominic",
+			"ruler_link": "Gagma_A",
+			"ruler_title": "President",
+			"date_founded": [
+				2024,
+				5,
+				14
+			],
+			"date_dissolved": [
+				2024,
+				7,
+				11
+			],
+			"reason_dissolved": "Doxxed their friend during the UŊ meeting when they were admitted",
+			"capital": "abcdefghijklmnopqrstuvwxyz",
+			"banner": "Bramusia-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				7,
+				11
+			]
+		},
+		{
+			"code2": "CB",
+			"code3": "COB",
+			"common_name": "Coldba (Cuba)",
+			"name": "Empire of Coldba (Cuba)",
+			"ruler": "Suqi",
+			"date_founded": [
+				2024,
+				6,
+				12
+			],
+			"ruler_title": "Emperess",
+			"capital": "City of Cuba",
+			"banner": "Banner of Coldba (Cuba).png",
+			"ung": "former",
+			"ung_joined": [
+				2024,
+				6,
+				11
+			],
+			"ung_left": [
+				2026,
+				4,
+				11
+			]
+		},
+		{
+			"code2": "CF",
+			"code3": "CFD",
+			"common_name": "CMCic Federation",
+			"ruler": "CMC",
+			"date_founded": [
+				2025,
+				1,
+				13
+			],
+			"date_dissolved": [
+				2025,
+				2,
+				7
+			],
+			"reason_dissolved": "Dissolved mere hours before the [[CMCxplosion]]. A portion was preserved as a UŊ mandate before being given to [[Dróstsiśtsi]]. A portion of that was a brief condominium between [[Dróstsiśtsi]] and [[Bootland|a later Amujan state]].",
+			"capital": "Ruxese",
+			"banner": "CMCic Federation banner.png"
+		},
+		{
+			"code2": "CH",
+			"code3": "CHI",
+			"common_name": "Chielbary",
+			"date_founded": [
+				2025,
+				10,
+				2
+			],
+			"date_dissolved": [
+				2025,
+				12,
+				23
+			],
+			"reason_dissolved": "Merged with [[Vilantnen]] to form [[Vilant]].",
+			"banner": "Chielbary_banner.png"
+		},
+		{
+			"code2": "CL",
+			"code3": "CLT",
+			"common_name": "Caluta",
+			"name": "Caluta, Incorporated",
+			"date_founded": [
+				2025,
+				10,
+				30
+			],
+			"ruler": "Yusur",
+			"ruler_title": "Chief Executive Officer",
+			"banner": "CalutaE.png",
+			"ung": "member",
+			"ung_joined": [
+				2026,
+				3,
+				15
+			]
+		},
+		{
+			"code2": "CP",
+			"code3": "CPL",
+			"common_name": "The Complex",
+			"ruler": "Archon Council",
+			"ruler_title": "Governing Council",
+			"date_founded": [
+				2024,
+				10,
+				1
+			],
+			"banner": "Complex-banner.png"
+		},
+		{
+			"code2": "CR",
+			"code3": "COR",
+			"common_name": "Corneria",
+			"name": "Anarchist Workers’ Republic of Corneria",
+			"ruler": "мока",
+			"ruler_title": "Councilperson",
+			"date_founded": [
+				2024,
+				4,
+				27
+			],
+			"capital": "Mijavu Javhlikja",
+			"banner": "CornerianBanner.png",
+			"ung": "former",
+			"ung_joined": [
+				2024,
+				9,
+				7
+			],
+			"ung_left": [
+				2025,
+				1,
+				25
+			]
+		},
+		{
+			"code2": "CU",
+			"code3": "CHU",
+			"common_name": "Chunk Nation",
+			"name": "The Principality of Chunk",
+			"ruler": "Breadlock301",
+			"date_founded": [
+				2026,
+				5,
+				15
+			],
+			"banner": "Chunk nation-banner.png"
+		},
+		{
+			"code2": "CV",
+			"code3": "CIV",
+			"common_name": "Civuyiscajrn",
+			"name": "Province of Civuyiscajrn",
+			"ruler": "ʡeter",
+			"ruler_title": "Gùjrnik",
+			"ruler_link": "User:Dillon",
+			"date_founded": [
+				2024,
+				4,
+				10
+			],
+			"date_dissolved": [
+				2026,
+				2,
+				7
+			],
+			"banner": "Civuyiscajrn Banner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				4,
+				10
+			],
+			"ung_demoted": [
+				2024,
+				10,
+				19
+			]
+		},
+		{
+			"code2": "CW",
+			"code3": "CTW",
+			"common_name": "Cataw",
+			"name": "Faerie City of Cataw",
+			"ruler": "Lady Sagura san Sagura",
+			"ruler_title": "King",
+			"date_founded": [
+				2025,
+				11,
+				24
+			],
+			"capital": "Cataw",
+			"banner": "Cataw_Banner.png"
+		},
+		{
+			"code2": "CX",
+			"code3": "CXI",
+			"common_name": "Cxihraaakruta",
+			"ruler": "Entity",
+			"capital": "Sikktaalxoga",
+			"banner": "Appalliŋesia banner.png",
+			"date_founded": [
+				2025,
+				8,
+				22
+			],
+			"ung": "member",
+			"ung_joined": [
+				2026,
+				4,
+				8
+			]
+		},
+		{
+			"code2": "DH",
+			"code3": "DHR",
+			"common_name": "Dhourigkàn",
+			"name": "United Republic of Dhourigkàn",
+			"ruler": "Umbra",
+			"date_founded": [
+				2024,
+				4,
+				12
+			],
+			"capital": "Rintìh",
+			"banner": "Dhrkn banner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				4,
+				27
+			],
+			"ung_demoted": [
+				2025,
+				1,
+				25
+			]
+		},
+		{
+			"code2": "",
+			"code3": "",
+			"common_name": "Doggerland",
+			"condominium": [
+				"AA",
+				"CB",
+				"HA",
+				"KA"
+			],
+			"ruler": [
+				"Adnagaporp",
+				"Jay",
+				"Omaatje",
+				"Suqi"
+			],
+			"ruler_title": "",
+			"banner": false,
+			"date_founded": [
+				2026,
+				1,
+				6
+			],
+			"not_ngation": "true"
+		},
+		{
+			"code2": "DN",
+			"code3": "DNL",
+			"common_name": "Dnalrehten",
+			"banner": false,
+			"ruler": "thattdutchperson",
+			"date_founded": [
+				2025,
+				12,
+				4
+			]
+		},
+		{
+			"code2": "old:Dägälunt",
+			"code3": "old:Dägälunt",
+			"common_name": "Dägälunt",
+			"ruler": "Felix I",
+			"ruler_link": "Nostalgiabricks",
+			"date_founded": [
+				2025,
+				3,
+				12
+			],
+			"date_dissolved": [
+				2025,
+				3,
+				14
+			],
+			"reason_dissolved": "See [The Great Chest Locking]",
+			"banner": false,
+			"notes": "Often stylised as Dagalunt due to [[Xhesas]] stealing the umlauts of Dagalunt."
+		},
+		{
+			"code2": "DT",
+			"code3": "DTT",
+			"common_name": "Dróstsiśtsi",
+			"name": "Peoples’ Republic of Dróstsiśtsi",
+			"ruler": "accruenewblue",
+			"ruler_title": "President",
+			"date_founded": [
+				2025,
+				4,
+				7
+			],
+			"capital": "Vuttteźmak",
+			"banner": "DTTBanner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				4,
+				19
+			]
+		},
+		{
+			"code2": "EC",
+			"code3": "ECC",
+			"common_name": "Evil Scamming Country (Condominium of Chaos)",
+			"date_founded": [
+				2025,
+				4,
+				27
+			],
+			"banner": "ESC_banner.png"
+		},
+		{
+			"code2": "ED",
+			"code3": "EDF",
+			"common_name": "Ettêre Ðiffyt",
+			"name": "Priesthood of Ettêre Ðiffyt",
+			"ruler": "Sven",
+			"ruler_title": "Divine Priest",
+			"date_founded": [
+				2024,
+				4,
+				17
+			],
+			"banner": "EDF banner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				4,
+				20
+			],
+			"ung_demoted": [
+				2026,
+				3,
+				22
+			]
+		},
+		{
+			"code2": "EK",
+			"code3": "EKV",
+			"common_name": "Enkavak",
+			"ruler": [
+				"Namnak Xhesas",
+				"Taugnix"
+			],
+			"ruler_title": "Magistrate",
+			"date_founded": [
+				2022,
+				8,
+				30
+			],
+			"capital": "Alnaŋaemak",
+			"banner": "Enkavak-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				6
+			],
+			"notes": "Founding date is disputed, Enkavak was first founded outside of Ŋəcraft, first gaming only occured on 2023-12-05"
+		},
+		{
+			"code2": "EL",
+			"code3": "EML",
+			"common_name": "Emberland",
+			"name": "Democratic State of Emberland",
+			"ruler": "probablynotacriminal",
+			"ruler_title": "Sovereign",
+			"ruler_link": "[[Probablynotacriminal (Character)]]",
+			"date_founded": [
+				2025,
+				4,
+				30
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				25
+			],
+			"reason_dissolved": "Turned into FERRA EET",
+			"capital": "Flamepoint",
+			"banner": "EmberlandBanner.png"
+		},
+		{
+			"code2": "EM",
+			"code3": "EPM",
+			"common_name": "i Êpcêm Mûn-nan",
+			"name": "i Kimôd Êpcêmin Mûn-nan",
+			"ruler": "Maple",
+			"ruler_title": "Kimôdihu",
+			"date_founded": [
+				2024,
+				4,
+				22
+			],
+			"banner": "I Êpcêm Mûn nan banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				27
+			]
+		},
+		{
+			"code2": "ES",
+			"code3": "ESC",
+			"common_name": "Evil Scamming Country",
+			"ruler": "Chronos",
+			"ruler_title": "Humble Scammer",
+			"date_founded": [
+				2024,
+				4,
+				22
+			],
+			"banner": "Evil-banner.png",
+			"notes": "Not recognized by [[Aylongam]], [[B’hiy’aj Dchâjâ]] (which basically doesn’t recognise anyone anyway), [[Corneria]], [[Dróstsiśtsi]], [[Enkavak]], [[Hummland]], [[Imerchal]], the [[Kingdom of Kyaw Cen]], [[Pua]] and [[Pihi]]. Note that the Evil Scamming Country does not recognize any of these Ŋations in return. The [[Realm of Madness]] once decuple recognized the Evil Scamming Country to nullify the unrecognition of all the above ŋations, but this is invalid since it dissolved."
+		},
+		{
+			"code2": "EW",
+			"code3": "ESW",
+			"common_name": "Eistówú",
+			"name": "Polis of Eistówú",
+			"ruler": "Fīl",
+			"ruler_title": "Architect",
+			"date_founded": [
+				2024,
+				5,
+				14
+			],
+			"capital": "[[Ríkízműis]]",
+			"banner": "Waighin-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				5,
+				17
+			]
+		},
+		{
+			"code2": "FE",
+			"code3": "FER",
+			"common_name": "FERRA",
+			"name": "Far-East Rail and Road Association",
+			"banner": "CompromiseLogo2.png",
+			"not_ngation": true
+		},
+		{
+			"code2": "FI",
+			"code3": "FIW",
+			"reserved": "Pyuwa (see KC-PUA)"
+		},
+		{
+			"code2": "FJ",
+			"code3": "FEJ",
+			"common_name": "Fejhaks eukjijj",
+			"ruler": "Roader",
+			"date_founded": [
+				2026,
+				3,
+				23
+			],
+			"banner": "Fejhaks-banner.png"
+		},
+		{
+			"code2": "FL",
+			"code3": "FSL",
+			"common_name": "Fishland",
+			"name": "Fishdom of Fishland",
+			"ruler": "Elisa",
+			"ruler_title": "The Fishbowl",
+			"date_founded": [
+				2024,
+				4,
+				24
+			],
+			"date_dissolved": [
+				2025,
+				1,
+				25
+			],
+			"reason_dissolved": "See [[Ŋeicide]]",
+			"capital": "Tarpoenstad",
+			"banner": "Fishland_banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				24
+			]
+		},
+		{
+			"code2": "FO",
+			"code3": "FOR",
+			"common_name": "Fortsanaphat",
+			"ruler": "Kween K. Auce",
+			"ruler_title": "Wyŋk",
+			"date_founded": [
+				2025,
+				8,
+				13
+			],
+			"date_dissolved": [
+				2026,
+				3,
+				25
+			],
+			"reason_dissolved": "dissolved upon creation of Lyrcynthinia, which inherited most of Fortsanaphat’s territory",
+			"capital": "Kilvana",
+			"banner": "Fortsanaphat_banner.png"
+		},
+		{
+			"code2": "FR",
+			"code3": "FRV",
+			"common_name": "Frossantiquervrâssonne, sousprésenval",
+			"name": "Trévandroumélisse-Frossantiquervrâssonne-d’Prévallondurévrenne-en-Mijonnâ-Tourvléssourinde-pralondure-Méllontrévresse-Vrassédrinourde",
+			"ruler": "Tright",
+			"ruler_title": "Prime Minister",
+			"date_founded": [
+				2025,
+				5,
+				29
+			],
+			"banner": "Frv-banner.png"
+		},
+		{
+			"code2": "FZ",
+			"code3": "FNZ",
+			"common_name": "Fenizuela",
+			"name": "Heavenly Empire of Fenizuela",
+			"ruler_title": "Emperatriz",
+			"ruler": "Charlotte",
+			"date_founded": [
+				2025,
+				11,
+				4
+			],
+			"capital": "Nueva Sidón",
+			"banner": "FenizuelaBanner.webp"
+		},
+		{
+			"code2": "GB",
+			"code3": "GBL",
+			"common_name": "Gubynlynd",
+			"name": "Gubynlynd",
+			"ruler": "Mia Kvigan",
+			"date_founded": [
+				2026,
+				3,
+				14
+			],
+			"banner": "Gubynlynd_banner.png"
+		},
+		{
+			"code2": "GN",
+			"code3": "GNI",
+			"common_name": "Gdaƨihr Ni̦xlo",
+			"ruler": "Ma̦z Ylahra̦míe",
+			"date_founded": [
+				2024,
+				10,
+				13
+			],
+			"banner": "Gdashihr Ni-xlo-banner.png"
+		},
+		{
+			"code2": "GS",
+			"code3": "GSK",
+			"common_name": "Gevsaksavli",
+			"name": "gvak gevasahk ksavlivmeg",
+			"ruler": "sil gvag gobanag",
+			"date_founded": [
+				2025,
+				2,
+				14
+			],
+			"banner": "Gevsaksavli_banner.png"
+		},
+		{
+			"code2": "GU",
+			"code3": "GUL",
+			"common_name": "Gulf Union",
+			"banner": "Gulf-banner.png",
+			"not_ngation": true
+		},
+		{
+			"code2": "HA",
+			"code3": "MNI",
+			"common_name": "Hárǝsi",
+			"name": "Míhóchihko Ngweskó Ikwonngóghoma",
+			"ruler": "Omaatje",
+			"date_founded": [
+				2026,
+				1,
+				6
+			],
+			"banner": "Haresi-banner.png"
+		},
+		{
+			"code2": "HD",
+			"code3": "HDL",
+			"common_name": "Hajdislant",
+			"name": "Hajdislant",
+			"ruler": "Her Unholiness apollyon",
+			"ruler_title": "Senate",
+			"date_founded": [
+				2025,
+				7,
+				23
+			],
+			"capital": "Hajdispoli",
+			"banner": "Hajdislant Banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				9,
+				20
+			]
+		},
+		{
+			"code2": "HE!old:Hentzo",
+			"code3": "HEN",
+			"common_name": "Hentzo",
+			"name": "Pirate Republic of Hentzo",
+			"ruler": "Rutinde I",
+			"ruler_title": "Pirate Lord",
+			"date_founded": [
+				2024,
+				2,
+				8
+			],
+			"date_dissolved": [
+				2025,
+				9,
+				3
+			],
+			"reason_dissolved": "Inactivity from the successor player to Lutrinae",
+			"capital": "Pirate Lair",
+			"banner": "HentzoBanner.png",
+			"ung": "former",
+			"ung_joined": [
+				2024,
+				2,
+				8
+			],
+			"ung_demoted": [
+				2024,
+				10,
+				20
+			],
+			"__comment": "originally admitted as Entzo for one day"
+		},
+		{
+			"code2": "HE",
+			"code3": "HED",
+			"common_name": "Hedamata",
+			"name": "Fungal Democracy of Hedamata",
+			"date_founded": [
+				2025,
+				11,
+				13
+			],
+			"ruler": "Nakimushi",
+			"ruler_title": "Sapoora",
+			"banner": "Hedamata-banner.webp"
+		},
+		{
+			"code2": "HG",
+			"code3": "HGP",
+			"common_name": "Haii Gwaida Pirates"
+		},
+		{
+			"code2": "HL",
+			"code3": "HML",
+			"common_name": "Hummland",
+			"name": "Kingdom of Hummland",
+			"ruler": "Hummus",
+			"ruler_title": "Quing",
+			"date_founded": [
+				2024,
+				3,
+				10
+			],
+			"capital": "Mitthumm City",
+			"banner": "Kingdom-Hummland-banner.png",
+			"ung": "former",
+			"ung_joined": [
+				2024,
+				3,
+				29
+			],
+			"ung_left": [
+				2026,
+				3,
+				16
+			]
+		},
+		{
+			"code2": "",
+			"code3": "",
+			"name": "House Territory",
+			"common_name": "House (Territory)|House",
+			"date_founded": [
+				2025,
+				7,
+				26
+			],
+			"not_ngation": true
+		},
+		{
+			"code2": "HO",
+			"code3": "HOP",
+			"common_name": "Hiop Nation"
+		},
+		{
+			"code2": "HR",
+			"code3": "HRK",
+			"common_name": "Hertskomestat",
+			"name": "The Hertskomestat Syndicate",
+			"ruler": "BE",
+			"date_founded": [
+				2025,
+				4,
+				23
+			],
+			"banner": "zh-banner.jpg"
+		},
+		{
+			"code2": "IG",
+			"code3": "IGE",
+			"common_name": "Igeþa",
+			"ruler": "Alice",
+			"ruler_title": "Qhiruther",
+			"date_founded": [
+				2024,
+				10,
+				7
+			],
+			"date_dissolved": [
+				2024,
+				10,
+				8
+			],
+			"reason_dissolved": "See [[Amujxplosion]]",
+			"banner": "Igetha Banner.png"
+		},
+		{
+			"code2": "IM",
+			"code3": "IMR",
+			"common_name": "Imerchal",
+			"name": "Free City of Yetch Bay",
+			"ruler": "The Directorate",
+			"ruler_link": "Free_City_of_Yetch_Bay#Executive",
+			"date_founded": [
+				2023,
+				12,
+				31
+			],
+			"capital": "Vila Nauta, Chalmosique",
+			"banner": "Imersial-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				5
+			]
+		},
+		{
+			"code2": "IR",
+			"code3": "IRN",
+			"common_name": "The Iron Empire",
+			"ruler": "Foobar111",
+			"ruler_title": "Supreme Leader",
+			"date_founded": [
+				2025,
+				2,
+				16
+			],
+			"date_dissolved": [
+				2025,
+				7,
+				22
+			],
+			"reason_dissolved": "Absorbed into Sq‘s territories as the Autonomous Region of Nieuw Antwerpen.",
+			"banner": "Ironian_mc_banner.png",
+			"__comment": "Formerly known as Smalland, then GIS The Golden Isles"
+		},
+		{
+			"code2": "JC",
+			"code3": "JIC",
+			"common_name": "Ovvú Jičeiñŋā",
+			"ruler": "spook_bag",
+			"ruler_title": "Ceref",
+			"date_founded": [
+				2024,
+				10,
+				19
+			],
+			"date_dissolved": [
+				2025,
+				6,
+				3
+			],
+			"reason_dissolved": "Converted into two FERRA EETs",
+			"banner": "Ovvy-banner.png"
+		},
+		{
+			"code2": "JG",
+			"code3": "JGW",
+			"common_name": "Juya Gwaña",
+			"ruler": "Suqi",
+			"date_founded": [
+				2022,
+				1,
+				8
+			],
+			"not_ngation": true
+		},
+		{
+			"code2": "JL",
+			"code3": "JTL",
+			"common_name": "Jotlond",
+			"name": "Kingdom of Jotlond",
+			"ruler": "Seo",
+			"ruler_title": "Queen",
+			"date_founded": [
+				2025,
+				5,
+				26
+			],
+			"capital": "Dornwík",
+			"banner": "Jotlond_banner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2025,
+				5,
+				28
+			],
+			"ung_demoted": [
+				2026,
+				3,
+				22
+			]
+		},
+		{
+			"code2": "JT",
+			"code3": "JUT",
+			"common_name": "Jutland",
+			"ruler": "Jutomi",
+			"ruler_title": "Great Adjudicator",
+			"date_founded": [
+				2026,
+				3,
+				13
+			],
+			"banner": "Jutland-flag.png"
+		},
+		{
+			"code2": "KA",
+			"code3": "KAI",
+			"common_name": "Kaipa",
+			"name": "Republic of Kaipa",
+			"ruler": [
+				"Jay Okamiyu",
+				"Rika Bayooka"
+			],
+			"ruler_title": [
+				"Prime Minister",
+				"Vice Minister"
+			],
+			"date_founded": [
+				2025,
+				5,
+				4
+			],
+			"banner": "Republic_of_Kaipa_Banner.png",
+			"ung": "member"
+		},
+		{
+			"code2": "KB",
+			"code3": "KAZ",
+			"common_name": "Kabazat",
+			"name": "Commonwealth of Kabazat",
+			"ruler": "Ebzot Gálcja Wevåxh",
+			"date_founded": [
+				2026,
+				5,
+				10
+			]
+		},
+		{
+			"code2": "KC",
+			"code3": "KKC",
+			"common_name": "Kyaw Cen",
+			"name": "Kingdom of Kyaw Cen",
+			"ruler": "Marcy I",
+			"ruler_title": "Quing",
+			"date_founded": [
+				2023,
+				12,
+				28
+			],
+			"banner": "Kyaw-cen-flag.png",
+			"ung": "member",
+			"__comment": "Settlement by Marcy existed starting in late October 2023, but was not formalised until December."
+		},
+		{
+			"code2": "KE",
+			"code3": "KEL",
+			"common_name": "Keltechra",
+			"name": "Odumate of Keltechra",
+			"ruler": "Sintar Naldumi",
+			"ruler_title": "Odum",
+			"ruler_link": "User:Cinthyr",
+			"date_founded": [
+				2025,
+				9,
+				3
+			],
+			"capital": "Raln",
+			"banner": "Keltechra_banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				9,
+				21
+			]
+		},
+		{
+			"code2": "old:KSA",
+			"code3": "old:KSA",
+			"common_name": "Keis-Spucke Administration",
+			"name": "Keis-Spucke Administration",
+			"ruler": "KsãndraArkonn",
+			"ruler_title": "Administrator",
+			"banner": false,
+			"date_founded": [
+				2025,
+				4,
+				21
+			],
+			"date_dissolved": [
+				2025,
+				4,
+				30
+			],
+			"reason_dissolved": "Transitioned into [[Aprux Mexyrhat]]",
+			"capital": "Rainsten"
+		},
+		{
+			"code2": "old:Kivengo",
+			"code3": "old:Kivengo",
+			"common_name": "Kīvengṓ",
+			"name": "Lesbian Empire of Kīvengṓ",
+			"ruler": "April",
+			"date_founded": [
+				2024,
+				2,
+				8
+			],
+			"date_dissolved": [
+				2024,
+				4,
+				15
+			],
+			"reason_dissolved": "lack of interest",
+			"banner": "Kivengo-flag-unofficial.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				2,
+				8
+			],
+			"ung_demoted": [
+				2024,
+				4,
+				15
+			]
+		},
+		{
+			"code2": "KI",
+			"code3": "KIL",
+			"common_name": "Kiltmo",
+			"banner": "Kiłtmo_Banner.png",
+			"ruler": "Suqi",
+			"ruler_title": "Prime Minister",
+			"date_founded": [
+				2025,
+				9,
+				5
+			],
+			"date_dissolved": [
+				2026,
+				2,
+				8
+			]
+		},
+		{
+			"code2": "KL",
+			"code3": "KTL",
+			"common_name": "Kotland",
+			"name": "Socialist Democratic Republic of Katland",
+			"ruler": "nyghte",
+			"date_founded": [
+				2024,
+				7,
+				9
+			],
+			"date_dissolved": [
+				2025,
+				9,
+				7
+			],
+			"capital": "Byalaya Tepe",
+			"banner": "Kotland-flag.png"
+		},
+		{
+			"code2": "KR",
+			"code3": "KRI",
+			"common_name": "Krīpetēpla",
+			"name": "High Kingdom of Krīpetēpla",
+			"ruler": "Sehrti'sa I",
+			"ruler_title": "High King",
+			"date_founded": [
+				2025,
+				4,
+				25
+			],
+			"capital": "Krīpahra",
+			"banner": "Krīpetēpla_banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				5,
+				5
+			]
+		},
+		{
+			"code2": "KT",
+			"code3": "KTY",
+			"common_name": "Kathyria",
+			"name": "Anarchic Queendom of Kathyria",
+			"ruler": "katherine T. Awesome",
+			"ruler_title": "Queen",
+			"date_founded": [
+				2024,
+				10,
+				8
+			],
+			"date_dissolved": [
+				2025,
+				3,
+				23
+			],
+			"capital": "Mekathyr",
+			"reason_dissolved": true,
+			"banner": "Asoghade faiul.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				10,
+				19
+			]
+		},
+		{
+			"code2": "KZ",
+			"code3": "KOZ",
+			"common_name": "Kozdenen",
+			"name": "Republic of Kozdenen",
+			"ruler": "Peleṽa Thoa-Saevakki",
+			"ruler_title": "Doge",
+			"ruler_link": "User:Total_pleb",
+			"date_founded": [
+				2024,
+				1,
+				18
+			],
+			"banner": "Banner of Kozdenen.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				5
+			]
+		},
+		{
+			"code2": "LC",
+			"code3": "LOC",
+			"common_name": "LoCATE",
+			"not_ngation": true
+		},
+		{
+			"code2": "LI",
+			"code3": "LIL",
+			"common_name": "Liauolên"
+		},
+		{
+			"code2": "LJ",
+			"code3": "LJI",
+			"common_name": "Lewıne qapp Ȝısın qog ħèr",
+			"name": "Lewıne qapp Ȝısin qog ħèr qapp Naqòo lar Nerıȝar qapp kkò ȝarın lòol lar qooqakk qapp resin lòol",
+			"date_founded": [
+				2026,
+				3,
+				17
+			],
+			"ruler": "Yelaȝ Linore qapp Ȝısın",
+			"ruler_title": "Lieutenant Clan Patriarch by Field Appointment"
+		},
+		{
+			"code2": "LK",
+			"code3": "LVK",
+			"common_name": "Lavvakcesaa",
+			"ruler": "Rija",
+			"ruler_title": "Consul",
+			"date_founded": [
+				2025,
+				3,
+				19
+			],
+			"date_dissolved": [
+				2026,
+				2,
+				6
+			],
+			"reason_dissolved": "Owner banned",
+			"capital": "Lautseq Kceuua",
+			"banner": "Lavvakcesaa_Banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				4,
+				19
+			]
+		},
+		{
+			"code2": "LL",
+			"code3": "LKL",
+			"common_name": "LukaLand",
+			"ruler": "Diax",
+			"date_founded": [
+				2025,
+				4,
+				23
+			],
+			"date_dissolved": [
+				2025,
+				11,
+				3
+			],
+			"reason_dissolved": "See [[The Great Tantrum]] for its initial annexation, then inactivity under AKC.",
+			"banner": "Lukaland-banner.png"
+		},
+		{
+			"code2": "LR",
+			"code3": "LAR",
+			"common_name": "Regnate Latium",
+			"name": "Reborn Nguhcordial Empire of Latium",
+			"ruler": "Idanicus Caesar",
+			"ruler_title": "Princeps",
+			"date_founded": [
+				2024,
+				7,
+				1
+			],
+			"capital": "Idanopolis",
+			"banner": "Latium-Regnātum-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				12,
+				20
+			]
+		},
+		{
+			"code2": "LX",
+			"code3": "LEG",
+			"common_name": "Legwa Rrina",
+			"ruler": "Ten Shadows",
+			"date_founded": [
+				2024,
+				12,
+				16
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				4
+			],
+			"reason_dissolved": true,
+			"not_ngation": true,
+			"banner": "Banner of Legwa Rina.png"
+		},
+		{
+			"code2": "LY",
+			"code3": "LYR",
+			"common_name": "Lyrcynthinia",
+			"name": "Hydratic Republic of Lyrcynthinia",
+			"ruler": "kaw57",
+			"ruler_link": "User:Kaw57",
+			"date_founded": [
+				2026,
+				3,
+				25
+			],
+			"capital": "Eville",
+			"banner": "Lyrcynthinia_banner.png"
+		},
+		{
+			"code2": "MA",
+			"code3": "MAZ",
+			"common_name": "Maize",
+			"ruler": "popping_corn",
+			"capital": "Popcorn",
+			"date_founded": [
+				2025,
+				4,
+				18
+			],
+			"banner": "Banner maize.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				4,
+				20
+			]
+		},
+		{
+			"code2": "MC",
+			"code3": "MIC",
+			"common_name": "Minaro-Cohasia",
+			"name": "Republic of Minaro-Cohasia",
+			"ruler_title": "Thuna",
+			"ruler": [
+				"“Cass” Cassandra Watkins",
+				"“Tx̄hmtēm” Thames Pruxa",
+				"“Annie” Rae Dious"
+			],
+			"date_founded": [
+				2026,
+				3,
+				20
+			],
+			"notes": "Gained independence from the [[Free City of Yetch Bay]]",
+			"banner": "Banner_of_Sirenguard.png",
+			"ung": "member",
+			"ung_joined": [
+				2026,
+				4,
+				11
+			]
+		},
+		{
+			"code2": "MD",
+			"code3": "MAD",
+			"common_name": "Madlands",
+			"banner": "Madlands_Banner.png",
+			"date_founded": [
+				2025,
+				5,
+				4
+			],
+			"not_ngation": true,
+			"__comment": "Acts as a non-ŋation continuation of Suqi‘s presence in the [[Realm of Madness]]."
+		},
+		{
+			"code2": "ML",
+			"code3": "MRL",
+			"common_name": "Maryland",
+			"ruler": "Mary",
+			"ruler_title": "Lunar Queen",
+			"capital": "Grětoměsto",
+			"date_founded": [
+				2024,
+				5,
+				11
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				27
+			],
+			"reason_dissolved": "Inactivity",
+			"banner": "Marylandbanner.png"
+		},
+		{
+			"code2": "MO",
+			"code3": "MOB",
+			"common_name": "Mobile Territories",
+			"ruler": "Jutomi",
+			"ruler_title": "Great Adjudicator",
+			"date_founded": [
+				2025,
+				10,
+				20
+			],
+			"banner": "Mobile-Territories-flag.png"
+		},
+		{
+			"code2": "MP",
+			"code3": "MPB",
+			"common_name": "MápabaL",
+			"ruler": "Lily",
+			"ruler_title": "Overseer General",
+			"capital": "BaLbeL",
+			"date_founded": [
+				2025,
+				1,
+				7
+			],
+			"banner": "Mapabal-banner.png"
+		},
+		{
+			"code2": "MR",
+			"code3": "MAR",
+			"common_name": "Ḿaro",
+			"name": "Composite Monarchy of Ḿaro",
+			"ruler": "Dragonfly",
+			"capital": "Ḿaro-Heki",
+			"date_founded": [
+				2025,
+				4,
+				21
+			],
+			"date_dissolved": [
+				2026,
+				3,
+				21
+			],
+			"banner": "Ḿaro banner.png"
+		},
+		{
+			"code2": "MS",
+			"code3": "MRS",
+			"common_name": "Maraśa",
+			"name": "Three Councils of Maraśa",
+			"ruler": "The Ńiśereá",
+			"ruler_link": "Maraśa#Government",
+			"date_founded": [
+				2025,
+				5,
+				26
+			],
+			"capital": "Śaracþáw",
+			"banner": "Maraśa-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				6,
+				8
+			]
+		},
+		{
+			"code2": "MT",
+			"code3": "MAT",
+			"common_name": "Martinus's Territories",
+			"date_founded": [
+				2024,
+				5,
+				6
+			],
+			"not_ngation": true
+		},
+		{
+			"code2": "MZ",
+			"code3": "MZR",
+			"common_name": "Myžariky",
+			"ruler": "Ruzyždy Nivnova",
+			"ruler_title": "High Princess",
+			"date_founded": [
+				2024,
+				2,
+				2
+			],
+			"banner": "Myzhariky-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				5
+			]
+		},
+		{
+			"code2": "NA",
+			"code3": "NAR",
+			"common_name": "Nāroňpār",
+			"name": "Quingdom of Nāroňpār",
+			"ruler": "ẞlanty",
+			"ruler_title": "Quing*",
+			"ruler_link": "Szlanty",
+			"date_founded": [
+				2024,
+				1,
+				19
+			],
+			"capital": "Nārospiňt",
+			"banner": "Naringpar-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				18
+			]
+		},
+		{
+			"code2": "NB",
+			"code3": "NBT",
+			"common_name": "Ŋibraltar",
+			"banner": "Ngibraltar-banner.png",
+			"ruler": [
+				"Marcy Sheikah",
+				"Agma Schwa"
+			],
+			"ruler_title": [
+				"Governors"
+			],
+			"date_founded": [
+				2024,
+				7,
+				1
+			],
+			"condominium": [
+				"AR",
+				"KC"
+			]
+		},
+		{
+			"code2": "NH",
+			"code3": "NHK",
+			"common_name": "Nan Hsüeh Kung Ssu",
+			"ruler": "FuLing",
+			"date_founded": [
+				2025,
+				5,
+				29
+			],
+			"date_dissolved": [
+				2025,
+				11,
+				6
+			],
+			"reason_dissolved": "Inactivity",
+			"banner": "NHKS_Banner.png"
+		},
+		{
+			"code2": "NI",
+			"code3": "NIA",
+			"common_name": "Nieuw Antwerpen",
+			"ruler": "Foobar111",
+			"ruler_title": "Governor",
+			"not_ngation": true,
+			"date_founded": [
+				2025,
+				7,
+				22
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				20
+			],
+			"reason_dissolved": "Absorbed into Kıltmo."
+		},
+		{
+			"code2": "NK",
+			"code3": "NRK",
+			"common_name": "Ŋərkey",
+			"ruler": [
+				"Viklo",
+				"Vÿl"
+			],
+			"capital": "Aŋkəra",
+			"date_founded": [
+				2025,
+				4,
+				20
+			],
+			"banner": "Nguhrkey-banner.png"
+		},
+		{
+			"code2": "NM",
+			"code3": "NMS",
+			"common_name": "New Maeksikeo",
+			"name": "Kardonian Outpost of New Maeksikeo",
+			"ruler": "Reolko Maqekaema",
+			"ruler_title": "Captain",
+			"banner": "New_maeksikao_banner.png",
+			"date_founded": [
+				2025,
+				8,
+				13
+			]
+		},
+		{
+			"code2": "NS",
+			"code3": "NSR",
+			"common_name": "Nsadaea",
+			"name": "Free Commonwealth of Nsadaea",
+			"capital": "Kâsêsûkurih",
+			"date_founded": [
+				2026,
+				5,
+				28
+			],
+			"banner": "Nsadaeanbanner.png",
+			"notes": "Listed founding date matches initial claim, formally reörganized into a ŋation on July 6th."
+		},
+		{
+			"code2": "NT!old:Nošaterçe",
+			"code3": "NST",
+			"common_name": "Nošaterçe",
+			"name": "Rěč Pollica e Divinna Nošaterçe",
+			"ruler": "Diviněç Titoslav Julěšnū",
+			"capital": "Nolegiona",
+			"date_founded": [
+				2024,
+				9,
+				8
+			],
+			"banner": "RPD-banner.png",
+			"reason_dissolved": "Inactivity"
+		},
+		{
+			"code2": "NT",
+			"code3": "NAT",
+			"common_name": "ŊATO",
+			"name": "Ŋibraltar Army Treaty Organisation",
+			"banner": "ŊATO_Banner.png",
+			"not_ngation": true
+		},
+		{
+			"code2": "NU",
+			"code3": "NGU",
+			"common_name": "Ŋafrican Union",
+			"banner": "Ŋafrican_Union_flag.png",
+			"not_ngation": true
+		},
+		{
+			"code2": "OK",
+			"code3": "OKD",
+			"common_name": "Old Kingdom",
+			"capital": "Slab Exchange",
+			"date_founded": [
+				2024,
+				6,
+				14
+			],
+			"banner": "Old kingdom banner.png",
+			"not_ngation": true
+		},
+		{
+			"code2": "OP",
+			"code3": "ONP",
+			"common_name": "Onparu \u0026 Koaru|Onparu",
+			"name": "Quingdom of Onparu",
+			"ruler": "Ngúmi Úmē Ásúí",
+			"ruler_title": "Quing",
+			"date_founded": [
+				2026,
+				1,
+				27
+			],
+			"capital": "Castle Onparu",
+			"banner": "Onparu-banner.png",
+			"notes": "not a separate ngation on the map but a part of the [[Onparu \u0026 Koaru]] region"
+		},
+		{
+			"code2": "YJ",
+			"code3": "YOJ",
+			"common_name": "Onparu \u0026 Koaru|Yoji",
+			"name": "Quingdom of Yoji",
+			"ruler": "Ngúmi Úmē Ásúí",
+			"ruler_title": "Quing",
+			"date_founded": [
+				2026,
+				1,
+				27
+			],
+			"capital": "Castle Yoji",
+			"banner": "Yoji-banner.png",
+			"notes": "not a separate ngation on the map but a part of the [[Onparu \u0026 Koaru]] region"
+		},
+		{
+			"code2": "OR",
+			"code3": "ORE",
+			"common_name": "Oressia",
+			"name": "Hetmanate of Oressia",
+			"ruler": "Orest",
+			"ruler_title": "Hetman",
+			"capital": "Todoian",
+			"date_founded": [
+				2024,
+				6,
+				30
+			],
+			"banner": "Oressia-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				7,
+				1
+			]
+		},
+		{
+			"code2": "OT",
+			"code3": "OTS",
+			"common_name": "Otslahue",
+			"ruler": "β595",
+			"date_founded": [
+				2025,
+				3,
+				9
+			],
+			"date_dissolved": [
+				2025,
+				12,
+				15
+			],
+			"reason_dissolved": "Repeated theft and subsequent ban",
+			"banner": "Banner otslahue.png"
+		},
+		{
+			"code2": "OW",
+			"code3": "OBW",
+			"common_name": "Oblane Wybrzeże",
+			"ruler": "Madzia",
+			"ruler_title": "President",
+			"date_founded": [
+				2024,
+				4,
+				2
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				17
+			],
+			"reason_dissolved": "Annexed by [[Keltechra]]",
+			"banner": "Slpashedcoastbanner.png"
+		},
+		{
+			"code2": "PF",
+			"code3": "HPF",
+			"common_name": "West Pua",
+			"name": "Holy Puan Florocracy",
+			"ruler": "Skrungk",
+			"ruler_title": "Pontifex",
+			"date_founded": [
+				2024,
+				7,
+				12
+			],
+			"date_dissolved": [
+				2025,
+				2,
+				2
+			],
+			"reason_dissolved": "[[Pua#End_of_the_Chilled_War]]",
+			"capital": "Allium",
+			"banner": "WestPuaBanner.png",
+			"ung": "member"
+		},
+		{
+			"code2": "PI",
+			"code3": "PIH",
+			"common_name": "Pihi",
+			"name": "Pihi",
+			"ruler": "Ngata",
+			"ruler_title": "Supreme Leader",
+			"date_founded": [
+				2024,
+				7,
+				12
+			],
+			"banner": "Pihi-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				10,
+				19
+			]
+		},
+		{
+			"code2": "PE",
+			"code3": "POE",
+			"common_name": "Port of Eras",
+			"reason_dissolved": "Ruler got banned"
+		},
+		{
+			"code2": "PK",
+			"code3": "PKM",
+			"common_name": "Paz Kiiam",
+			"ruler": "Rivulé Rainworld",
+			"ruler_title": "Princeps",
+			"capital": "Länśapol",
+			"date_founded": [
+				2025,
+				4,
+				24
+			],
+			"banner": "PazKiiamBanner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				5,
+				4
+			]
+		},
+		{
+			"code2": "PL",
+			"code3": "PLS",
+			"common_name": "Pelialis",
+			"name": "Het Koloniserentje Pelialis",
+			"ruler": "???",
+			"ruler_title": "Dukender of Sillies",
+			"capital": "Eeleg",
+			"banner": "Pelialis banner.png",
+			"date_founded": [
+				2026,
+				2,
+				8
+			]
+		},
+		{
+			"code2": "PN",
+			"code3": "PAN",
+			"common_name": "Pantiago",
+			"name": "Pantiago Northern Company",
+			"ruler": "Aleksanetra",
+			"date_founded": [
+				2026,
+				5,
+				24
+			]
+		},
+		{
+			"code2": "QO",
+			"code3": "QOS",
+			"common_name": "Qosculyn",
+			"name": "Principality of Qosculyn",
+			"ruler": "Martucẏs Bqosar",
+			"ruler_title": "Prince",
+			"capital": "Muthup",
+			"date_founded": [
+				2025,
+				5,
+				17
+			],
+			"banner": "Qosysyn flag.png"
+		},
+		{
+			"code2": "RA",
+			"code3": "RTS",
+			"common_name": "Rauratoshan",
+			"name": "Rauratoshan Kingdom",
+			"ruler": "Nozomi Caramella",
+			"ruler_title": "Quing",
+			"ruler_link": "Astaryuu/Nozomi",
+			"date_founded": [
+				2024,
+				11,
+				25
+			],
+			"capital": "Irisela Island",
+			"banner": "Rauratoshan-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				12,
+				20
+			]
+		},
+		{
+			"code2": "RE",
+			"code3": "REM",
+			"common_name": "Reimusia",
+			"name": "Fumocratic Republic of Reimusia",
+			"date_founded": [
+				2025,
+				5,
+				22
+			]
+		},
+		{
+			"code2": "RI",
+			"code3": "RIY",
+			"common_name": "Riyelum",
+			"ruler": "Nova",
+			"date_founded": [
+				2024,
+				6,
+				16
+			],
+			"banner": "Rijelem-banner.png",
+			"ung": "member"
+		},
+		{
+			"code2": "RK",
+			"code3": "RKT",
+			"common_name": "Arktsev",
+			"name": "Empire of the Ř̩ktsðèvsǽmuxō",
+			"ruler": "nguhcraft photographer",
+			"ruler_title": "Hat'ulgāt'ném",
+			"capital": "Zestōspiṓ",
+			"date_founded": [
+				2024,
+				4,
+				20
+			],
+			"banner": "Rktdabsimo-banner.png"
+		},
+		{
+			"code2": "RM",
+			"code3": "ROM",
+			"common_name": "Realm of Madness",
+			"ruler": "Suqi",
+			"ruler_title": "Obscuror",
+			"date_founded": [
+				2024,
+				8,
+				3
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				4
+			],
+			"reason_dissolved": true,
+			"banner": "The Flag of the Realm of Madness.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				8,
+				9
+			]
+		},
+		{
+			"code2": "RP",
+			"code3": "FRP",
+			"common_name": "Pua",
+			"name": "Florocratic Republic of Pua",
+			"ruler": "Peaches Ariki-Rino",
+			"ruler_title": "General Secretary",
+			"ruler_link": "Peaches",
+			"date_founded": [
+				2024,
+				7,
+				12
+			],
+			"capital": "Kanga",
+			"banner": "EastPuaBanner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				9,
+				7
+			],
+			"ung_demoted": [
+				2026,
+				3,
+				22
+			]
+		},
+		{
+			"code2": "SC",
+			"code3": "SOC",
+			"common_name": "State of Confusion",
+			"ruler": "Idealist",
+			"date_founded": [
+				2025,
+				2,
+				29
+			],
+			"notes": "Self-proclaims the founding date of ''yes''. Existence is paradoxical, not sure if does or even can actually exist"
+		},
+		{
+			"code2": "SG",
+			"code3": "SPG",
+			"common_name": "Spansos Gaming",
+			"ruler": "Spans",
+			"date_founded": [
+				2024,
+				4,
+				9
+			],
+			"banner": "Spansos-Gaming-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				10
+			]
+		},
+		{
+			"code2": "SH",
+			"code3": "SHL",
+			"common_name": "Shroomland",
+			"capital": "Sporeton",
+			"banner": "Shroomland-banner.png",
+			"condominium": [
+				"TR"
+			],
+			"notes": "Used to be in condominium with Fishland and later Þunan Qumreá."
+		},
+		{
+			"code2": "SL",
+			"code3": "SEL",
+			"common_name": "Seolland",
+			"ruler": "Lori",
+			"ruler_title": "Grand Duchess",
+			"date_founded": [
+				2024,
+				5,
+				19
+			],
+			"banner": "Ngossiya-banner.png"
+		},
+		{
+			"code2": "SM",
+			"code3": "ASM",
+			"common_name": "Alternate Slumia",
+			"ruler": "Masela",
+			"date_founded": [
+				2026,
+				2,
+				27
+			],
+			"capital": "Ljamẽusajy",
+			"banner": "Alternate Slumia banner.png"
+		},
+		{
+			"code2": "ST",
+			"code3": "SOT",
+			"common_name": "Sofao Tâsi",
+			"ruler": "N3",
+			"capital": "Sajl Sow",
+			"date_founded": [
+				2024,
+				8,
+				1
+			],
+			"banner": "Sofao.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				6,
+				6
+			]
+		},
+		{
+			"code2": "SV",
+			"code3": "STV",
+			"common_name": "Stej Ven",
+			"ruler": "viklo",
+			"date_founded": [
+				2024,
+				4,
+				1
+			],
+			"capital": "Sta Wejs",
+			"banner": "Stej ven banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				4,
+				2
+			]
+		},
+		{
+			"code2": "TA",
+			"code3": "TAN",
+			"common_name": "T'anshilebs",
+			"name": "Grand Archduchy of T'anshilebs",
+			"ruler": "Lambda",
+			"ruler_title": "Archduke",
+			"capital": "Lsotabsi",
+			"date_founded": [
+				2024,
+				12,
+				26
+			],
+			"banner": "T'anshilebs banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				1,
+				25
+			]
+		},
+		{
+			"code2": "TH",
+			"code3": "THE",
+			"common_name": "The"
+		},
+		{
+			"code2": "TP",
+			"code3": "TPU",
+			"common_name": "Tauranga Puawai",
+			"ruler": "Skrungk",
+			"ruler_title": "Pontifex",
+			"date_founded": [
+				2025,
+				2,
+				2
+			],
+			"banner": "TaurangaPuawaiBanner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				2,
+				2
+			],
+			"__comment": "Originally founded as a colony of West Pua on 17/9/2024, founding date reflects independence. Admitted automatically with the seat of West Pua."
+		},
+		{
+			"code2": "TQ",
+			"code3": "TQR",
+			"common_name": "Þunan Qumreá",
+			"name": "Plutocracy of Þunan Qumreá",
+			"ruler": "Śiłja",
+			"ruler_title": "Rijyc",
+			"date_founded": [
+				2023,
+				12,
+				28
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				25
+			],
+			"reason_dissolved": "[[Þunan_Qumreá#Dissolution_and_successors]]",
+			"capital": "Þunan Ŋáce",
+			"banner": "Thunanqumreaa-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				5
+			]
+		},
+		{
+			"code2": "TR",
+			"code3": "TRK",
+			"common_name": "Xtrakva",
+			"name": "Young Colony of Xtrakva",
+			"ruler": "Vÿl",
+			"ruler_title": "Governor",
+			"capital": "Czägrÿxyx",
+			"date_founded": [
+				2024,
+				5,
+				13
+			],
+			"banner": "Xtrakva-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				6,
+				11
+			]
+		},
+		{
+			"code2": "TS",
+			"code3": "TSN",
+			"common_name": "Tocjaǵa Śahan",
+			"ruler": "Howard",
+			"ruler_title": "Quing, Prime Minister, President, Dictator, High Priest, Judges (all of them)",
+			"capital": "Crask Beach",
+			"date_founded": [
+				2025,
+				4,
+				14
+			],
+			"banner": "Tocjaǵa Śahan banner.webp"
+		},
+		{
+			"code2": "old:ÞunanÞár",
+			"code3": "old:ÞunanÞár",
+			"common_name": "Þunan Þár",
+			"banner": false,
+			"not_ngation": true,
+			"condominium": [
+				"MZ",
+				"TQ"
+			],
+			"date_founded": [
+				2024,
+				2,
+				16
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				25
+			],
+			"reason_dissolved": "Returned to sole ownership of Myžariky following the [[Þunan_Qumreá#Dissolution_and_successors|Collapse of Þunan Qumreá]]."
+		},
+		{
+			"code2": "old:CrownKing",
+			"code3": "old:CrownKing",
+			"common_name": "Crown King Condominium",
+			"banner": false,
+			"not_ngation": true,
+			"condominium": [
+				"TQ",
+				"AR"
+			],
+			"date_founded": [
+				2024,
+				11,
+				1
+			],
+			"date_dissolved": [
+				2025,
+				5,
+				25
+			],
+			"reason_dissolved": "Returned to sole ownership of Xarslasja following the [[Þunan_Qumreá#Dissolution_and_successors|Collapse of Þunan Qumreá]]."
+		},
+		{
+			"code2": "TU",
+			"code3": "THU",
+			"common_name": "Thasusan Union",
+			"banner": false,
+			"not_ngation": true
+		},
+		{
+			"code2": "TY",
+			"code3": "TNY",
+			"common_name": "Tanylezi",
+			"ruler": [
+				"Carl Cafaceu",
+				"Fencoh Alecolzon"
+			],
+			"ruler_title": [
+				"Halen",
+				"Canahalen"
+			],
+			"capital": "Neu Tocoselesi",
+			"date_founded": [
+				2024,
+				7,
+				14
+			],
+			"date_dissolved": [
+				2025,
+				9,
+				1
+			],
+			"reason_dissolved": true,
+			"banner": "Tanylezi Banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				8,
+				9
+			]
+		},
+		{
+			"code2": "TZ",
+			"code3": "TZG",
+			"common_name": "Tanzang",
+			"name": "Tanzag Tontog",
+			"ruler": "Māj Osop",
+			"ruler_title": "Prince",
+			"ruler_link": "JJ",
+			"date_founded": [
+				2024,
+				1,
+				2
+			],
+			"capital": "Bōtag",
+			"banner": "Dangcang-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2024,
+				2,
+				7
+			]
+		},
+		{
+			"code2": "UK",
+			"code3": "UKO",
+			"common_name": "Ukoŋia",
+			"ruler": "Daybreaker",
+			"ruler_title": "Grand Overseer",
+			"capital": "Tauzisi",
+			"date_founded": [
+				2025,
+				10,
+				24
+			],
+			"banner": "Ukoŋiabanner.png"
+		},
+		{
+			"code2": "US",
+			"code3": "UIS",
+			"common_name": "UIS",
+			"name": "United Ildorgear State",
+			"ruler": [
+				"Fīl",
+				"Fīl",
+				"iopvixens"
+			],
+			"ruler_title": [
+				"Interŋational Representative",
+				"National Leader",
+				"Leader of Hmȳ̀n Gwā autonomous region"
+			],
+			"capital": "Vgəldərəm",
+			"date_founded": [
+				2025,
+				6,
+				8
+			],
+			"banner": "Eltear-banner.png"
+		},
+		{
+			"code2": "UZ",
+			"code3": "UZF",
+			"common_name": "Uzafnic Federation",
+			"ruler": "Iris",
+			"ruler_title": "President",
+			"capital": "Fisete",
+			"date_founded": [
+				2024,
+				10,
+				15
+			],
+			"date_dissolved": [
+				2024,
+				12,
+				6
+			],
+			"reason_dissolved": "Mental health",
+			"banner": "UzafnicBanner.png"
+		},
+		{
+			"code2": "VA",
+			"code3": "VAN",
+			"common_name": "Vansterèl",
+			"capital": "Pòrt d'Avets",
+			"date_founded": [
+				2024,
+				5,
+				4
+			],
+			"banner": "Vansterel-banners.png",
+			"condominium": [
+				"IM",
+				"KC"
+			]
+		},
+		{
+			"code2": "VB",
+			"code3": "VBR",
+			"common_name": "Viberia",
+			"name": "Republic of Viberia",
+			"date_founded": [
+				2026,
+				5,
+				3
+			],
+			"capital": "Syygalaun"
+		},
+		{
+			"code2": "VD",
+			"code3": "VDC",
+			"common_name": "Vallis Draconum",
+			"ruler": [
+				"Toby Dorakun",
+				"Minerva Arenae"
+			],
+			"ruler_title": [
+				"President",
+				"Prime Minister"
+			],
+			"capital": "Vallis Ignium",
+			"date_founded": [
+				2025,
+				1,
+				1
+			],
+			"banner": "Draconis-banner.jpeg",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				5,
+				13
+			]
+		},
+		{
+			"code2": "VL",
+			"code3": "VIL",
+			"common_name": "Vilant",
+			"name": "Vilant",
+			"ruler": "sq",
+			"ruler_title": "Governnor",
+			"date_founded": [
+				2024,
+				12,
+				22
+			],
+			"date_dissolved": [
+				2026,
+				17,
+				2
+			],
+			"reason_dissolved": "Incorporated into Kozdenen",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				1,
+				25
+			],
+			"banner": "Banner_vilantnen.png",
+			"notes": "Originally founded as [[Vilantnen]], but also contains a newer [[Vilantnen]] within its borders. Was “sq’s Territories” for a while."
+		},
+		{
+			"code2": "VU",
+			"code3": "VUY",
+			"common_name": "Vuyanaa",
+			"name": "Nyunku Vuyanaa",
+			"ruler": "Feefăt Lirkanku May",
+			"ruler_title": "King",
+			"ruler_link": "JJ",
+			"date_founded": [
+				2025,
+				7,
+				30
+			],
+			"banner": "Luyhuabanner.png"
+		},
+		{
+			"code2": "VZ",
+			"code3": "VZR",
+			"common_name": "The Vazr",
+			"name": "The Sublime Realm of the Trinity in the Vazr",
+			"ruler": "Adeleine V",
+			"ruler_title": "Vazrmer",
+			"capital": "Festeburg",
+			"date_founded": [
+				2024,
+				7,
+				19
+			],
+			"date_dissolved": [
+				2025,
+				9,
+				1
+			],
+			"reason_dissolved": "self-nuked",
+			"banner": "Vazr-banner.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				1,
+				25
+			]
+		},
+		{
+			"code2": "WA",
+			"code3": "WAN",
+			"common_name": "Wánade",
+			"name": "Federation of the Morninglands",
+			"ruler": "Nahia of Kawábade",
+			"ruler_title": "High Priestess",
+			"capital": "Yázka",
+			"date_founded": [
+				2025,
+				4,
+				10
+			],
+			"banner": "Ruwumanko-waanade.png.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				4,
+				19
+			]
+		},
+		{
+			"code2": "WS",
+			"code3": "WSK",
+			"common_name": "Wekañu-Skefo",
+			"capital": "Wekañu-Skal",
+			"date_founded": [
+				2025,
+				4,
+				19
+			],
+			"banner": "Wekañu-skefo.png",
+			"ung": "member",
+			"ung_joined": [
+				2025,
+				4,
+				20
+			]
+		},
+		{
+			"code2": "YK",
+			"code3": "YKM",
+			"ruler": "Yunashā",
+			"common_name": "Yunaited Kaingdwm",
+			"ruler_title": "Kaing",
+			"capital": "Weister Bay",
+			"date_founded": [
+				2025,
+				11,
+				16
+			],
+			"banner": "Yunaited Kaingdwm.jpg"
+		},
+		{
+			"code2": "YS",
+			"code3": "YYS",
+			"common_name": "Yysh",
+			"name": "Spatiotemporally Confused Province of Yysh",
+			"ruler": "Mr. Hagfish",
+			"ruler_title": "Emergency Interim Prime Minister-in-Exile",
+			"date_founded": [
+				2025,
+				4,
+				20
+			],
+			"date_dissolved": [
+				2024,
+				11,
+				24
+			],
+			"reason_dissolved": "Inactivity",
+			"banner": "Yysh_banner.png",
+			"__comment": "Formally dissolved 27/7/2024, nearly a year before its founding."
+		},
+		{
+			"code2": "ZA",
+			"code3": "HZA",
+			"common_name": "Zju'a",
+			"name": "Hiso Zju'a",
+			"ruler": [
+				"Masela",
+				"EmyFel"
+			],
+			"date_founded": [
+				2026,
+				3,
+				23
+			],
+			"banner": "HZA-banner.png",
+			"notes": "Co-ran and co-owned by Masela and EmyFel"
+		},
+		{
+			"code2": "ZG",
+			"code3": "ZGW",
+			"common_name": "Ʒimh Gwynh",
+			"name": "Islands of Ʒimh Gwynh",
+			"ruler": "Jweng the Diamondless",
+			"ruler_title": "Emperor",
+			"date_founded": [
+				2024,
+				2,
+				5
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				27
+			],
+			"reason_dissolved": "Inactivity",
+			"banner": "Islandsofximhgwynh-banner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				2,
+				5
+			],
+			"ung_demoted": [
+				2024,
+				11,
+				9
+			]
+		},
+		{
+			"code2": "ZT",
+			"code3": "ZTZ",
+			"common_name": "Zotazil",
+			"name": "Second Imperial Colony of Zotazil in Nguhcraft",
+			"ruler": "Trixie",
+			"ruler_title": "Delegate to the UŊ",
+			"date_founded": [
+				2024,
+				4,
+				18
+			],
+			"date_dissolved": [
+				2025,
+				10,
+				27
+			],
+			"reason_dissolved": "Inactivity",
+			"banner": "Majabanner.png",
+			"ung": "observer",
+			"ung_joined": [
+				2024,
+				4,
+				27
+			],
+			"ung_demoted": [
+				2025,
+				1,
+				25
+			]
+		}
+	]
+}

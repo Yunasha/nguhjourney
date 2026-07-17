@@ -5,6 +5,37 @@ const targetUrl = true
   ? "localstorage"
   : "https://mc.nguh.org/w/index.php?title=Data:NguhRoutes%2Fnetwork.json&action=raw";
 
+const countryUrl = true
+  ? "../../country.json"
+  : "https://mc.nguh.org/w/index.php?title=Data:Places&action=raw";
+
+export async function getAllCountries({ url = countryUrl } = {}) {
+  const response = await fetch(url, { method: "GET" });
+  if (!response.ok) throw new Error(`Unable to get country data \n"guh"`);
+
+  const result = await response.json();
+
+  return result["places"];
+}
+
+export async function getAssociatedCountries({
+  code2,
+  strictSearch = false,
+} = {}) {
+  if (!code2) {
+    throw new Error(`code2 is empty.\n"stop it. get some help"`);
+  }
+
+  const countries = await getAllCountries();
+  let result = countries.filter((country) => country.code2 == code2);
+  if (strictSearch && result.length == 0) {
+    throw new Error(
+      `no country is associated with the code ${code2} is empty.\n"YOLO"`,
+    );
+  }
+  return result;
+}
+
 async function getData({ url = targetUrl } = {}) {
   let result;
 
@@ -75,9 +106,9 @@ export async function getRoute({ url = targetUrl, code } = {}) {
 // despite the name, it will not make them passable
 // forget that. we gonna unfuck it
 export function unfuckRoute(route) {
-  return route["stops"].filter((stop) => (
-    typeof stop != "string" && stop.coords
-  ));
+  return route["stops"].filter(
+    (stop) => typeof stop != "string" && stop.coords,
+  );
 }
 
 export async function getAssociatedStationRoutes({
@@ -133,13 +164,28 @@ export function stationNamesFromCode({
   return translated;
 }
 
+export function searchStopConnections({
+  url = targetUrl,
+  stationCode,
+  connections,
+} = {}) {
+  const searchResult = connections.find((_connection) =>
+    _connection.some((_station) => _station["code"] == stationCode),
+  );
+
+  // console.log("->", searchResult)
+
+  if (searchResult) return searchResult;
+  return [];
+}
+
 export async function populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRoute({
   route,
   elementId,
 } = {}) {
   const container = document.getElementById(elementId);
   const fragment = document.createDocumentFragment();
-  const isNether = route.code.startsWith("N-");
+  const isNetherRoute = route.code.startsWith("N-");
 
   container.style.display = "block";
 
@@ -165,23 +211,88 @@ export async function populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRou
   contentContainer.appendChild(listContainer);
 
   // populate list
-  let stations = await getData();
-  stations = stations["stations"];
+  const data = await getData();
+  const stations = data["stations"];
   unfuckRoute(route).forEach((_station) => {
+    let [x, , z] = _station.coords; //guhh
+    // const isNether = _station.code.startsWith("N-");
+
     const item = document.createElement("li");
-    item.setAttribute("station-code", _station.code)
+    item.setAttribute("station-code", _station.code);
+    // item.setAttribute("station-x", x);
+    // item.setAttribute("station-z", z);
+    // const name = stationNamesFromCode({
+    //   stationsList: stations,
+    //   stationCode: _station.code,
+    // });
+    // item.setAttribute("station-name", name[0]);
+    // item.innerText = `${_station.code} ⋅ ${name[0]} ${isNether ? ` (${_station.coords[0] * 8}, ${_station.coords[2] * 8}) Nether: ` : ``}(${_station.coords[0]}, ${_station.coords[2]})`;
+
+    // console.log(_station.code)
+    const stationConnection = searchStopConnections({
+      stationCode: _station.code,
+      connections: data["connections"],
+    });
+
+    // console.log(stationConnection);
+
+    let displayedCode;
+    let [xn, _, zn] = [];
+    let isNether = false;
+
+    if (stationConnection.length > 0) {
+      displayedCode = stationConnection
+        .map((_connection) => _connection["code"])
+        .join(" / ");
+
+      // console.log(
+      //   stationConnection.find((_connection) =>
+      //     _connection["code"].startsWith("N-"),
+      //   )["coords"]
+      // );
+
+      [xn, _, zn] = stationConnection.find((_connection) =>
+        _connection["code"].startsWith("N-"),
+      )["coords"];
+
+      [x, _, z] = stationConnection.find(
+        (_connection) => !_connection["code"].startsWith("N-"),
+      )["coords"];
+
+      isNether = true;
+
+      // console.log(xn, zn, isNether);
+      // console.log("????")
+    } else {
+      displayedCode = _station.code;
+      if (isNetherRoute) {
+        // correction for nether route
+        displayedCode = `N-${_station.code}`;
+        x *= 8;
+        z *= 8;
+      }
+    }
+
+    item.setAttribute("station-x", x);
+    item.setAttribute("station-z", z);
+    item.setAttribute("station-xn", xn);
+    item.setAttribute("station-zn", zn);
+
+    // TODO: please change this
     const name = stationNamesFromCode({
       stationsList: stations,
-      stationCode: _station.code,
+      // stationCode: _station.code,
+      stationCode: isNetherRoute
+        ? (displayedCode.split(" / ")[1] ?? displayedCode)
+        : displayedCode.split(" / ")[0], // ass was to get the name
     });
-    item.setAttribute("station-name", name[0])
-    // item.innerText = `${_station.code} - ${name[0]} ${isNether ? ` (${_station.coords[0] * 8}, ${_station.coords[2] * 8}) Nether: ` : ``}(${_station.coords[0]}, ${_station.coords[2]})`;
 
-    const [x, , z] = _station.coords;
+    item.setAttribute("station-name", name[0]);
 
-    item.innerText = isNether
-      ? `${_station.code} - ${name[0]} (${x * 8}, ${z * 8}) N: (${x}, ${z})`
-      : `${_station.code} - ${name[0]} (${x}, ${z})`;
+    item.innerText = isNether // what was this again?
+      ? // ? `${displayedCode} ⋅ ${name[0]} (${x}, ${z}) => (${x * 8}, ${z * 8})`
+        `${displayedCode} ⋅ ${name[0]} (${x}, ${z}) => (${xn}, ${zn})`
+      : `${displayedCode} ⋅ ${name[0]} (${x}, ${z})`;
 
     // item.style.fontFamily = "monospace";
     // item.style.fontSize = "0.9rem";
@@ -209,60 +320,130 @@ export async function populateDisplayOfAnHTMLElementFromIdWithStopsFromSingleRou
 
   // stopsList.addEventListener("click", () => {
   //   navigator.clipboard.writeText(stopsString);
-  //   console.log('route to clipboard!');
+  //   // console.log('route to clipboard!');
   // })
 }
 
-export function displayStationInfo({ routes, stationName, elementId } = {}) {
+export function displayStationInfo({
+  routes,
+  stationName,
+  elementId,
+  coords,
+  netherCoords,
+} = {}) {
   const stationContainer = document.getElementById(elementId);
   const fragment = document.createDocumentFragment();
 
   const title = document.createElement("h1");
   fragment.appendChild(title);
-  title.innerText = stationName;
+  title.innerText =
+    netherCoords[0] != "undefined" // don't ask how
+      ? `${stationName} (${coords.join(", ")}) => (${netherCoords.join(", ")})`
+      : `${stationName} (${coords.join(", ")})`;
+  // console.log(coords);
+  // console.log(netherCoords);
+
+  const info = document.createElement("p");
+  info.innerText = `-`;
+  fragment.appendChild(info);
+
+  getAssociatedCountries({
+    code2: stationName.split(" ⋅ ")[0].slice(0, 2),
+  }).then((countries) => {
+    // console.log(countries);
+
+    if (countries.length > 0) {
+      const country = countries[0];
+      info.innerText = `${country.common_name} ⋅ ${country.code3}`;
+    } else {
+      info.innerText = `is an orphaned stop`;
+    }
+  });
 
   const subtitle = document.createElement("h2");
   fragment.appendChild(subtitle);
   subtitle.innerText = "Route(s) this station share:";
 
   const routesList = document.createElement("ul");
-  routesList.classList.add("station-info-list")
-  fragment.appendChild(routesList)
+  routesList.classList.add("station-info-list");
+  fragment.appendChild(routesList);
   routes.forEach((route) => {
-    const item = document.createElement("li")
-    item.setAttribute("route-code", route.code)
-    routesList.appendChild(item)
-    item.innerText = `${route.name} (${route.code})`
+    const item = document.createElement("li");
+    item.setAttribute("route-code", route.code);
+    routesList.appendChild(item);
+    item.innerText = `${route.name} (${route.code})`;
   });
 
-  stationContainer.innerHTML = ``
-  stationContainer.appendChild(fragment)
-  stationContainer.scrollIntoView({ behavior: "smooth", block: "nearest" })
-  stationContainer.parentElement.setAttribute("open", true)
-
+  stationContainer.innerHTML = ``;
+  stationContainer.appendChild(fragment);
+  stationContainer.scrollIntoView({ behavior: "smooth", block: "nearest" });
+  stationContainer.parentElement.setAttribute("open", true);
 }
 
 export async function displayMap({ chart, route, elementId } = {}) {
-  const isNether = route.code.startsWith("N-");
+  // const isNether = route.code.startsWith("N-");
 
   // console.log(route)
   let stations = await getData();
   stations = stations["stations"];
 
   // console.log(route.loop);
-  console.log(route)
-  stations = unfuckRoute(route).map((_station) => ({
-    x: isNether ? _station.coords[0] * 8 : _station.coords[0],
-    y: isNether ? _station.coords[2] * 8 : _station.coords[2],
-    name: `${_station.code} - ${stationNamesFromCode({ stationsList: stations, stationCode: _station.code })[0]}`,
-  }));
-  if (route.loop) stations = [...stations, { ...stations[0] }];
+  // console.log(route);
+  // stations = unfuckRoute(route).map((_station) => ({
+  //   x: isNether ? _station.coords[0] * 8 : _station.coords[0],
+  //   y: isNether ? _station.coords[2] * 8 : _station.coords[2],
+  //   name: `${_station.code} ⋅ ${stationNamesFromCode({ stationsList: stations, stationCode: _station.code })[0]}`,
+  // }));
+
+  const routesData = await getData();
+
+  let dataset = [];
+  unfuckRoute(route).forEach((_station) => {
+    // const isNether = _station.code.startsWith("N-")
+    let [x, _, z] = [];
+    let [xn, zn] = [];
+    let isNether = false;
+    const stationName = `${_station.code} ⋅ ${stationNamesFromCode({ stationsList: stations, stationCode: _station.code })[0]}`;
+
+    const stationConnection = searchStopConnections({
+      stationCode: _station.code,
+      connections: routesData["connections"],
+    });
+
+    if (stationConnection.length > 0) {
+      [xn, _, zn] = stationConnection.find((_connection) =>
+        _connection["code"].startsWith("N-"),
+      )["coords"];
+
+      [x, _, z] = stationConnection.find(
+        (_connection) => !_connection["code"].startsWith("N-"),
+      )["coords"];
+    } else {
+      [x, _, z] = _station["coords"];
+      if (route.code.startsWith("N-")) {
+        xn = "undefined";
+        zn = "undefined";
+        x *= 8;
+        z *= 8;
+      }
+    }
+
+    dataset.push({
+      x: x,
+      y: z,
+      xn: xn,
+      yn: zn,
+      name: stationName,
+    });
+  });
+
+  if (route.loop) dataset = [...dataset, { ...dataset[0] }];
 
   const data = {
     datasets: [
       {
         // label: route.name,
-        data: stations,
+        data: dataset,
         backgroundColor: "#0000",
         // backgroundColor: route.color ?? "#000",
 
@@ -290,15 +471,19 @@ export async function displayMap({ chart, route, elementId } = {}) {
 
         const point = chart.data.datasets[datasetIndex].data[index];
         getAssociatedStationRoutes({
-          stationCode: point["name"].split(" - ")[0],
+          stationCode: point["name"].split(" ⋅ ")[0],
         }).then((data) => {
           // console.log(data)
           // console.log(point);
 
-          displayStationInfo({ routes: data, stationName: point["name"], elementId: "station-content" })
-
+          displayStationInfo({
+            routes: data,
+            stationName: point["name"],
+            elementId: "station-content",
+            coords: [point.x, point.y],
+            netherCoords: [point["xn"], point["yn"]],
+          });
         });
-
       },
       plugins: {
         legend: {

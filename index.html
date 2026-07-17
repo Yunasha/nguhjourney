@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
     <link rel="stylesheet" href="./src/css/style.css" />
     <link rel="stylesheet" href="./src/css/styleXP.css" />
     <script src="./src/js/chart.js"></script>
@@ -112,6 +113,8 @@
       import * as route from "./src/js/routes.js";
 
       let chart;
+      // route.getAllCountries().then(data => {console.log(data)})
+      // route.getAssociatedCountries({ code2: "AA" }).then(data => {console.log(data)})
 
       async function loadRoute({ code } = {}) {
         if (!code) throw new Error('No route code was given.\n"bruh"');
@@ -170,9 +173,14 @@
         .addEventListener("click", (event) => {
           const element = event.target;
           const stationCode = element.getAttribute("station-code");
-          const stationName = element.getAttribute("station-name");
-
           if (!stationCode) return;
+
+          const stationName = element.getAttribute("station-name");
+          const coords = [element.getAttribute("station-x"), element.getAttribute("station-z")];
+          const NetherCoords = [element.getAttribute("station-xn"), element.getAttribute("station-zn")];
+
+          // console.log(">>>> ", NetherCoords)
+          // console.log("2>>>> ", coords)
 
           // console.log(stationCode);
           // loadRoute({ code: stationCode }); //WRONGG
@@ -182,8 +190,10 @@
             .then((data) => {
               route.displayStationInfo({
                 routes: data,
-                stationName: `${stationCode} - ${stationName}`,
+                stationName: `${stationCode} ⋅ ${stationName}`,
                 elementId: "station-content",
+                coords: coords,
+                netherCoords: NetherCoords
               });
             });
         });
