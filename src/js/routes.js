@@ -340,8 +340,8 @@ export function displayStationInfo({
     netherCoords[0] != "undefined" // don't ask how
       ? `${stationName} (${coords.join(", ")}) => (${netherCoords.join(", ")})`
       : `${stationName} (${coords.join(", ")})`;
-  // console.log(coords);
-  // console.log(netherCoords);
+  console.log(coords);
+  console.log(netherCoords);
 
   const info = document.createElement("p");
   info.innerText = `-`;
@@ -481,7 +481,10 @@ export async function displayMap({ chart, route, elementId } = {}) {
             stationName: point["name"],
             elementId: "station-content",
             coords: [point.x, point.y],
-            netherCoords: [point["xn"], point["yn"]],
+            netherCoords: [
+              point["xn"] ?? "undefined",
+              point["yn"] ?? "undefined",
+            ],
           });
         });
       },
